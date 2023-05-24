@@ -7,7 +7,7 @@ export const setupUniverse = () => {
     // setup of the camera
     const camera = new THREE.PerspectiveCamera(50, window.innerWidth / window.innerHeight, 0.1, 1000);
     camera.position.setY(0);
-    camera.position.setZ(11);
+    camera.position.setZ(8);
 
     //setup of the rerender
     const renderer = new THREE.WebGLRenderer({

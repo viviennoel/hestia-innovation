@@ -4,10 +4,9 @@ import styles from "./pages.module.scss"
 
 const Index = () => {
   return (
-    <div id='body'>
-      <BannerHome />
-      <p>hello!</p>
-    </div>
+      <div id='body'>
+        <BannerHome />
+      </div>
   );
 };
 

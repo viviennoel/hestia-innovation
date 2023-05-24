@@ -4,6 +4,7 @@ import * as THREE from 'three';
 import { setupUniverse } from '../../hooks/setup';
 import { OrbitControls } from 'three/examples/jsm/controls/OrbitControls'
 import { GLTFLoader } from 'three/examples/jsm/loaders/GLTFLoader';
+import { DRACOLoader } from 'three/examples/jsm/loaders/DRACOLoader.js';
 
 export const BannerHome = () => {
     const [displayMesh, setDisplayMesh] = useState(false);
@@ -25,14 +26,20 @@ export const BannerHome = () => {
     material.opacity = 0.2;
 
     const plane = new THREE.Mesh( geometry, material );
-    plane.position.y = -1.9
+    plane.position.y = -3
     plane.position.z = -0.3
     plane.receiveShadow = true;
     scene.add( plane );
 
     // GLB image
     const loader = new GLTFLoader();
-    loader.load( '/images/animatedTechFog.glb', function ( glt ) {
+
+    var dracoLoader = new DRACOLoader();
+    dracoLoader.setDecoderConfig({ type: 'js' });
+    dracoLoader.setDecoderPath('https://www.gstatic.com/draco/v1/decoders/');
+    loader.setDRACOLoader( dracoLoader );
+
+    loader.load( '/images/hestiaAnimation.glb', function ( glt ) {
       body = glt.scene;
       mixer = new THREE.AnimationMixer( body );
 
@@ -40,11 +47,11 @@ export const BannerHome = () => {
       const clips = glt.animations;
       clips.forEach( function ( clip ) {
         clip.duration = 7;
-        mixer.clipAction(clip).setEffectiveTimeScale ( 0.5 )
+        mixer.clipAction(clip).setEffectiveTimeScale ( 1.2 )
         mixer.clipAction( clip ).play();
       } );
 
-      body.position.set(0, -2, -1)
+      body.position.set(0, -3, -1)
       glt.scene.traverse(function (child) {
         child.castShadow = true;
       });
@@ -58,9 +65,9 @@ export const BannerHome = () => {
 scene.add(smokeGroup);
 
     // Light
-    const pointLightLeft = new THREE.PointLight(0x285fd4, 0.8);
-    const pointLightFront = new THREE.PointLight(0x2e456f, 0.6);
-    const pointLightTop = new THREE.PointLight(0xecb7ff, 1);
+    const pointLightLeft = new THREE.PointLight(0xffffff, 0.8);
+    const pointLightFront = new THREE.PointLight(0xffffff, 0.6);
+    const pointLightTop = new THREE.PointLight(0xffffff, 0.3);
     pointLightTop.position.set( 0, 6, -1 );
     pointLightFront.position.set( 10, 10, 50 );
     pointLightLeft.position.set( -50, 0, 5 );
@@ -84,6 +91,16 @@ scene.add(smokeGroup);
       renderer.shadowMap.type = THREE.PCFSoftShadowMap;
       renderer.render(scene, camera);
     }
+
+    window.addEventListener('mousemove', function(e) {
+      if(!body || !window){
+        return
+      }
+      
+      let mousePosition = THREE.MathUtils.lerp(body.rotation.y, ((e.offsetX - window.innerWidth / 2) * Math.PI) / 5000, 0.1)
+      console.log(mousePosition, e.offsetX )
+      body.rotation.y = mousePosition;
+    }, false);  
 
     animate();
   }, []);

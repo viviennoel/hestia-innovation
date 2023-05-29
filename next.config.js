@@ -1,4 +1,3 @@
-/** @type {import('next').NextConfig} */
 const nextConfig = {
   reactStrictMode: true,
   async rewrites() {
@@ -12,7 +11,7 @@ const nextConfig = {
   },
   webpack: (config, options) => {
     config.module.rules.push({
-      test: /\.(glb|gltf|hdr)$/,
+      test: /\.(glb|gltf)$/,
       use: [
         {
           loader: 'file-loader',

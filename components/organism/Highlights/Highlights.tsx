@@ -32,7 +32,7 @@ export const Highlights = () => {
     return(
         <Container className={styles.container}>
           <Row>
-            {content.map((cardContent) => <Col md><CardImage content={cardContent} /></Col>)}
+            {content.map((cardContent) => <Col md key={cardContent.text}><CardImage content={cardContent} /></Col>)}
           </Row>
         </Container>
     )

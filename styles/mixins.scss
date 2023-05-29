@@ -1,0 +1,5 @@
+@use './variables.scss';
+
+@mixin for-phone-up {
+    @media (min-width: variables.$breakpoint-small) { @content; }
+}

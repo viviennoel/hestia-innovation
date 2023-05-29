@@ -2,11 +2,12 @@ import Link from "next/link";
 import { PrismicLink, PrismicProvider } from "@prismicio/react";
 import { PrismicPreview } from "@prismicio/next";
 import Script from 'next/script'
+import { Header } from '../components/organism/Header'
 
 import { repositoryName } from "../prismicio";
 import { Heading } from "../components/Heading";
 
-import "../styles/globals.css";
+import "../styles/globals.scss";
 
 const richTextComponents = {
   heading1: ({ children }) => (
@@ -77,6 +78,7 @@ export default function App({ Component, pageProps }) {
       </Script>
       
       <PrismicPreview repositoryName={repositoryName}>
+        <Header />
         <Component {...pageProps} />
       </PrismicPreview>
     </PrismicProvider>

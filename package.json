@@ -15,23 +15,26 @@
     "gen": "prismic-ts-codegen"
   },
   "dependencies": {
-    "@prismicio/client": "^6.7.3",
+    "@prismicio/client": "^7.0.1",
     "@prismicio/helpers": "^2.3.9",
-    "@prismicio/next": "^1.0.3",
-    "@prismicio/react": "^2.5.2",
+    "@prismicio/next": "^1.2.1",
+    "@prismicio/react": "^2.6.2",
     "@prismicio/slice-simulator-react": "^0.2.3",
     "@react-three/drei": "^9.65.4",
+    "aos": "^3.0.0-beta.6",
+    "bootstrap": "^5.2.3",
     "clsx": "^1.2.1",
     "file-loader": "^6.2.0",
     "next": "^13.2.3",
     "react": "^18.2.0",
+    "react-bootstrap": "^2.7.4",
     "react-dom": "^18.2.0",
     "sass": "^1.61.0",
     "three": "^0.151.3"
   },
   "devDependencies": {
     "@prismicio/types": "^0.2.7",
-    "@tailwindcss/aspect-ratio": "^0.4.2",
+    "@slicemachine/adapter-next": "^0.1.3",
     "@types/react": "18.0.28",
     "autoprefixer": "^10.4.13",
     "concurrently": "^7.6.0",
@@ -41,7 +44,7 @@
     "prettier": "^2.8.4",
     "prettier-plugin-tailwindcss": "^0.2.4",
     "prismic-ts-codegen": "^0.1.5",
-    "slice-machine-ui": "^0.7.1",
+    "slice-machine-ui": "^1.0.3",
     "tailwindcss": "^3.2.7"
   }
 }

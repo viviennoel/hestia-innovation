@@ -28,12 +28,14 @@ export async function getStaticProps({ params, previewData }) {
   const page = await client.getByUID("page", params.uid);
   const navigation = await client.getSingle("navigation");
   const settings = await client.getSingle("settings");
+  const header = await client.getSingle("header");
 
   return {
     props: {
       page,
       navigation,
       settings,
+      header,
     },
   };
 }

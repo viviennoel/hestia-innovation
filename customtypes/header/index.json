@@ -1,0 +1,25 @@
+{
+  "id": "header",
+  "label": "header",
+  "repeatable": false,
+  "status": true,
+  "json": {
+    "Main": {
+      "uid": {
+        "type": "UID",
+        "config": {
+          "label": "uid",
+          "placeholder": ""
+        }
+      },
+      "link": {
+        "type": "Link",
+        "config": {
+          "label": "link",
+          "placeholder": "",
+          "select": null
+        }
+      }
+    }
+  }
+}

@@ -109,7 +109,7 @@ export const BannerHome = () => {
   return (
     <div className={`${styles.background} ${displayMesh && styles.background_anim}`}>
         <Titles animateTitle={animateTitle} />
-        <div className={`${styles.canvas_wrapper} ${displayMesh && styles.canvas_anim}`}>
+          <div className={`${styles.canvas_wrapper} ${displayMesh && styles.canvas_anim}`}>
             <canvas id="bg" className={styles.canvas}></canvas>
         </div>
     </div>

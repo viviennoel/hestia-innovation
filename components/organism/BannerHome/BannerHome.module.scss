@@ -1,5 +1,5 @@
 .background{
-    background-image: url('./../../../public/images/hestiaAnimationBg.jpeg');
+    background-image: url('./../../../public/images/backgroundHestia.jpg');
     background-size: cover;
     width: 100vw;
     height: 100vh;
@@ -35,20 +35,6 @@
 .canvas_anim {
     animation: fadeIn 1s ease-in-out forwards;
     opacity: 0;
-}
-
-@keyframes grow {
-    from {
-      transform: scale(1) translateY(0);
-    }
-
-    50% {
-        transform: scale(1.2) translateY(20px);
-    }
-  
-    to {
-        transform: scale(1) translateY(0);
-    }
 }
 
 @keyframes fadeIn {

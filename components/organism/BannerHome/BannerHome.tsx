@@ -42,6 +42,8 @@ export const BannerHome = () => {
     var dracoLoader = new DRACOLoader();
     dracoLoader.setDecoderConfig({ type: 'js' });
     dracoLoader.setDecoderPath('https://www.gstatic.com/draco/v1/decoders/');
+    dracoLoader.preload()
+
     loader.setDRACOLoader( dracoLoader );
 
     loader.load( '/images/hestiaAnimationCompressed.glb', function ( glt ) {

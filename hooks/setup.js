@@ -5,7 +5,7 @@ export const setupUniverse = () => {
     const scene = new THREE.Scene();
 
     // setup of the camera
-    const camera = new THREE.PerspectiveCamera(50, window.innerWidth / window.outerHeight, 0.1, 1000);
+    const camera = new THREE.PerspectiveCamera(50, window.innerWidth / window.innerHeight, 0.1, 1000);
     camera.position.setY(0);
     camera.position.setZ(8);
 
@@ -15,13 +15,15 @@ export const setupUniverse = () => {
       alpha: true
     });
     renderer.setPixelRatio(window.devicePixelRatio);
-    renderer.setSize(window.innerWidth, window.outerHeight);
+    renderer.setSize(window.innerWidth, window.innerHeight);
+    const windowHeight = window.innerHeight;
+
     window.addEventListener( 'resize', onWindowResize, false );
     function onWindowResize(){
-      alert('RESIZE', window.outerHeight, window.innerHeight)
-      camera.aspect = window.innerWidth / window.outerHeight;
+      alert('RESIZE' + window.outerHeight + window.innerHeight + windowHeight)
+      camera.aspect = window.innerWidth / windowHeight;
       camera.updateProjectionMatrix();
-      renderer.setSize(window.innerWidth, window.outerHeight);
+      renderer.setSize(window.innerWidth, windowHeight);
     }
     console.log('RESIZE OTHER')
     renderer.render(scene, camera);

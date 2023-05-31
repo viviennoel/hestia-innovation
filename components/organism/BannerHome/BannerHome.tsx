@@ -33,7 +33,8 @@ export const BannerHome = () => {
 
     manager.onLoad = () => {
       moveMeshWithMouse();
-      setAnimateTitle(true)
+      setAnimateTitle(true);
+      setDisplayMesh(true);
     };
 
     // GLB image
@@ -64,7 +65,6 @@ export const BannerHome = () => {
       });
 
       scene.add(body)
-      setDisplayMesh(true);
     });
 
     // Light

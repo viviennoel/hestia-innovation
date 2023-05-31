@@ -18,7 +18,7 @@ export const setupUniverse = () => {
     renderer.setSize(window.innerWidth, window.outerHeight);
     window.addEventListener( 'resize', onWindowResize, false );
     function onWindowResize(){
-      console.log('RESIZE')
+      alert('RESIZE', window.outerHeight, window.innerHeight)
       camera.aspect = window.innerWidth / window.outerHeight;
       camera.updateProjectionMatrix();
       renderer.setSize(window.innerWidth, window.outerHeight);

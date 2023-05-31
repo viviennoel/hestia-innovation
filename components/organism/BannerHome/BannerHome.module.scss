@@ -2,7 +2,7 @@
     background-image: url('./../../../public/images/backgroundHestia.jpg');
     background-size: cover;
     width: 100vw;
-    height: 100vh;
+    height: 100%;
     background-position: bottom;
     z-index: -1;
     position: absolute;
@@ -24,7 +24,7 @@
 
 .canvas {
     width: 100vw;
-    height: 100vh;
+    height: 100%;
     margin: auto;
 }
 

@@ -46,7 +46,7 @@ export const BannerHome = () => {
 
     loader.setDRACOLoader( dracoLoader );
 
-    loader.load( '/images/hestiaAnimationCompressed.glb', function ( glt ) {
+    loader.load( '/images/hestiaAnimateTopCompressed.glb', function ( glt ) {
       body = glt.scene;
       mixer = new THREE.AnimationMixer( body );
 

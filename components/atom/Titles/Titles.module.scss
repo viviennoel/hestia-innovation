@@ -28,7 +28,7 @@
 }
 
 .animateTitle {
-    animation: slideTitles 2.5s ease-in-out forwards;
+    animation: slideTitles 2.5s ease-in-out 1s forwards;
 }
 
 @keyframes slideTitles {

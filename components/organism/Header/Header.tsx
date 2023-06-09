@@ -2,8 +2,9 @@ import { DropdownMenu } from "../../atom/DropdownMenu"
 
 import styles from './Header.module.scss';
 import { createClient } from "./../../../prismicio";
-import { useContext, useEffect, useState } from "react";
+import { SetStateAction, useContext, useEffect, useState } from "react";
 import LanguageContext from "../../../context/languageContext";
+import { HeaderDocument } from "../../../prismicio-types";
 
 export const Header = () => {
     const [dataState, setDataState] = useState('isLoading');
@@ -12,7 +13,7 @@ export const Header = () => {
     useEffect(()=> {
         const getHeaderData = async () => {
             const client = createClient();
-            const data = await client.getSingle('header', {lang: language})
+            const data:any = await client.getSingle('header', {lang: language})
             setDataState(data);
         }
         

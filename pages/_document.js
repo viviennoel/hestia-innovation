@@ -4,14 +4,14 @@ export default function Document() {
   return (
     <Html>
       <Head>
-        <link
-          href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap"
-          rel="stylesheet"
-        />
-        <link
-          href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap"
-          rel="stylesheet"
-        />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" />
+        <link 
+          as="style"
+          rel="stylesheet preload prefetch" 
+          href="https://fonts.googleapis.com/css2?family=Jaldi&family=family=Gothic+A1&display=swap" 
+          type="text/css" 
+          crossorigin="anonymous" />
       </Head>
       <body className="overflow-x-hidden antialiased">
         <Main />

@@ -8,7 +8,7 @@ import { repositoryName } from "../prismicio";
 import { Heading } from "../components/Heading";
 
 import "../styles/globals.scss";
-import { createContext, useState } from "react";
+import { useState } from "react";
 import LanguageContext from "../context/languageContext";
 
 const richTextComponents = {
@@ -82,7 +82,6 @@ export default function App({ Component, pageProps }) {
           gtag('config', 'G-5H4WBKW0B3');
         `}
       </Script>
-      
       <PrismicPreview repositoryName={repositoryName}>
         <Header {...pageProps} />
         <Component {...pageProps} />

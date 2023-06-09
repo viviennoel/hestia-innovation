@@ -101,7 +101,6 @@ export const BannerHome = () => {
       }
       
       let mousePosition = THREE.MathUtils.lerp(body.rotation.y, ((e.offsetX - window.innerWidth / 2) * Math.PI) / 5000, 0.1)
-      console.log(mousePosition, e.offsetX )
       body.rotation.y = mousePosition;
     }, false);  
 

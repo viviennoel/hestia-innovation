@@ -45,22 +45,28 @@ export const BannerHome = () => {
     const pointLightTop = new THREE.PointLight(0xffffff, 0.3);
     pointLightTop.position.set( 0, 6, -1 );
 
-    const pointLightRight = new THREE.PointLight( 0x95bdff, 2 );
-    pointLightRight.position.set( 10, 1, -4 );
+    const pointLightRight = new THREE.PointLight( 0xffffff, 0.5 );
+    pointLightRight.position.set( 50, 1, -4 );
 
     const pointLightInside = new THREE.PointLight( 0xfff200, 10 );
-    pointLightInside.position.set( 0, -2, -5 );
+    pointLightInside.position.set( 0, -2, -7 );
 
     const light = new THREE.AmbientLight( 0x404040, 40 );
     
-    scene.add( light, pointLightRight, pointLightLeft, pointLightFront, pointLightTop, pointLightInside );
+    scene.add( light,pointLightRight, pointLightLeft, pointLightFront, pointLightTop, pointLightInside );
 
     // Animation Loop
     const animate = () => {
       requestAnimationFrame(animate);
-      body && (body.rotation.y += 0.003)
+      body && (body.rotation.y += 0.001)
       renderer.render(scene, camera);
-    }  
+    }
+
+    const updateCamera = () => {
+      camera.position.z = 8 + window.scrollY / 50;
+    }
+  
+  window.addEventListener("scroll", updateCamera);
 
     animate();
   }, []);

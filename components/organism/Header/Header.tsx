@@ -1,6 +1,7 @@
 import { DropdownMenu } from "../../atom/DropdownMenu"
-import Link from 'next/link'
+import Link from 'next/link';
 import styles from './Header.module.scss';
+import Button from 'react-bootstrap/Button';
 import { useContext } from "react";
 import LanguageContext from "../../../context/languageContext";
 import Container from 'react-bootstrap/Container';
@@ -27,6 +28,7 @@ export const Header = () => {
                     </div>
                     <div className='d-flex'>
                         <DropdownMenu />
+                        <Button href='/contact' className={`${styles.button}`}>Book a consultation</Button>
                     </div>
                 </div>
             </Container>

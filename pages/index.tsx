@@ -8,12 +8,7 @@ import { BannerTextImage } from './../components/organism/BannerTextImage';
 
 
 const Index = () => {
-    const [language, setLanguage] = useState("fr-FR");
-    
-    useEffect(() => {
-      const localLanguage = window.localStorage.getItem("language");
-      setLanguage(localLanguage);
-    }, [language]);
+    const { language } = useContext(LanguageContext);
 
     const contentHighlight = [
         {

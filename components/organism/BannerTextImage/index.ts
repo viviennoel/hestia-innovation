@@ -1,0 +1,1 @@
+export { BannerTextImage } from './BannerTextImage'

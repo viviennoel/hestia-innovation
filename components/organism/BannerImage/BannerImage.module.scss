@@ -1,0 +1,27 @@
+.banner{
+    width: 100vw;
+    box-shadow: #121212c4 0px 0px 3px 0px;
+    position: relative;
+
+    &::after{
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.78);
+    }
+}
+
+.smallBanner{
+    height: 30vh;
+}
+
+.mediumBanner{
+    height: 50vh;
+}
+
+.largeBanner{
+    height: 100vh;
+}

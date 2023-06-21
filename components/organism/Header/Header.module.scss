@@ -1,4 +1,17 @@
 .headerWrapper{
-    position: absolute;
-    top:0
+    position: fixed;
+    top: 3vh;
+    width: 100%;
+    padding: 10px 30px;
+    background-image: linear-gradient(to right, #f6f6f6, #FFFFFF, #ffffff, #ffffff, #f6f6f6);
+    box-shadow: #121212c4 0px 0px 3px 0px;
+    z-index: 1;
+
+    a {
+        padding-right: 30px;
+        font-family: 'Marcellus SC', serif;
+        color: black;
+        font-size: 1.2rem;
+        text-decoration: none;
+    }
 }

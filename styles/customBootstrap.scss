@@ -2,4 +2,33 @@
 
 .btn{
     box-shadow: #00000036 0 0 6px 0px;
+    border-radius: 0%;
+    border: none;
+}
+
+.h5 {
+    font-family: 'Marcellus SC', serif;
+    font-weight: 700;
+    font-size: 1.5rem;
+}
+
+.card-img, .card-img-top {
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+}
+
+.card-footer{
+    background-color: black;
+    color: white;
+    text-align: center;
+    border-radius: 0;
+
+    &:last-child{
+        border-radius: 0; 
+    }
+
+    a {
+        color: white;
+        text-decoration: none;
+    }
 }

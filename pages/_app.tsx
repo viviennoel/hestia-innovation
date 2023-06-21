@@ -1,92 +1,30 @@
-import Link from "next/link";
-import { PrismicLink, PrismicProvider } from "@prismicio/react";
-import { PrismicPreview } from "@prismicio/next";
-import Script from 'next/script'
 import { Header } from '../components/organism/Header'
-
-import { repositoryName } from "../prismicio";
-import { Heading } from "../components/Heading";
-
 import "../styles/globals.scss";
-import { useState } from "react";
+import { useEffect, useLayoutEffect, useState } from "react";
 import LanguageContext from "../context/languageContext";
-
-const richTextComponents = {
-  heading1: ({ children }) => (
-    <Heading as="h2" size="3xl" className="mb-7 mt-12 first:mt-0 last:mb-0">
-      {children}
-    </Heading>
-  ),
-  heading2: ({ children }) => (
-    <Heading as="h3" size="2xl" className="mb-7 last:mb-0">
-      {children}
-    </Heading>
-  ),
-  heading3: ({ children }) => (
-    <Heading as="h4" size="xl" className="mb-7 last:mb-0">
-      {children}
-    </Heading>
-  ),
-  paragraph: ({ children }) => <p className="mb-7 last:mb-0">{children}</p>,
-  oList: ({ children }) => (
-    <ol className="mb-7 pl-4 last:mb-0 md:pl-6">{children}</ol>
-  ),
-  oListItem: ({ children }) => (
-    <li className="mb-1 list-decimal pl-1 last:mb-0 md:pl-2">{children}</li>
-  ),
-  list: ({ children }) => (
-    <ul className="mb-7 pl-4 last:mb-0 md:pl-6">{children}</ul>
-  ),
-  listItem: ({ children }) => (
-    <li className="mb-1 list-disc pl-1 last:mb-0 md:pl-2">{children}</li>
-  ),
-  preformatted: ({ children }) => (
-    <pre className="mb-7 rounded bg-slate-100 p-4 text-sm last:mb-0 md:p-8 md:text-lg">
-      <code>{children}</code>
-    </pre>
-  ),
-  strong: ({ children }) => (
-    <strong className="font-semibold">{children}</strong>
-  ),
-  hyperlink: ({ children, node }) => (
-    <PrismicLink
-      field={node.data}
-      className="underline decoration-1 underline-offset-2"
-    >
-      {children}
-    </PrismicLink>
-  ),
-};
+import { Footer } from '../components/organism/Footer';
 
 export default function App({ Component, pageProps }) {
-  type LanguageContextType = "fr-fr" | "en-gb";
-  const [language, setLanguage] = useState<LanguageContextType>("fr-fr");
+  const [language, setLanguage] = useState("en-GB");
+
+  useEffect(() => {
+    if (typeof window !== "undefined") {
+      // Retrieve the language from localStorage if available, or set a default language
+      const storedLanguage = window.localStorage.getItem("language");
+      setLanguage(storedLanguage);
+    }
+  }, []);
+
+  useEffect(() => {
+    // Update localStorage whenever the language changes
+    language !== "" && localStorage.setItem("language", language);
+  }, [language]);
 
   return (
-  <LanguageContext.Provider value={{language, setLanguage}}>
-    <PrismicProvider
-      internalLinkComponent={(props) => <Link {...props} />}
-      richTextComponents={richTextComponents}
-    >
-      <Script id="cookieyes" type="text/javascript" src="https://cdn-cookieyes.com/client_data/76d3aa112edf14403cf70ca5/script.js" />
-      <Script
-        src="https://www.googletagmanager.com/gtag/js?id=G-5H4WBKW0B3"
-        strategy="afterInteractive"
-      />
-      <Script id="google-analytics" strategy="afterInteractive">
-        {`
-          window.dataLayer = window.dataLayer || [];
-          function gtag(){window.dataLayer.push(arguments);}
-          gtag('js', new Date());
-
-          gtag('config', 'G-5H4WBKW0B3');
-        `}
-      </Script>
-      <PrismicPreview repositoryName={repositoryName}>
-        <Header {...pageProps} />
-        <Component {...pageProps} />
-      </PrismicPreview>
-    </PrismicProvider>
-  </LanguageContext.Provider>
+    <LanguageContext.Provider value={{ language, setLanguage }}>
+      <Header {...pageProps} />
+      <Component {...pageProps} />
+      <Footer />
+    </LanguageContext.Provider>
   );
 }

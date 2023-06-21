@@ -1,11 +1,10 @@
 .background{
-    background-image: url('./../../../public/images/backgroundHestia.jpg');
+    background-image: radial-gradient(circle at center, rgb(27, 26, 19), black);
     background-size: cover;
     width: 100vw;
     height: 100%;
-    background-position: bottom;
     z-index: -1;
-    position: absolute;
+    position: fixed;
     top: 0;
 
     &::before {
@@ -35,6 +34,11 @@
 .canvas_anim {
     animation: fadeIn 1s ease-in-out forwards;
     opacity: 0;
+}
+
+.margin_top_content{
+    position: relative;
+    padding-top: 60vh;
 }
 
 @keyframes fadeIn {

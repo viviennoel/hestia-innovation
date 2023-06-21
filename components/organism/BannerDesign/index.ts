@@ -1,0 +1,1 @@
+export {BannerDesign } from './BannerDesign'

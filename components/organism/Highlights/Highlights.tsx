@@ -3,37 +3,18 @@ import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import { CardImage } from '../../atom/Card/CardImage';
 import styles from './Highlights.module.scss';
+import { HighLightsProps } from './../../../types/componentProps'
 
-export const Highlights = () => {
-    let content = [
-        {
-            source:'',
-            title:'title',
-            text:'text',
-            link:'/',
-            delay:'500'
-        },
-        {
-            source:'',
-            title:'title',
-            text:'text',
-            link:'/',
-            delay:'600'
-        },
-        {
-            source:'',
-            title:'title',
-            text:'text',
-            link:'/',
-            delay:'700'
-        }
-    ]
-
+export const Highlights = ({content}:HighLightsProps) => {
+    console.log(content)
+    
     return(
+      <div className='mt-5'>
         <Container className={styles.container}>
           <Row>
-            {content.map((cardContent) => <Col md key={cardContent.text}><CardImage content={cardContent} /></Col>)}
+            {content.map((cardContent) => <Col md key={cardContent.text} className='mb-5'><CardImage content={cardContent} /></Col>)}
           </Row>
         </Container>
+      </div>
     )
 }

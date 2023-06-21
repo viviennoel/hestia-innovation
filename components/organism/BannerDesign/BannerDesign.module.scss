@@ -1,0 +1,58 @@
+.background{
+    background-image: url('./../../../public/images/backgroundHestia.jpg');
+    background-size: cover;
+    width: 100vw;
+    height: 100%;
+    background-position: bottom;
+    z-index: -1;
+    position: absolute;
+    top: 0;
+
+    &::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: white;
+        opacity: 1;
+        animation: fadeOut 1.5s ease-in-out forwards;
+        z-index: -1;
+      }
+}
+
+.canvas {
+    width: 100vw;
+    height: 100%;
+    margin: auto;
+}
+
+.canvas_wrapper {
+    opacity: 0;
+}
+
+.canvas_anim {
+    animation: fadeIn 1s ease-in-out forwards;
+    opacity: 0;
+}
+
+@keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+  
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeOut {
+    from {
+      opacity: 1;
+    }
+  
+    to {
+        opacity: 0;
+    }
+  }

@@ -20,15 +20,14 @@ export const Header = () => {
                 {/* Reponsive version - desktop */}
                 <div className='d-none d-md-flex justify-content-between w-100'>
                     <div className='my-auto'>
-                        <Link href="/">Home</Link>
+                        <Link href="/">Hestia</Link>
                         <Link href="/">About</Link>
-                        <Link href="/">Development</Link>
-                        <Link href="/">Design</Link>
+                        <Link href="/development">Development</Link>
+                        <Link href="/tech/designs">Design</Link>
                         <Link href="/">Automation</Link>
                     </div>
                     <div className='d-flex'>
                         <DropdownMenu />
-                        <Button href='/contact' className={`${styles.button}`}>Book a consultation</Button>
                     </div>
                 </div>
             </Container>

@@ -6,6 +6,7 @@ import LanguageContext from '../context/languageContext';
 import { translations } from '../translations/translations';
 import { BannerImage } from './../components/organism/BannerImage';
 import { BannerTextImage } from './../components/organism/BannerTextImage';
+import Button from 'react-bootstrap/Button'
 
 
 const Index = () => {

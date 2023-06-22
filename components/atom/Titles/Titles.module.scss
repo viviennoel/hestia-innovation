@@ -5,10 +5,21 @@
     font-family: 'Gothic A1', sans-serif;
     width: 100vw;
     font-weight: 300;
+    font-size: 3rem;
     text-align: center;
     text-transform: uppercase;
-    transform: translateY(45vh);
-    text-shadow: white 1px 0 20px, white 1px 0 10px, white 1px 0 20px, white 1px 0 20px, white 1px 0 20px, white 1px 0 20px;
+    color:white;
+}
+
+.transparent{
+    color: transparent;
+}
+
+.word {
+    margin: auto;
+    color: white;
+    font: 700 normal 2.5em 'tahoma';
+    text-shadow: 5px 2px #222324, 2px 4px #222324, 3px 5px #222324;
 }
 
 .title {

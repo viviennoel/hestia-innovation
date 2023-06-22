@@ -47,7 +47,7 @@ export const BannerDesign = () => {
 
     loader.setDRACOLoader( dracoLoader );
 
-    loader.load( '/images/sphere.glb', function ( glt ) {
+    loader.load( '/images/hestiaAnimateTopCompressed.glb', function ( glt ) {
       body = glt.scene;
       mixer = new THREE.AnimationMixer( body );
 
@@ -109,7 +109,6 @@ export const BannerDesign = () => {
 
   return (
     <div className={`${styles.background} ${displayMesh && styles.background_anim}`}>
-        <Titles animateTitle={animateTitle} />
         <div className={`${styles.canvas_wrapper} ${displayMesh && styles.canvas_anim}`}>
           <canvas id="bg" className={styles.canvas}></canvas>
         </div>

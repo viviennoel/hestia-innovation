@@ -1,6 +1,6 @@
 import styles from './Titles.module.scss'
 
-export const Titles = (animateTitle) => {
+export const Titles = (animateTitle=true) => {
     return(
         <div className={`${styles.titleWrapper} ${animateTitle && styles.animateTitle}`}>
           <h1 className={styles.title}>Hestia Innovation</h1>

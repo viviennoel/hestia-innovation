@@ -1,4 +1,5 @@
 import { useContext, useEffect, useState } from 'react';
+import { Titles } from '../components/atom/Titles';
 import { BannerHome } from '../components/organism/BannerHome';
 import { Highlights } from '../components/organism/Highlights';
 import LanguageContext from '../context/languageContext';
@@ -37,23 +38,7 @@ const Index = () => {
     return(
         <div>
             <BannerHome />
-            <Highlights content={contentHighlight}/>
-            <BannerTextImage
-                imageSrc='https://res.cloudinary.com/djlwtz7qw/image/upload/v1684920923/cld-sample-2.jpg'
-                title={translations[language].HomePresentation.title} 
-                body={translations[language].HomePresentation.body} 
-                link={translations[language].HomePresentation.link} 
-                linkPlaceholder={translations[language].HomePresentation.linkPlaceholder}
-                variation='light'
-                textSide='right'
-            />
-            <BannerTextImage
-                imageSrc='https://res.cloudinary.com/djlwtz7qw/image/upload/v1684920923/cld-sample-2.jpg'
-                title={translations[language].HomePresentation.title} 
-                body={translations[language].HomePresentation.body} 
-                link={translations[language].HomePresentation.link} 
-                linkPlaceholder={translations[language].HomePresentation.linkPlaceholder}
-            />
+            <Titles></Titles>
         </div>
     )
 }

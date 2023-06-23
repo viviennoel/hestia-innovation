@@ -13,7 +13,7 @@ export default function App({ Component, pageProps }) {
       const storedLanguage = window.localStorage.getItem("language");
       const currentLanguage = storedLanguage ? storedLanguage : window.location;
       console.log(currentLanguage)
-      setLanguage(currentLanguage.toString());
+      setLanguage(currentLanguage ? currentLanguage.toString() : 'en-GB');
     }
   }, []);
 

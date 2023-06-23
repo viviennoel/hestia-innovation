@@ -7,6 +7,7 @@ import Container from 'react-bootstrap/Container';
 import { MobileNav } from "../../atom/MobileNav";
 import { useRouter } from "next/router";
 import { translations } from "../../../translations/translations";
+import { LanguageNav } from "../../atom/LanguageNav";
 
 export const Header = () => {
     const { language } = useContext(LanguageContext);
@@ -20,6 +21,7 @@ export const Header = () => {
                 {/* Reponsive version - mobile */}
                 <div className='d-flex d-md-none justify-content-between w-100'>
                     <MobileNav />
+                    <LanguageNav />
                 </div>
 
                 {/* Reponsive version - desktop */}

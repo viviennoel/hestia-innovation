@@ -1,31 +1,24 @@
 @import './../../../styles/mixins.scss';
 
-.transparentWrapper{
-    background-image: linear-gradient(to right, transparent, transparent) !important;
-    
-    @include for-desktop-up {
-        background-image: linear-gradient(to right, #fc6868,black, black, #181818);
-    }
-
-    a {
-        color: white !important;
-    }
-}
-
 .headerWrapper{
     position: fixed;
     top: 0;
     width: 100%;
     z-index: 1;
-    background-image: radial-gradient(#cfcdcd, #FFFFFF);
+    background-image: linear-gradient(#1d1d1d, #000000, #000000, #000000, #181818);
     padding: 10px 0;
 
     a {
-        padding-right: 30px;
+        padding: 0 15px;
         font-family: 'Marcellus SC', serif;
-        color: black;
+        color: white;
         font-size: 1.2rem;
         text-decoration: none;
+        transition: all 0.5s;
+
+        &:hover {
+            color: rgb(160, 160, 160);
+        }
     }
 
     .button{

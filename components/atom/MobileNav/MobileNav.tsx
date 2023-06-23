@@ -44,16 +44,16 @@ export const MobileNav = () => {
       <Dropdown.Menu className={styles.menu}>
         
       <h2 className={styles.subsection}>Navigation</h2>
-        <Dropdown.Item>
+        <Dropdown.Item className='pb-2'>
           <Link href="/">{translations[language].header.home}</Link>
         </Dropdown.Item>
-        <Dropdown.Item>
+        <Dropdown.Item className='pb-2'>
           <Link href="/development">{translations[language].header.development}</Link>
         </Dropdown.Item>
-        <Dropdown.Item>
+        <Dropdown.Item className='pb-2'>
           <Link href="/design">{translations[language].header.design}</Link>
         </Dropdown.Item>
-        <Dropdown.Item>
+        <Dropdown.Item className='pb-2'>
           <Link href="/ia">{translations[language].header.IA}</Link>
         </Dropdown.Item>
       </Dropdown.Menu>

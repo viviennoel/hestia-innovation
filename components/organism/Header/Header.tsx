@@ -16,7 +16,7 @@ export const Header = () => {
     console.log(isHomepage)
 
     return(
-        <div className={`${styles.headerWrapper} ${isHomepage ? styles.transparentWrapper : ''}`}>
+        <div className={`${styles.headerWrapper}`}>
             <Container>
                 {/* Reponsive version - mobile */}
                 <div className='d-flex d-md-none justify-content-between w-100'>

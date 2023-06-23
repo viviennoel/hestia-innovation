@@ -21,8 +21,23 @@
         }
     }
 
+    .menuDesktop{
+        opacity: 0;
+        animation: appears 0.5s ease-in-out 0.5s forwards;
+    }
+
     .button{
         background-color: white;
         color: black;
+    }
+}
+
+@keyframes appears {
+    0%{
+        opacity: 0;
+    }
+
+    100%{
+        opacity: 1;
     }
 }

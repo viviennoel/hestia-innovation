@@ -26,7 +26,7 @@ export const Header = () => {
 
                 {/* Reponsive version - desktop */}
                 <div className='d-none d-md-flex justify-content-between w-100'>
-                    <div className='my-auto'>
+                    <div className={`my-auto ${styles.menuDesktop}`}>
                         <Link href="/">{translations[language].header.home}</Link>
                         <Link href="/">About</Link>
                         <Link href="/development">Development</Link>

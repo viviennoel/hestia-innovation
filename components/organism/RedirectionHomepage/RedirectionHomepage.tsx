@@ -1,14 +1,15 @@
 import {ButtonCustom} from './../../atom/Button';
 import styles from './RedirectionHomepage.module.scss';
+import Link from 'next/link';
 
 export const RedirectionHomepage = () => {
     return(
         <div className={styles.RedirectionWrapper}>
             <div className='mb-3'>
-                <ButtonCustom variation='dark'>Discover Hestia</ButtonCustom>
+                <ButtonCustom variation='dark'><Link href='/showcase'>Discover Hestia</Link></ButtonCustom>
             </div>
             <div>
-                <ButtonCustom variation='clear'>Assess your project</ButtonCustom>
+                <ButtonCustom variation='clear'><Link href='/assessment'>Assess your project</Link></ButtonCustom>
             </div>
         </div>
     )

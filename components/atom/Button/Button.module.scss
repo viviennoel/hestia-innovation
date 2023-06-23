@@ -5,6 +5,11 @@
     min-width: 200px;
     transition: all 1s;
 
+    a {
+        text-decoration: none;
+        color: black;
+    }
+
     &:hover{
         transform: scale(1.2);
         background-color: white;
@@ -18,6 +23,11 @@
     border: solid 1px white;
     min-width: 200px;
     transition: all 1s;
+
+    a {
+        text-decoration: none;
+        color: white;
+    }
 
     &:hover{
         transform: scale(1.2);

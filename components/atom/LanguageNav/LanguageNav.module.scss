@@ -21,6 +21,7 @@
     background-color: black !important;
     padding: 40px calc(var(--bs-gutter-x) * 0.5 + 12px) !important;
     transform: none !important;
+    inset: 0 0 auto auto !important;
     right: 0;
     z-index: -1 !important;
     border: none !important;

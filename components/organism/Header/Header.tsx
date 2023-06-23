@@ -34,7 +34,7 @@ export const Header = () => {
                         <Link href="/">Automation</Link>
                     </div>
                     <div className='d-flex'>
-                        <DropdownMenu />
+                        <LanguageNav />
                     </div>
                 </div>
             </Container>

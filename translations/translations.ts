@@ -52,5 +52,32 @@ export const translations = {
             design: 'design',
             IA: 'IA & automatisation',
         }
+    },
+    'en-SET': {
+        titleGoodPractices: "",
+        titleAI: "",
+        titleDesign: "",
+        subtitleGoodPractices: "",
+        subtitleAI: "",
+        subtitleDesign: "",
+        HomePresentation: {
+            title: "",
+            body: "",
+            link: "",
+            linkPlaceholder: "",
+        },
+        home: {
+            titlePresentation: "",
+            titleWord1: "",
+            titleWord2: "",
+            titleWord3: "",
+            titleWord4: "",
+        },
+        header:{
+            home: "",
+            development: "",
+            design: "",
+            IA: "",
+        }
     }
 }

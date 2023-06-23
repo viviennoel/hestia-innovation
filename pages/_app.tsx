@@ -5,21 +5,21 @@ import LanguageContext from "../context/languageContext";
 import { Footer } from '../components/organism/Footer';
 
 export default function App({ Component, pageProps }) {
-  const [language, setLanguage] = useState<string>("en-GB");
+  const [language, setLanguage] = useState<string>("en-SET");
 
   useEffect(() => {
-    if (typeof window !== "undefined") {
+    if (typeof window !== "undefined" && typeof navigator !== "undefined") {
       // Retrieve the language from localStorage if available, or set a default language
       const storedLanguage = window.localStorage.getItem("language");
-      const currentLanguage = storedLanguage ? storedLanguage : window.location;
+      const currentLanguage = storedLanguage ? storedLanguage : navigator.language;
       console.log(currentLanguage)
-      setLanguage(currentLanguage ? currentLanguage.toString() : 'en-GB');
+      setLanguage(currentLanguage.toString());
     }
   }, []);
 
   useEffect(() => {
     // Update localStorage whenever the language changes
-    language !== "" && localStorage.setItem("language", language);
+    language !== "en-SET" && localStorage.setItem("language", language);
   }, [language]);
 
   return (

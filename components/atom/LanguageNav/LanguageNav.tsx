@@ -39,7 +39,7 @@ export const LanguageNav = () => {
     return(
     <Dropdown>
       <Dropdown.Toggle variant="light" className={`${styles.toogle} d-flex`}>
-        <img width="30" height="30" src={`https://img.icons8.com/color/48/${country}.png`} alt="france"/>
+        {language !== 'en-SET' && <img width="30" height="30" src={`https://img.icons8.com/color/48/${country}.png`} alt="france"/>}
       </Dropdown.Toggle>
       <Dropdown.Menu className={styles.menu}>
         <div className='d-flex justify-content-between'>

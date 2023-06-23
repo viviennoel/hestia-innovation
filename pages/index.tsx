@@ -4,9 +4,7 @@ import { BannerHome } from '../components/organism/BannerHome';
 import { Highlights } from '../components/organism/Highlights';
 import LanguageContext from '../context/languageContext';
 import { translations } from '../translations/translations';
-import { BannerImage } from './../components/organism/BannerImage';
-import { BannerTextImage } from './../components/organism/BannerTextImage';
-import Button from 'react-bootstrap/Button'
+import {RedirectionHomepage} from './../components/organism/RedirectionHomepage'
 
 
 const Index = () => {
@@ -39,7 +37,8 @@ const Index = () => {
     return(
         <div>
             <BannerHome />
-            <Titles></Titles>
+            <Titles />
+            <RedirectionHomepage />
         </div>
     )
 }

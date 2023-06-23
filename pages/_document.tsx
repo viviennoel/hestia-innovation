@@ -24,7 +24,7 @@ export default function Document() {
         <link 
           as="style"
           rel="stylesheet preload prefetch" 
-          href="https://fonts.googleapis.com/css2?family=Marcellus+SC&display=swap" 
+          href="https://fonts.googleapis.com/css2?family=Marcellus+SC&family=Quicksand&display=swap" 
           type="text/css" 
           crossOrigin="anonymous" />
       </Head>

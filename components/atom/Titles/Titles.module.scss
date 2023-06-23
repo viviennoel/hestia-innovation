@@ -1,11 +1,11 @@
-@use '../../../styles/mixins.scss';
+@import '../../../styles/mixins.scss';
 
 .titleWrapper{
     position: absolute;
-    font-family: 'Gothic A1', sans-serif;
+    font-family: 'Marcellus SC', serif;
     width: 100vw;
     font-weight: 300;
-    font-size: 3rem;
+    font-size: 2rem;
     text-align: center;
     text-transform: uppercase;
     color:white;
@@ -15,17 +15,20 @@
     color: transparent;
 }
 
+.titlePresentation{
+    color: rgb(202, 201, 201);
+    text-align: center;
+}
 .word {
     margin: auto;
     color: white;
-    font: 700 normal 2.5em 'tahoma';
-    text-shadow: 5px 2px #222324, 2px 4px #222324, 3px 5px #222324;
+    text-shadow: 5px 2px #222324, 2px 4px #222324, 3px 5px #222324
 }
 
 .title {
     font-size: 40px;
 
-    @include mixins.for-phone-up {    
+    @include for-tablet-portrait-up {    
         font-size: 60px; 
     }
 }
@@ -34,18 +37,4 @@
     font-size: 30px;
     font-weight: 500;
     font-family: 'Jaldi', sans-serif;
-}
-
-.animateTitle {
-    animation: slideTitles 2.5s ease-in-out 1s forwards;
-}
-
-@keyframes slideTitles {
-    from {
-      transform: translateY(45vh);
-    }
-  
-    to {
-      transform: translateY(10vh);
-    }
 }

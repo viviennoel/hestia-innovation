@@ -1,0 +1,1 @@
+export {RedirectionHomepage} from './RedirectionHomepage';

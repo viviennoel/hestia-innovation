@@ -1,0 +1,27 @@
+.clearBtn {
+    background-color: white;
+    color: black;
+    border: solid 1px white;
+    min-width: 200px;
+    transition: all 1s;
+
+    &:hover{
+        transform: scale(1.2);
+        background-color: white;
+        color: black;
+        border: solid 1px white;
+    }
+}
+
+.darkBtn{
+    background-color: black;
+    border: solid 1px white;
+    min-width: 200px;
+    transition: all 1s;
+
+    &:hover{
+        transform: scale(1.2);
+        background-color: black;
+        border: solid 1px white;
+    }
+}

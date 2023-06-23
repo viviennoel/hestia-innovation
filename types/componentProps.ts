@@ -25,3 +25,8 @@ export type BannerTextImageProps = {
     variation?: 'dark' | 'light',
     textSide?: 'left' | 'right'
 }
+
+export type ButtonProps = {
+    variation: 'clear' | 'dark',
+    children?: React.ReactNode
+}

@@ -1,16 +1,29 @@
+@import './../../../styles/mixins.scss';
+
+.transparentWrapper{
+    background-image: linear-gradient(to right, transparent, transparent) !important;
+    
+    @include for-desktop-up {
+        background-image: linear-gradient(to right, #fc6868,black, black, #181818);
+    }
+
+    a {
+        color: white;
+    }
+}
+
 .headerWrapper{
     position: fixed;
     top: 0;
     width: 100%;
-    padding: 10px 30px;
-    background-image: linear-gradient(to right, #0e0e0e,black, black, #181818);
-    box-shadow: #121212c4 0px 0px 3px 0px;
     z-index: 1;
+    background-image: radial-gradient(#cfcdcd, #FFFFFF);
+    padding: 10px 0;
 
     a {
         padding-right: 30px;
         font-family: 'Marcellus SC', serif;
-        color: white;
+        color: black;
         font-size: 1.2rem;
         text-decoration: none;
     }

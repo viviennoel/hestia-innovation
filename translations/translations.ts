@@ -11,6 +11,19 @@ export const translations = {
             body: 'Scientific approach of the digital, support of the business for any situation', 
             link: '/about',
             linkPlaceholder: 'More about us'
+        },
+        home: {
+            titlePresentation: 'Grow your business by',
+            titleWord1: 'Develop features',
+            titleWord2: 'Analyse data',
+            titleWord3: 'Improve experience',
+            titleWord4: 'Grow business',
+        },
+        header:{
+            home: 'homepage',
+            development: 'development',
+            design: 'design',
+            IA: 'AI & automation',
         }
     },
     'fr-FR': {
@@ -25,6 +38,19 @@ export const translations = {
             body: 'Approche scientifique approach of the digital, support of the business for any situation', 
             link: '/about',
             linkPlaceholder: 'Plus à propos de nous'
+        },
+        home: {
+            titlePresentation: 'Faites croître votre entreprise',
+            titleWord1: 'Developpement',
+            titleWord2: 'Analyse des données',
+            titleWord3: 'Améliorer le produit',
+            titleWord4: 'Ouvrir de nouvelles opportunités',
+        },
+        header:{
+            home: 'accueil',
+            development: 'developpement',
+            design: 'design',
+            IA: 'IA & automatisation',
         }
     }
 }

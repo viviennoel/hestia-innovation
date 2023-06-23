@@ -17,6 +17,10 @@
     border-top-right-radius: 0;
 }
 
+.dropdown-toggle::after{
+    display: none;
+}
+
 .card-footer{
     background-color: black;
     color: white;

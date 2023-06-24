@@ -7,13 +7,13 @@ import { Configuration, OpenAIApi } from "openai";
 
 export default async (req, res) => {
   const configuration = new Configuration({
-    apiKey: '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',
+    apiKey: process.env.OPENAI_API_KEY,
   });
   const openai = new OpenAIApi(configuration);
 
   const history = [];
 
-    const user_input = 'write an aricle about test driven development'
+    const user_input = 'which color is the sky?'
     const messages = [];
 
     messages.push({ role: "user", content: user_input });

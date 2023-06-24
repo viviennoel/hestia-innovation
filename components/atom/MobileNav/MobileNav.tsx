@@ -50,7 +50,7 @@ export const MobileNav = () => {
         <Dropdown.Item className='pb-2'  href="/development">
           {translations[language].header.development}
         </Dropdown.Item>
-        <Dropdown.Item className='pb-2' href="/design">
+        <Dropdown.Item className='pb-2' href="/tech/designs">
           {translations[language].header.design}
         </Dropdown.Item>
         <Dropdown.Item className='pb-2' href="/ia">

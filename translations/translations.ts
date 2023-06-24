@@ -13,7 +13,7 @@ export const translations = {
             linkPlaceholder: 'More about us'
         },
         home: {
-            titlePresentation: 'Grow your business by',
+            titlePresentation: 'Hestia Innovation',
             titleWord1: 'Develop features',
             titleWord2: 'Analyse data',
             titleWord3: 'Improve experience',

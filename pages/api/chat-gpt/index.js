@@ -21,12 +21,11 @@ const handler = async(event) => {
       );
 
       const completion_text = completion.data.choices[0].message.content;
-      console.log(completion_text);
       history.push([user_input, completion_text]);
 
       return {
         statusCode: 200,
-        body: JSON.stringify({ message: completion_text }),
+        body: JSON.stringify(completion_text),
       };
     } catch (error) {
       if (error.response) {

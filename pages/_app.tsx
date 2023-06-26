@@ -12,7 +12,6 @@ export default function App({ Component, pageProps }) {
       // Retrieve the language from localStorage if available, or set a default language
       const storedLanguage = window.localStorage.getItem("language");
       const currentLanguage = storedLanguage ? storedLanguage : navigator.language;
-      console.log(currentLanguage)
       setLanguage(currentLanguage.toString());
     }
   }, []);

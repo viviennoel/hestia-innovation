@@ -13,7 +13,6 @@ export const Header = () => {
     const { language } = useContext(LanguageContext);
     const router = useRouter()
     const isHomepage = router.pathname === '/';
-    console.log(isHomepage)
 
     return(
         <div className={`${styles.headerWrapper}`}>

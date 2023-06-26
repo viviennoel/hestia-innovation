@@ -1,14 +1,22 @@
 import AWS from 'aws-sdk';
-import { useState } from 'react';
+import { useContext, useEffect, useState } from 'react';
+import LanguageContext from '../context/languageContext';
 
 const AI = () => {
-const [anwswer, setAnswer] = useState('Loading')
-console.log(process.env.AWS_ACCESS_KEY_ID, process.env.AWS_SECRET_ACCESS_KEY, process.env.AWS_REGION)
+const [anwswer, setAnswer] = useState('');
+const [formData, setFormData] = useState({question: ""});
+const { language } = useContext(LanguageContext);
+
+const handleSubmit = (event) => {
+    event.preventDefault();
+    language !== 'en-SET' && invokeLambdaFunction();
+}
+
 AWS.config.update({
-  region: process.env.AWS_REGION,
+  region: process.env.NEXT_PUBLIC_AWS_REGION,
   credentials: {
-    accessKeyId: process.env.AWS_ACCESS_KEY_ID,
-    secretAccessKey: process.env.AWS_SECRET_ACCESS_KEY,
+    accessKeyId: process.env.NEXT_PUBLIC_AWS_ACCESS_KEY_ID,
+    secretAccessKey: process.env.NEXT_PUBLIC_AWS_SECRET_ACCESS_KEY,
   },
 });
 
@@ -20,22 +28,28 @@ const invokeLambdaFunction = async () => {
     const params = {
       FunctionName: 'chatgpt',
       InvocationType: 'RequestResponse',
-      Payload: JSON.stringify({}),
+      Payload: JSON.stringify({ question: formData.question }),
     };
 
     const response = await lambda.invoke(params).promise();
     const data = JSON.parse(response.Payload as string);
-    setAnswer('hello');
+    setAnswer(data.body);
     console.log(data.body);
   } catch (error) {
     console.log(error);
   }
 };
-
-// Call the function to invoke the Lambda function
-invokeLambdaFunction();
     
-return <p style={{paddingTop: '30vh'}}>{anwswer}</p>
+return (
+    <>
+        <h2 style={{paddingTop: '30vh'}} className='text-center px-5'>{anwswer}</h2>
+        <form onSubmit={handleSubmit}>
+            <label htmlFor="name">Ask your question</label>
+            <input type="text" id="question" name="question" value={formData.question} />
+            <button type="submit">Submit</button>
+        </form>
+    </>
+)
 }
 
 export default AI;

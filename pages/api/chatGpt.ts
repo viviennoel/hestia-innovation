@@ -1,10 +1,5 @@
 import { Configuration, OpenAIApi } from "openai";
 
-/**
-* @param {NapkinRequest} req
-* @param {NapkinResponse} res
-*/
-
 export default async (req, res) => {
   const configuration = new Configuration({
     apiKey: process.env.OPENAI_API_KEY,

@@ -29,8 +29,10 @@ const handler = async(event) => {
       if (error.response) {
         console.log(error.response.status);
         console.log(error.response.data);
+        res.json({'message': `error ${error.response.status}`})
       } else {
-        console.log(error.message);
+        res.json({'message': `othererror ${error.message}`})
+        console.log();
       }
     }
   }

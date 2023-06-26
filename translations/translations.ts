@@ -13,7 +13,7 @@ export const translations = {
             linkPlaceholder: 'More about us'
         },
         home: {
-            titlePresentation: 'Hestia Innovation',
+            titlePresentation: 'Webmasters',
             titleWord1: 'Develop features',
             titleWord2: 'Analyse data',
             titleWord3: 'Improve experience',
@@ -40,7 +40,7 @@ export const translations = {
             linkPlaceholder: 'Plus à propos de nous'
         },
         home: {
-            titlePresentation: 'Faites croître votre entreprise',
+            titlePresentation: 'Webmasters',
             titleWord1: 'Developpement',
             titleWord2: 'Analyse des données',
             titleWord3: 'Améliorer le produit',

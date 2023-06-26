@@ -1,6 +1,6 @@
 const { Configuration, OpenAIApi } = require("openai");
 
-const handler = async(event) => {
+const handler = async(req) => {
   const configuration = new Configuration({
     apiKey: process.env.OPENAI_API_KEY,
   });
@@ -8,9 +8,9 @@ const handler = async(event) => {
   const openai = new OpenAIApi(configuration);
   const history = [];
 
-  console.log(event.body)
-  const user_input = JSON.parse(event.body).question;
-  console.log(event.body)
+  console.log(req)
+  const user_input = JSON.parse(req.body).question;
+  console.log(req.body)
   console.log(user_input);
   const messages = [];
 

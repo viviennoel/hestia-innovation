@@ -9,8 +9,8 @@ const handler = async(req) => {
   const history = [];
 
   console.log(req)
-  const user_input = JSON.parse(req.body).question;
-  console.log(req.body)
+  const user_input = req.question;
+  console.log(req.question);
   console.log(user_input);
   const messages = [];
 

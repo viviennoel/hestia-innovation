@@ -8,6 +8,7 @@ const handler = async(event) => {
   const openai = new OpenAIApi(configuration);
   const history = [];
 
+  console.log(event.body)
   const user_input = JSON.parse(event.body).question;
   console.log(event.body)
   console.log(user_input);

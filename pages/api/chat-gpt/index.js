@@ -1,6 +1,6 @@
 const { Configuration, OpenAIApi } = require("openai");
 
-export default async (req, res) => {
+export const handler = async(event) => {
   const configuration = new Configuration({
     apiKey: process.env.OPENAI_API_KEY,
   });

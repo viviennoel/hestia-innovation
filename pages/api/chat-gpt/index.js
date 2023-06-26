@@ -9,6 +9,8 @@ const handler = async(event) => {
   const history = [];
 
   const user_input = JSON.parse(event.body).question;
+  console.log(event.body)
+  console.log(user_input);
   const messages = [];
 
   messages.push({ role: "user", content: user_input });

@@ -7,6 +7,11 @@ const [anwswer, setAnswer] = useState('');
 const [formData, setFormData] = useState({question: ""});
 const { language } = useContext(LanguageContext);
 
+const handleChange = (event) => {
+    const { name, value } = event.target;
+    setFormData((prevFormData) => ({ ...prevFormData, [name]: value }));
+};
+
 const handleSubmit = (event) => {
     event.preventDefault();
     language !== 'en-SET' && invokeLambdaFunction();
@@ -45,7 +50,7 @@ return (
         <h2 style={{paddingTop: '30vh'}} className='text-center px-5'>{anwswer}</h2>
         <form onSubmit={handleSubmit}>
             <label htmlFor="name">Ask your question</label>
-            <input type="text" id="question" name="question" value={formData.question} />
+            <input type="text" id="question" name="question" value={formData.question}  onChange={handleChange}/>
             <button type="submit">Submit</button>
         </form>
     </>

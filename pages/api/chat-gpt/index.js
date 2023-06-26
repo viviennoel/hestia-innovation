@@ -22,17 +22,23 @@ const handler = async(event) => {
 
       const completion_text = completion.data.choices[0].message.content;
       console.log(completion_text);
-      res.json({'message': completion_text})
-
       history.push([user_input, completion_text]);
+
+      return {
+        statusCode: 200,
+        body: JSON.stringify({ message: completion_text }),
+      };
     } catch (error) {
       if (error.response) {
-        console.log(error.response.status);
-        console.log(error.response.data);
-        res.json({'message': `error ${error.response.status}`})
+        return {
+          statusCode: error.response.statusCode,
+          body: JSON.stringify({ message: error.response.body }),
+        };
       } else {
-        res.json({'message': `othererror ${error.message}`})
-        console.log();
+        return {
+          statusCode: 500,
+          body: JSON.stringify({ message: error.message }),
+        };
       }
     }
   }

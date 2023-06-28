@@ -5,6 +5,7 @@ import LanguageContext from '../context/languageContext';
 import { translations } from '../translations/translations';
 import { BannerImage } from '../components/organism/BannerImage';
 import { BannerTextImage } from '../components/organism/BannerTextImage';
+import { AnimatedText } from '../components/atom/AnimatedText/AnimatedText';
 
 
 const Showcase = () => {
@@ -40,6 +41,7 @@ const Showcase = () => {
                 size='medium'
                 background='https://res.cloudinary.com/djlwtz7qw/image/upload/v1684920923/cld-sample-2.jpg'
             />
+            <AnimatedText words={translations[language].titleGoodPractices} balise='h2' />
             <Highlights content={contentHighlight}/>
             <BannerTextImage
                 imageSrc='https://res.cloudinary.com/djlwtz7qw/image/upload/v1684920923/cld-sample-2.jpg'

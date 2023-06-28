@@ -36,13 +36,13 @@ export const BannerHome = () => {
     });
 
     // Light
-    const pointLightLeft = new THREE.PointLight(0xffffff, 0.8);
-    pointLightLeft.position.set( -50, 0, 5 );
+    const pointLightLeft = new THREE.PointLight(0xffffff, 5);
+    pointLightLeft.position.set( -50, 0, 20 );
 
-    const pointLightFront = new THREE.PointLight(0xffffff, 10);
+    const pointLightFront = new THREE.PointLight(0xffffff, 20);
     pointLightFront.position.set( 10, 10, 50 );
 
-    const pointLightTop = new THREE.PointLight(0xffffff, 0.3);
+    const pointLightTop = new THREE.PointLight(0xffffff, 10);
     pointLightTop.position.set( 0, 6, -1 );
 
     const pointLightRight = new THREE.PointLight( 0xffffff, 0.5 );

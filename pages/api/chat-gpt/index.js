@@ -8,10 +8,7 @@ const handler = async(req) => {
   const openai = new OpenAIApi(configuration);
   const history = [];
 
-  console.log(req)
   const user_input = req.question;
-  console.log(req.question);
-  console.log(user_input);
   const messages = [];
 
   messages.push({ role: "user", content: user_input });

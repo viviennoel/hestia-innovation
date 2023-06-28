@@ -19,13 +19,13 @@
 }
 
 .canvas_anim {
-    animation: fadeIn 1s ease-in-out forwards;
+    animation: fadeIn 0.5s ease-in-out forwards;
     opacity: 0;
 }
 
 .margin_top_content{
     position: relative;
-    padding-top: 50vh;
+    padding-top: 40vh;
 }
 
 @keyframes fadeIn {

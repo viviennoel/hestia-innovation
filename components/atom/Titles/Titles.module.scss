@@ -2,24 +2,25 @@
 
 .titleWrapper{
     position: absolute;
-    font-family: 'Marcellus SC', serif;
     width: 100vw;
     font-weight: 300;
-    font-size: 1.2rem;
+    font-size: 1.7rem;
     text-align: center;
-    text-transform: uppercase;
     color:white;
+    text-shadow: #000 1px 0 20px, #000 1px 0 20px, #000 1px 0 20px, #000 1px 0 20px;
+}
+
+.titlePresentation{
+    font-size: 3rem;
+    color: rgb(202, 201, 201);
+    text-align: center;
+    text-shadow: #000 1px 0 20px, #000 1px 0 20px, #000 1px 0 20px, #000 1px 0 20px;
 }
 
 .transparent{
     color: transparent;
 }
 
-.titlePresentation{
-    font-size: 2rem;
-    color: rgb(202, 201, 201);
-    text-align: center;
-}
 .word {
     margin: auto;
     color: white;

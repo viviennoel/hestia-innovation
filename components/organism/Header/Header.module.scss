@@ -12,23 +12,52 @@
         padding: 0 15px;
         font-family: 'Marcellus SC', serif;
         color: white;
-        font-size: 1.2rem;
         text-decoration: none;
         transition: all 0.5s;
 
         &:hover {
-            color: rgb(160, 160, 160);
+            background-color: rgb(5, 5, 5);
+            color: rgb(187, 187, 187);
+            transform: translateX(-20pxs);
+        }
+
+        @include for-phone-only {    
+            font-size: 1.2rem; 
         }
     }
 
     .menuDesktop{
         opacity: 0;
-        animation: appears 0.5s ease-in-out 0.5s forwards;
+        animation: appears 0.5s ease-in-out forwards;
+
+        a {
+            padding: 0 15px;
+            font-family: 'Marcellus SC', serif;
+            text-transform: uppercase;
+            color: white;
+            text-decoration: none;
+            transition: all 0.5s;
+    
+            &:hover {
+                color: rgb(160, 160, 160);
+            }
+
+            @include for-phone-only {    
+                font-size: 1.2rem; 
+            }
+        }
     }
 
     .button{
         background-color: white;
         color: black;
+    }
+
+    .logo{
+        font-family: 'Marcellus SC', serif;
+        color: rgb(165, 165, 165);
+        font-size: 1.2rem;
+        animation: appears 0.5 ease-in-out forwards;
     }
 }
 

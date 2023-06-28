@@ -20,10 +20,11 @@ export const translations = {
             titleWord4: 'Grow business',
         },
         header:{
-            home: 'homepage',
-            development: 'development',
-            design: 'design',
-            IA: 'AI & automation',
+            navigation: 'Navigation',
+            home: 'Homepage',
+            development: 'Development',
+            design: 'Design',
+            IA: 'AI & Automation',
         }
     },
     'fr-FR': {
@@ -47,10 +48,11 @@ export const translations = {
             titleWord4: 'Ouvrir de nouvelles opportunités',
         },
         header:{
-            home: 'accueil',
-            development: 'developpement',
-            design: 'design',
-            IA: 'IA & automatisation',
+            navigation: 'Navigation',
+            home: 'Accueil',
+            development: 'Développement web',
+            design: 'Design',
+            IA: 'IA & Automatisation',
         }
     },
     'en-SET': {

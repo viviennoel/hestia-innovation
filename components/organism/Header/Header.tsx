@@ -20,6 +20,9 @@ export const Header = () => {
                 {/* Reponsive version - mobile */}
                 <div className='d-flex d-md-none justify-content-between w-100'>
                     <MobileNav />
+                    {!isHomepage && <h2
+                        className={`${styles.logo} my-auto`}
+                        >Hestia</h2>}
                     <LanguageNav />
                 </div>
 

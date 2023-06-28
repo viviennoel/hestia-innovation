@@ -43,17 +43,17 @@ export const MobileNav = () => {
       </Dropdown.Toggle>
       <Dropdown.Menu className={styles.menu}>
         
-      <h2 className={styles.subsection}>Navigation</h2>
-        <Dropdown.Item className='pb-2' href="/">
+      <h2 className={styles.subsection}>{translations[language].header.navigation}</h2>
+        <Dropdown.Item className='pb-3' href="/">
           {translations[language].header.home}
         </Dropdown.Item>
-        <Dropdown.Item className='pb-2'  href="/development">
+        <Dropdown.Item className='pb-3'  href="/development">
           {translations[language].header.development}
         </Dropdown.Item>
-        <Dropdown.Item className='pb-2' href="/tech/designs">
+        <Dropdown.Item className='pb-3' href="/tech/designs">
           {translations[language].header.design}
         </Dropdown.Item>
-        <Dropdown.Item className='pb-2' href="/ia">
+        <Dropdown.Item className='pb-3' href="/ia">
           {translations[language].header.IA}
         </Dropdown.Item>
       </Dropdown.Menu>

@@ -1,6 +1,7 @@
 .background{
-    background-image: radial-gradient(circle at center, rgb(27, 26, 19), black);
+    background-image: url('https://res.cloudinary.com/djlwtz7qw/image/upload/v1688105658/background_dalnbr.webp');
     background-size: cover;
+    background-position: center;
     width: 100vw;
     height: 100vh;
     z-index: -1;
@@ -19,7 +20,6 @@
 }
 
 .canvas_anim {
-    animation: fadeIn 0.5s ease-in-out forwards;
     opacity: 0;
 }
 

@@ -46,7 +46,6 @@ export const BannerTextImage = ({imageSrc, title, body, link, linkPlaceholder, v
 const getVariationStyle = (variation):string => {
     switch(variation){
         case("light"):
-            console.log('this is the variation', styles.lightBanner)
             return styles.lightBanner;
         default:
             return styles.darkBanner;

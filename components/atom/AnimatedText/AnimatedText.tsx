@@ -1,18 +1,17 @@
 import React, { useEffect, useRef, useState } from 'react';
 import { Container } from 'react-bootstrap';
+import styles from './AnimatedTitle.module.scss';
 
 type Balise = 'h2' | 'p';
 
 export const AnimatedText = ({words, balise}:{words:string, balise:Balise}) => {
-    const speed = 70;
+    const speed = 100;
     const [part, setPart] = useState('');
     let offset = 0;
-    const containerRef = useRef<HTMLDivElement>(null);
   
     useEffect(() => {
       const interval = setInterval(() => { 
         const newPart = words.substr(0, offset);
-        console.log('offset', offset, words, newPart)
         if (offset <= words.length) {
             setPart(newPart);
             offset++;
@@ -22,28 +21,13 @@ export const AnimatedText = ({words, balise}:{words:string, balise:Balise}) => {
       }, speed);
   
       return () => clearInterval(interval);
-    }, []);
-
-    useEffect(() => {
-      const containerOpacity = containerRef.current?.style.opacity;
-      console.log('Container opacity:', containerOpacity);
-      if (containerOpacity === '0.5') {
-        offset = 0;
-      }
-    }, [containerRef.current?.style.opacity]);
-  
+    }, [words]);
   
     return (
-      <Container
-      ref={containerRef}
-        data-aos="fade-down"
-        data-aos-anchor-placement="top-bottom"
-        data-aos-delay='0'
-        data-aos-duration="1000"
-      >
-        <h2 className={`word pt-4`}>
+      <Container>
+        <h1 className={`pt-4 ${styles.animatedTitle}`}>
             {part}
-        </h2>
+        </h1>
       </Container>
     )
 }

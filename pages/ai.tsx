@@ -39,7 +39,6 @@ const invokeLambdaFunction = async () => {
     const response = await lambda.invoke(params).promise();
     const data = JSON.parse(response.Payload as string);
     setAnswer(data.body);
-    console.log(data.body);
   } catch (error) {
     console.log(error);
   }

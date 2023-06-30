@@ -40,10 +40,11 @@ const Showcase = () => {
             <BannerImage 
                 size='medium'
                 background='https://res.cloudinary.com/djlwtz7qw/image/upload/v1684920923/cld-sample-2.jpg'
-            />
-            <AnimatedText words={translations[language].titleGoodPractices} balise='h2' />
+            >
+                <AnimatedText words={translations[language].titleGoodPractices} balise='h2' />
+            </BannerImage>
             <Highlights content={contentHighlight}/>
-            <AnimatedText words={translations[language].titleGoodPractices} balise='h2' />
+            
             <BannerTextImage
                 imageSrc='https://res.cloudinary.com/djlwtz7qw/image/upload/v1684920923/cld-sample-2.jpg'
                 title={translations[language].HomePresentation.title} 

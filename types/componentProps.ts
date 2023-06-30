@@ -3,6 +3,7 @@ export type BannerImageSize = "large" | "medium" | "small"
 export type BannerImageProps = {
     size: BannerImageSize;
     background: string;
+    children?: React.ReactNode;
 }
 
 export type HighLightsProps = {

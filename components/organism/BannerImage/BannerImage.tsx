@@ -1,15 +1,15 @@
 import { BannerImageProps, BannerImageSize } from "../../../types/componentProps"
 import styles from './BannerImage.module.scss'
 
-export const BannerImage = ({size, background}:BannerImageProps) => {
+export const BannerImage = ({size, background, children}:BannerImageProps) => {
     return(
         <div className={`${getBannerStyle(size)} ${styles.banner}`} style={{backgroundImage:`url(${background})`}}>
+            {children}
         </div>
     )
 }
 
 const getBannerStyle = (size:BannerImageSize) => {
-    console.log(size)
     switch(size){
         case('small'):
             return styles.smallBanner;

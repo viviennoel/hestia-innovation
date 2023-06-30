@@ -43,6 +43,7 @@ const Showcase = () => {
             />
             <AnimatedText words={translations[language].titleGoodPractices} balise='h2' />
             <Highlights content={contentHighlight}/>
+            <AnimatedText words={translations[language].titleGoodPractices} balise='h2' />
             <BannerTextImage
                 imageSrc='https://res.cloudinary.com/djlwtz7qw/image/upload/v1684920923/cld-sample-2.jpg'
                 title={translations[language].HomePresentation.title} 

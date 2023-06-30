@@ -36,7 +36,7 @@ const Index = () => {
 
     return(
         <div>
-            <BannerHome />
+            
             <Titles />
             <RedirectionHomepage />
         </div>

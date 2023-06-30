@@ -1,14 +1,13 @@
-
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useRef, useState } from 'react';
 import { Container } from 'react-bootstrap';
 
 type Balise = 'h2' | 'p';
 
 export const AnimatedText = ({words, balise}:{words:string, balise:Balise}) => {
-    console.log(words)
     const speed = 70;
     const [part, setPart] = useState('');
     let offset = 0;
+    const containerRef = useRef<HTMLDivElement>(null);
   
     useEffect(() => {
       const interval = setInterval(() => { 
@@ -24,9 +23,19 @@ export const AnimatedText = ({words, balise}:{words:string, balise:Balise}) => {
   
       return () => clearInterval(interval);
     }, []);
+
+    useEffect(() => {
+      const containerOpacity = containerRef.current?.style.opacity;
+      console.log('Container opacity:', containerOpacity);
+      if (containerOpacity === '0.5') {
+        offset = 0;
+      }
+    }, [containerRef.current?.style.opacity]);
+  
   
     return (
       <Container
+      ref={containerRef}
         data-aos="fade-down"
         data-aos-anchor-placement="top-bottom"
         data-aos-delay='0'

@@ -2,9 +2,7 @@ import React, { useEffect, useRef, useState } from 'react';
 import { Container } from 'react-bootstrap';
 import styles from './AnimatedTitle.module.scss';
 
-type Balise = 'h2' | 'p';
-
-export const AnimatedText = ({words, balise}:{words:string, balise:Balise}) => {
+export const AnimatedText = ({words}:{words:string}) => {
     const speed = 100;
     const [part, setPart] = useState('');
     let offset = 0;

@@ -3,7 +3,7 @@ import styles from './BannerImage.module.scss'
 
 export const BannerImage = ({size, background, children}:BannerImageProps) => {
     return(
-        <div className={`${getBannerStyle(size)} ${styles.banner}`} style={{backgroundImage:`url(${background})`}}>
+        <div className={`${getBannerStyle(size)} ${styles.banner} mb-5`} style={{backgroundImage:`url(${background})`}}>
             {children}
         </div>
     )

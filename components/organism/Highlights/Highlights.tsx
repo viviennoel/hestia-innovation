@@ -8,7 +8,7 @@ import { HighLightsProps } from './../../../types/componentProps'
 export const Highlights = ({content}:HighLightsProps) => {
     console.log(content)
     return(
-      <div className='mt-5'>
+      <div>
         <Container className={styles.container}>
           <Row>
             {content.map((cardContent, index) => <Col md key={`${cardContent.text}${index}`} className='mb-5'><CardImage content={cardContent} /></Col>)}

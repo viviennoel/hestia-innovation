@@ -1,12 +1,12 @@
 import { useContext } from 'react';
-import { BannerHome } from '../components/organism/BannerHome';
 import { Highlights } from '../components/organism/Highlights';
 import LanguageContext from '../context/languageContext';
 import { translations } from '../translations/translations';
 import { BannerImage } from '../components/organism/BannerImage';
 import { BannerTextImage } from '../components/organism/BannerTextImage';
 import { AnimatedText } from '../components/atom/AnimatedText/AnimatedText';
-
+import { HighlightHover } from '../components/organism/HighlightHover/HighlightHover'
+import { Subtitle } from '../components/atom/Subtitle/Subtitle';
 
 const Showcase = () => {
     const { language } = useContext(LanguageContext);
@@ -41,10 +41,13 @@ const Showcase = () => {
                 size='medium'
                 background='https://res.cloudinary.com/djlwtz7qw/image/upload/v1684920923/cld-sample-2.jpg'
             >
-                <AnimatedText words={translations[language].titleGoodPractices} balise='h2' />
+                <AnimatedText words={translations[language].titleGoodPractices} />
             </BannerImage>
-            <Highlights content={contentHighlight}/>
             
+            <Subtitle content={translations[language].showcase.threeSpecialties} />
+            <HighlightHover content={contentHighlight}/>
+            
+            <Subtitle content={translations[language].showcase.detailDesign} />
             <BannerTextImage
                 imageSrc='https://res.cloudinary.com/djlwtz7qw/image/upload/v1684920923/cld-sample-2.jpg'
                 title={translations[language].HomePresentation.title} 
@@ -54,12 +57,19 @@ const Showcase = () => {
                 variation='light'
                 textSide='right'
             />
+            
+            <Subtitle content={translations[language].showcase.discoverArticles} />
+            <Highlights content={contentHighlight}/>
+
+            <Subtitle content={translations[language].showcase.assessYourNeeds} />
             <BannerTextImage
                 imageSrc='https://res.cloudinary.com/djlwtz7qw/image/upload/v1684920923/cld-sample-2.jpg'
                 title={translations[language].HomePresentation.title} 
                 body={translations[language].HomePresentation.body} 
                 link={translations[language].HomePresentation.link} 
                 linkPlaceholder={translations[language].HomePresentation.linkPlaceholder}
+                variation='light'
+                textSide='left'
             />
         </div>
     )

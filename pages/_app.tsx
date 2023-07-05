@@ -3,15 +3,26 @@ import "../styles/globals.scss";
 import { useEffect, useLayoutEffect, useState } from "react";
 import LanguageContext from "../context/languageContext";
 import { Footer } from '../components/organism/Footer';
+import { useRouter } from 'next/router';
 
 export default function App({ Component, pageProps }) {
   const [language, setLanguage] = useState<string>("en-SET");
+  const router = useRouter()
+  const isHomepage = router.pathname === '/';
+
+  const getNavigatorLanguage = () => {
+    if(navigator.language === 'en-GB' || navigator.language === 'fr-FR'){
+      return navigator.language;
+    }
+
+    return 'en-GB';
+  }
 
   useEffect(() => {
     if (typeof window !== "undefined" && typeof navigator !== "undefined") {
       // Retrieve the language from localStorage if available, or set a default language
       const storedLanguage = window.localStorage.getItem("language");
-      const currentLanguage = storedLanguage ? storedLanguage : navigator.language;
+      const currentLanguage = storedLanguage ? storedLanguage : getNavigatorLanguage();
       setLanguage(currentLanguage.toString());
     }
   }, []);
@@ -25,7 +36,7 @@ export default function App({ Component, pageProps }) {
     <LanguageContext.Provider value={{ language, setLanguage }}>
       <Header {...pageProps} />
       <Component {...pageProps} />
-      <Footer />
+      {!isHomepage && <Footer />}
     </LanguageContext.Provider>
   );
 }

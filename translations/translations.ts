@@ -25,6 +25,12 @@ export const translations = {
             development: 'Development',
             design: 'Design',
             IA: 'AI & Automation',
+        },
+        showcase: {
+            threeSpecialties: "3 Domaines d'expertise",
+            detailDesign: 'Un soin du détail remarqué',
+            discoverArticles: 'Découvrez nos articles',
+            assessYourNeeds: 'Échangez avec nos experts',
         }
     },
     'fr-FR': {
@@ -53,6 +59,12 @@ export const translations = {
             development: 'Développement web',
             design: 'Design',
             IA: 'IA & Automatisation',
+        },
+        showcase: {
+            threeSpecialties: "3 Domaines d'expertise",
+            detailDesign: 'Un soin du détail remarqué',
+            discoverArticles: 'Découvrez nos articles',
+            assessYourNeeds: 'Échangez avec nos experts',
         }
     },
     'en-SET': {
@@ -80,6 +92,12 @@ export const translations = {
             development: "",
             design: "",
             IA: "",
+        },
+        showcase: {
+            threeSpecialties: "",
+            detailDesign: '',
+            discoverArticles: '',
+            assessYourNeeds: '',
         }
     }
 }

@@ -1,12 +1,15 @@
-import {useEffect} from "react";
+import {useContext, useEffect} from "react";
 import Card from 'react-bootstrap/Card';
 import Link from 'next/link';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import styles from './CardImage.module.scss';
+import { translations } from "../../../translations/translations";
+import LanguageContext from "../../../context/languageContext";
 
 export const CardImage = ({content}) => {
     const {source, title, text, link, delay} = content;
+    const { language } = useContext(LanguageContext);
     useEffect(() => {
         AOS.init();
     }, [])
@@ -25,11 +28,10 @@ export const CardImage = ({content}) => {
                 {text}
             </Card.Text>
             </Card.Body>
-            <Card.Footer>
+            <Card.Footer className='pb-2'>
                 <small className="text-muted">
                     <Link href={link}>
-                        Read more
-                        <img className='ms-4' width="30" height="30" src="https://img.icons8.com/carbon-copy/100/ffffff/arrow.png" alt="arrow"/>
+                        {translations[language].more}
                     </Link>
                 </small>
             </Card.Footer>

@@ -1,5 +1,6 @@
 export const translations = {
     'en-GB': {
+        more: 'Read more',
         titleGoodPractices: "Best practices",
         titleAI: "Artificial Intelligence",
         titleDesign: "User oriented design",
@@ -26,6 +27,17 @@ export const translations = {
             design: 'Design',
             IA: 'AI & Automation',
         },
+        footer:{
+            title: 'Hestia Innovation',
+            description: "Créé pour devenir une solution de poids dans l'art de l'habillement sur mesure, notre travail vous permet aujourd'hui de profiter d'un service d'exception. Situé sur les rives de la Seine, à Puteaux, notre siège social est au coeur de notre activité de création. Nos tailleurs sont disponibles pour vous assister à tout instant. Ce service reconnu est une marque de fabrique dont nous sommes fiers.",
+            nav1: '',
+            nav2: '',
+            nav3: '',
+            nav4: '',
+            nav5: '',
+            nav6: '',
+            nav7: '',
+        },
         showcase: {
             threeSpecialties: "3 Domaines d'expertise",
             detailDesign: 'Un soin du détail remarqué',
@@ -34,6 +46,7 @@ export const translations = {
         }
     },
     'fr-FR': {
+        more: 'En savoir plus',
         titleGoodPractices: "Web & business",
         titleAI: "Intelligence Artificielle",
         titleDesign: "Design & consommateurs",
@@ -56,9 +69,23 @@ export const translations = {
         header:{
             navigation: 'Navigation',
             home: 'Accueil',
-            development: 'Développement web',
+            about: 'A propos',
+            dev: 'Développement web',
             design: 'Design',
-            IA: 'IA & Automatisation',
+            automation: 'IA & Automatisation',
+            contact: 'Contact',
+        },
+        footer:{
+            title: 'Hestia Innovation',
+            description: "Créé pour devenir une solution de poids dans l'art de l'habillement sur mesure, notre travail vous permet aujourd'hui de profiter d'un service d'exception. Situé sur les rives de la Seine, à Puteaux, notre siège social est au coeur de notre activité de création. Nos tailleurs sont disponibles pour vous assister à tout instant. Ce service reconnu est une marque de fabrique dont nous sommes fiers.",
+            quickLinks: 'Liens rapides',
+            nav1: '✨ Accueil',
+            nav2: '✨ Nous connaitre',
+            nav3: '✨ Notre travail',
+            nav4: '✨ Dévelopement web',
+            nav5: '✨ Design & Produits',
+            nav6: '✨ Automation & IA',
+            nav7: '✨ Contact',
         },
         showcase: {
             threeSpecialties: "3 Domaines d'expertise",
@@ -68,6 +95,7 @@ export const translations = {
         }
     },
     'en-SET': {
+        more: '',
         titleGoodPractices: "",
         titleAI: "",
         titleDesign: "",
@@ -92,6 +120,10 @@ export const translations = {
             development: "",
             design: "",
             IA: "",
+        },
+        footer:{
+            title: '',
+            description: ""
         },
         showcase: {
             threeSpecialties: "",

@@ -7,39 +7,17 @@ import { translations } from '../../../translations/translations';
 
 export const MobileNav = () => {
     const [country, setCountry] = useState("france");
-    const { language, setLanguage } = useContext(LanguageContext);
+    const { language } = useContext(LanguageContext);
 
   useEffect(()=>{
     const language = window.localStorage.getItem("language")
     setCountry(language === "fr-FR" ? "france" : 'great-britain')
   }, [country])
 
-    const updateLanguage = (language:string) => {
-      setCountry(language)
-      switch(language) {
-        case(Countries.FRANCE):
-          window.localStorage.setItem("language", 'fr-FR')
-          setLanguage('fr-FR');
-          break;
-        case (Countries.GREAT_BRITAIN):
-          window.localStorage.setItem("language", 'en-GB')
-          setLanguage('en-GB');
-          break;
-        default:
-          window.localStorage.setItem("language", 'en-GB')
-          setLanguage('en-GB');
-      }
-    }
-
-    enum Countries {
-      FRANCE = 'france',
-      GREAT_BRITAIN = 'great-britain'
-    }
-
     return(
     <Dropdown>
-      <Dropdown.Toggle variant="light" className={`${styles.toogle} d-flex`}>
-        <img width="30" height="30" src="https://img.icons8.com/ios-filled/50/ffffff/menu--v1.png" alt="menu--v1"/>
+      <Dropdown.Toggle className={`${styles.toogle} d-flex`}>
+        <img width="20" height="20" src="https://img.icons8.com/ios-filled/50/ffffff/menu--v1.png" alt="menu--v1"/>
       </Dropdown.Toggle>
       <Dropdown.Menu className={styles.menu}>
         
@@ -47,14 +25,20 @@ export const MobileNav = () => {
         <Dropdown.Item className='pb-3' href="/">
           {translations[language].header.home}
         </Dropdown.Item>
-        <Dropdown.Item className='pb-3'  href="/development">
-          {translations[language].header.development}
+        <Dropdown.Item className='pb-3' href="/about">
+          {translations[language].header.about}
         </Dropdown.Item>
-        <Dropdown.Item className='pb-3' href="/tech/designs">
+        <Dropdown.Item className='pb-3'  href="/development">
+          {translations[language].header.dev}
+        </Dropdown.Item>
+        <Dropdown.Item className='pb-3' href="/designs">
           {translations[language].header.design}
         </Dropdown.Item>
-        <Dropdown.Item className='pb-3' href="/ia">
-          {translations[language].header.IA}
+        <Dropdown.Item className='pb-3' href="/ai">
+          {translations[language].header.automation}
+        </Dropdown.Item>
+        <Dropdown.Item className='pb-3' href="/contact">
+          {translations[language].header.contact}
         </Dropdown.Item>
       </Dropdown.Menu>
     </Dropdown>

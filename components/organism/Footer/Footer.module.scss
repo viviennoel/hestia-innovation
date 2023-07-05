@@ -1,4 +1,33 @@
 .footer{
     color: white;
     background-color: black;
+    text-align: center;
+
+    p{
+        text-align: justify;
+        padding-bottom: 2rem;
+    }
+
+    h2 {
+        padding-bottom: 2rem;
+    }
+
+    ul {
+        list-style-type: none;
+        text-align: left;
+
+        li {
+            padding-bottom: 1rem;
+
+            a {
+                color: white;
+                text-decoration: none;
+                transition: all 0.5s;
+
+                &:hover, :focus {
+                    color: rgb(160, 160, 160);
+                }
+            }
+        }
+    }
 }

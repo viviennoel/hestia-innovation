@@ -9,7 +9,7 @@ export const RedirectionHomepage = () => {
                 <ButtonCustom variation='dark'><Link href='/showcase'>Discover Hestia</Link></ButtonCustom>
             </div>
             <div>
-                <ButtonCustom variation='clear'><Link href='/assessment'>Assess your project</Link></ButtonCustom>
+                <ButtonCustom variation='dark'><Link href='/contact'>Assess your project</Link></ButtonCustom>
             </div>
         </div>
     )

@@ -6,12 +6,6 @@
     border: none;
 }
 
-.h5 {
-    font-family: 'Marcellus SC', serif;
-    font-weight: 700;
-    font-size: 1.5rem;
-}
-
 .card-img, .card-img-top {
     border-top-left-radius: 0;
     border-top-right-radius: 0;
@@ -22,7 +16,8 @@
 }
 
 .card-footer{
-    background-color: #3c280f;
+    background-color: transparent;
+    background-image: linear-gradient(to right, #202020, black, #292929);
     color: white;
     text-align: center;
     border-radius: 0;

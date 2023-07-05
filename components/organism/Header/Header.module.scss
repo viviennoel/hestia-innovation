@@ -30,13 +30,13 @@
         opacity: 0;
         animation: appears 0.5s ease-in-out forwards;
 
-        a {
+        a:not(:last-child) {
             padding: 0 15px;
             font-family: 'Marcellus SC', serif;
-            text-transform: uppercase;
             color: white;
             text-decoration: none;
             transition: all 0.5s;
+            border-right: solid 1px white;
     
             &:hover {
                 color: rgb(160, 160, 160);

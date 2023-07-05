@@ -18,22 +18,23 @@ export const Header = () => {
         <div className={`${styles.headerWrapper}`}>
             <Container>
                 {/* Reponsive version - mobile */}
-                <div className='d-flex d-md-none justify-content-between w-100'>
+                <div className='d-flex d-lg-none justify-content-between w-100'>
                     <MobileNav />
                     {!isHomepage && <h2
                         className={`${styles.logo} my-auto`}
-                        >Hestia</h2>}
+                        ><Link href='/'>Hestia</Link></h2>}
                     <LanguageNav />
                 </div>
 
                 {/* Reponsive version - desktop */}
-                <div className='d-none d-md-flex justify-content-between w-100'>
+                <div className='d-none d-lg-flex justify-content-between w-100'>
                     <div className={`my-auto ${styles.menuDesktop}`}>
                         <Link href="/">{translations[language].header.home}</Link>
-                        <Link href="/">About</Link>
-                        <Link href="/development">Development</Link>
-                        <Link href="/tech/designs">Design</Link>
-                        <Link href="/">Automation</Link>
+                        <Link href="/about">{translations[language].header.about}</Link>
+                        <Link href="/development">{translations[language].header.dev}</Link>
+                        <Link href="/designs">{translations[language].header.design}</Link>
+                        <Link href="/ai">{translations[language].header.automation}</Link>
+                        <Link href="/contact">{translations[language].header.contact}</Link>
                     </div>
                     <div className='d-flex'>
                         <LanguageNav />

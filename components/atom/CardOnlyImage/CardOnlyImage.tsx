@@ -24,15 +24,8 @@ export const CardOnlyImage = ({content}) => {
                 <Card.ImgOverlay className={styles.cardOverlay}>
                     <div className={styles.cardOverlay_align}>
                         <Card.Title>{title}</Card.Title>
-                        <Card.Text>{text}</Card.Text>
-                        <Card.Text>
-                        <img
-                            className='ms-4'
-                            width="30"
-                            height="30"
-                            src="https://img.icons8.com/carbon-copy/100/ffffff/arrow.png"
-                            alt="arrow"
-                        />
+                            <Card.Text>{text}</Card.Text>
+                            <Card.Text>
                         </Card.Text>
                     </div>
                     </Card.ImgOverlay>

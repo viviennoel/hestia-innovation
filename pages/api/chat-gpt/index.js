@@ -8,7 +8,7 @@ const handler = async(req) => {
   const openai = new OpenAIApi(configuration);
   const history = [];
 
-  const user_input = `write a short linkedin post (less than 3000 caracters) with emojis about ${req.question}`;
+  const user_input = `write a short linkedin post (less than 200 caracters) with emojis about ${req.question}`;
   const messages = [];
 
   messages.push({ role: "user", content: user_input });

@@ -28,6 +28,8 @@ const handleSubmit = async (event) => {
     }
 }
 
+console.log(process.env.NEXT_PUBLIC_AWS_REGION);
+
 AWS.config.update({
   region: process.env.NEXT_PUBLIC_AWS_REGION,
   credentials: {
@@ -112,7 +114,7 @@ return (
             
             <label htmlFor="name">Find an image to illustrate the post</label>
             <input type="text" id="image" name="image" value={formData.image} onChange={handleChange}/>
-            <button type="submit">Submit</button>
+            <button type="submit">Submit {process.env.NEXT_PUBLIC_AWS_REGION}</button>
         </form>
     </>
 )

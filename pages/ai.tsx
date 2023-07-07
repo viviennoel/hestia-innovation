@@ -9,7 +9,7 @@ const [image, setImage] = useState({
   src: undefined,
   alt: undefined,
 });
-const [formData, setFormData] = useState({question: ""});
+const [formData, setFormData] = useState({question: "", image: ""});
 const { language } = useContext(LanguageContext);
 
 const handleChange = (event) => {
@@ -39,6 +39,7 @@ AWS.config.update({
 const lambda = new AWS.Lambda();
 
 const getTextFromOpenAI = async () => {
+  console.log('AIIII')
   try {
     const params = {
       FunctionName: 'chatgpt',
@@ -49,6 +50,7 @@ const getTextFromOpenAI = async () => {
     const response = await lambda.invoke(params).promise();
     const data = JSON.parse(response.Payload as string);
     setAnswer(data.body);
+    console.log('AIIII success')
 
     return data.body;
   } catch (error) {
@@ -64,7 +66,7 @@ type Photos = {
   }
 const getPictureFromPexel = async () => {
   const client = createClient('fcSMShcb7yct8Q4fudxM2Pk3b94LC1j9oia2JBPBVQQe2B8Pgyxm0VX1');
-  const query = formData.question;
+  const query = formData.image;
 
   return client.photos.search({ query, per_page: 1 })
     .then(result => {
@@ -105,8 +107,11 @@ return (
         <p style={{paddingTop: '30vh'}} className='text-center px-5'>{anwswer}</p>
         {image.src && <img src={image.src} alt={image.alt} className='w-100 pb-5'></img>}
         <form onSubmit={handleSubmit}>
-            <label htmlFor="name">Ask your question</label>
+            <label htmlFor="name">Subject of the post</label>
             <input type="text" id="question" name="question" value={formData.question}  onChange={handleChange}/>
+            
+            <label htmlFor="name">Find an image to illustrate the post</label>
+            <input type="text" id="image" name="image" value={formData.image} onChange={handleChange}/>
             <button type="submit">Submit</button>
         </form>
     </>

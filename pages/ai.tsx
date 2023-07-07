@@ -56,6 +56,12 @@ const getTextFromOpenAI = async () => {
   }
 };
 
+type Photos = {
+  photos:{
+    src: {landscape:string},
+    alt: string
+    }[]
+  }
 const getPictureFromPexel = async () => {
   const client = createClient('fcSMShcb7yct8Q4fudxM2Pk3b94LC1j9oia2JBPBVQQe2B8Pgyxm0VX1');
   const query = formData.question;
@@ -64,8 +70,8 @@ const getPictureFromPexel = async () => {
     .then(result => {
       const imagePexel = {
 
-        src: result.photos[0].src.landscape,
-        alt: result.photos[0].alt,
+        src: (result as Photos).photos[0].src.landscape,
+        alt: (result as Photos).photos[0].alt,
       }
 
       setImage(imagePexel);
@@ -73,7 +79,7 @@ const getPictureFromPexel = async () => {
     });
 }
 
-const postOnLinkedIn = (text, articleImage) => {
+const postOnLinkedIn = (text:string, articleImage:{src:string, alt: string}) => {
   const body= {
     text,
     articleImage,

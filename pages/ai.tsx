@@ -2,14 +2,17 @@ import AWS from 'aws-sdk';
 import { useContext, useEffect, useState } from 'react';
 import LanguageContext from '../context/languageContext';
 import { createClient } from 'pexels';
+import Container from 'react-bootstrap/Container';
+import Spinner from 'react-bootstrap/Spinner';
+import styles from './ai.module.scss';
 
 const AI = () => {
-const [anwswer, setAnswer] = useState('');
+const [anwswer, setAnswer] = useState(undefined);
 const [image, setImage] = useState({
   src: undefined,
   alt: undefined,
 });
-const [formData, setFormData] = useState({question: "", image: ""});
+const [formData, setFormData] = useState({question: "", image: "", pswd:""});
 const { language } = useContext(LanguageContext);
 
 const handleChange = (event) => {
@@ -41,18 +44,16 @@ AWS.config.update({
 const lambda = new AWS.Lambda();
 
 const getTextFromOpenAI = async () => {
-  console.log('AIIII')
   try {
     const params = {
       FunctionName: 'chatgpt',
       InvocationType: 'RequestResponse',
-      Payload: JSON.stringify({ question: formData.question }),
+      Payload: JSON.stringify({ question: formData.question, pswd: formData.pswd }),
     };
 
     const response = await lambda.invoke(params).promise();
     const data = JSON.parse(response.Payload as string);
     setAnswer(data.body);
-    console.log('AIIII success')
 
     return data.body;
   } catch (error) {
@@ -105,18 +106,30 @@ fetch("https://vivien-thomas-noel.npkn.net/5c2b24/", {
 }
     
 return (
-    <>
-        <p style={{paddingTop: '30vh'}} className='text-center px-5'>{anwswer}</p>
-        {image.src && <img src={image.src} alt={image.alt} className='w-100 pb-5'></img>}
-        <form onSubmit={handleSubmit}>
+    <Container className={styles.container}>
+          {(!anwswer || !image.src) &&
+            <div className='m-auto'>
+              <Spinner animation="border" role="status">
+                <span className="visually-hidden">Loading...</span>
+              </Spinner>
+            </div>
+          }
+          {anwswer && <p style={{paddingTop: '30vh'}} className='text-center px-5'>{anwswer}</p>}
+          {image.src && <img src={image.src} alt={image.alt} className='w-100 pb-5'></img>}
+        
+          <form onSubmit={handleSubmit} className={styles.form}>
             <label htmlFor="name">Subject of the post</label>
-            <input type="text" id="question" name="question" value={formData.question}  onChange={handleChange}/>
+            <input type="text" id="question" name="question" value={formData.question}  onChange={handleChange} className={styles.input} required/>
             
             <label htmlFor="name">Find an image to illustrate the post</label>
-            <input type="text" id="image" name="image" value={formData.image} onChange={handleChange}/>
-            <button type="submit">Submit {process.env.NEXT_PUBLIC_AWS_REGION}</button>
+            <input type="text" id="image" name="image" value={formData.image} onChange={handleChange} className={styles.input} required/>
+            
+            <label htmlFor="name">Admin password</label>
+            <input type="text" id="pswd" name="pswd" value={formData.pswd} onChange={handleChange} className={styles.input} required/>
+            
+            <button type="submit">Submit</button>
         </form>
-    </>
+    </Container> 
 )
 }
 

@@ -5,6 +5,13 @@ const handler = async(req) => {
     apiKey: process.env.OPENAI_API_KEY,
   });
 
+  if(req.pswd !== 'Linda0712*'){
+    return {
+      statusCode: 403,
+      body: JSON.stringify({ message: 'Unauthorized' }),
+    };
+  }
+
   const openai = new OpenAIApi(configuration);
   const history = [];
 

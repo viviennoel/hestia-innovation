@@ -5,9 +5,11 @@ import { createClient } from 'pexels';
 import Container from 'react-bootstrap/Container';
 import Spinner from 'react-bootstrap/Spinner';
 import styles from './ai.module.scss';
+import { ButtonCustom } from './../components/atom/Button';
 
 const AI = () => {
 const [anwswer, setAnswer] = useState(undefined);
+const [status, setStatus] = useState('input');
 const [image, setImage] = useState({
   src: undefined,
   alt: undefined,
@@ -23,15 +25,13 @@ const handleChange = (event) => {
 const handleSubmit = async (event) => {
     event.preventDefault();
     if(language !== 'en-SET'){
+      setStatus('loading');
       const text = await getTextFromOpenAI();
       const articleImage = await getPictureFromPexel();
-      console.log(text)
-      console.log(articleImage);
       const result = await postOnLinkedIn(text, articleImage);
+      setStatus('success')
     }
 }
-
-console.log(process.env.NEXT_PUBLIC_AWS_REGION);
 
 AWS.config.update({
   region: process.env.NEXT_PUBLIC_AWS_REGION,
@@ -104,31 +104,50 @@ fetch("https://vivien-thomas-noel.npkn.net/5c2b24/", {
     .then(result => console.log(result))
     .catch(error => console.log('error', error));
 }
+
+const resetStatus = () => {
+  setStatus('input');
+  setAnswer(undefined);
+  setImage({
+    src: undefined,
+    alt: undefined,
+  });
+  setFormData({question: "", image: "", pswd:""});
+}
     
 return (
     <Container className={styles.container}>
-          {(!anwswer || !image.src) &&
-            <div className='m-auto'>
-              <Spinner animation="border" role="status">
-                <span className="visually-hidden">Loading...</span>
-              </Spinner>
+          <div className={status === 'loading' ? styles.spinner : styles.linkedin}>
+            {((!anwswer || !image.src) && status === 'loading') &&
+              <div className='m-auto'>
+                <Spinner animation="border" role="status">
+                  <span className="visually-hidden">Loading...</span>
+                </Spinner>
+              </div>}
+              {anwswer && <p style={{paddingTop: '15vh'}} className='text-center px-5'>{anwswer}</p>}
+              {image.src && <img src={image.src} alt={image.alt} className='w-100 pb-5'></img>}
             </div>
-          }
-          {anwswer && <p style={{paddingTop: '30vh'}} className='text-center px-5'>{anwswer}</p>}
-          {image.src && <img src={image.src} alt={image.alt} className='w-100 pb-5'></img>}
-        
-          <form onSubmit={handleSubmit} className={styles.form}>
-            <label htmlFor="name">Subject of the post</label>
-            <input type="text" id="question" name="question" value={formData.question}  onChange={handleChange} className={styles.input} required/>
-            
-            <label htmlFor="name">Find an image to illustrate the post</label>
-            <input type="text" id="image" name="image" value={formData.image} onChange={handleChange} className={styles.input} required/>
-            
-            <label htmlFor="name">Admin password</label>
-            <input type="text" id="pswd" name="pswd" value={formData.pswd} onChange={handleChange} className={styles.input} required/>
-            
-            <button type="submit">Submit</button>
-        </form>
+
+            <div className='m-auto'>
+              {status === 'success' ? 
+              <div className={`${styles.form} text-center`}>
+                <h2 className='pb-5'>Your post have been posted!</h2>
+                <button onClick={resetStatus} className={styles.button}>Create a new post!</button>
+              </div>
+              :<form onSubmit={handleSubmit} className={`${styles.form} text-center`}>
+                <h2 className='pb-5 text-center'>LinkedIn post by IA</h2>
+                <label htmlFor="name">Subject of the post</label>
+                <input type="text" id="question" name="question" value={formData.question}  onChange={handleChange} className={styles.input} required/>
+                
+                <label htmlFor="name">Find an image to illustrate the post</label>
+                <input type="text" id="image" name="image" value={formData.image} onChange={handleChange} className={styles.input} required/>
+                
+                <label htmlFor="name">Admin password</label>
+                <input type="text" id="pswd" name="pswd" value={formData.pswd} onChange={handleChange} className={styles.input} required/>
+                
+                <button type="submit" className={styles.button}>Submit</button>
+              </form>}
+            </div>
     </Container> 
 )
 }

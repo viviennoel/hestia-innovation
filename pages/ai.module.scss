@@ -1,16 +1,41 @@
 .form{
     max-width: 400px;
     margin: auto;
-    position: absolute;
-    bottom: 5vh;
+    padding: 30px;
+    background-color: black;
+    color: white;
+}
+
+.spinner{
+    min-height: 50vh;
+    margin: auto;
+    display: flex;
+}
+
+.linkedin{
+    min-height: 50vh;
+    margin: auto;
 }
 
 .container{
     min-height: 100vh;
-    display: flex;
 }
 
 .input{
     width: 100%;
     margin-bottom: 30px;
+}
+
+.button{
+    background-color: black;
+    border: solid 1px white;
+    min-width: 200px;
+    transition: all 1s;
+    color: white;
+
+    &:hover{
+        background-color:white;
+        border: solid 1px black;
+        color: black;
+    }
 }

@@ -63,6 +63,7 @@ const getPictureFromPexel = async () => {
   return client.photos.search({ query, per_page: 1 })
     .then(result => {
       const imagePexel = {
+
         src: result.photos[0].src.landscape,
         alt: result.photos[0].alt,
       }
@@ -72,7 +73,7 @@ const getPictureFromPexel = async () => {
     });
 }
 
-const postOnLinkedIn = (text:string, articleImage:{src:string, alt: string}) => {
+const postOnLinkedIn = (text, articleImage) => {
   const body= {
     text,
     articleImage,

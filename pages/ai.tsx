@@ -81,7 +81,7 @@ const getPictureFromPexel = async () => {
 
 const postOnLinkedIn = (text:string, articleImage:{src:string, alt: string}) => {
   const body= {
-    text,
+    text: text,
     articleImage,
 }
 

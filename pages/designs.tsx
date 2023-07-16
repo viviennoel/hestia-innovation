@@ -1,9 +1,9 @@
-import { BannerDesign } from "../../components/organism/BannerDesign";
+import { BannerDesign } from "../components/organism/BannerDesign";
 
 const Designs = () => {
 
   return (
-      <div>
+      <div style={{height: '100vh'}}>
         <BannerDesign />
       </div>
   );

@@ -17,6 +17,20 @@ type HighlightsContent = {
     delay:string
 }
 
+export type CarouselProps = {
+    source: string;
+    alt: string;
+    link: string;
+    title: string;
+    text: string;
+}
+
+export type BulletPointsProps = {
+    img: string;
+    title: string;
+    text: string;
+}
+
 export type BannerTextImageProps = {
     imageSrc: string,
     title: string,

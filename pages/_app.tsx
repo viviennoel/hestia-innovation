@@ -1,9 +1,11 @@
 import { Header } from '../components/organism/Header'
 import "../styles/globals.scss";
-import { useEffect, useLayoutEffect, useState } from "react";
+import React, { useEffect, useState } from "react";
+import { Suspense } from 'react';
 import LanguageContext from "../context/languageContext";
 import { Footer } from '../components/organism/Footer';
 import { useRouter } from 'next/router';
+import { CookieModale } from '../components/organism/CookieModale/CookieModale';
 
 export default function App({ Component, pageProps }) {
   const [language, setLanguage] = useState<string>("en-SET");
@@ -34,6 +36,7 @@ export default function App({ Component, pageProps }) {
 
   return (
     <LanguageContext.Provider value={{ language, setLanguage }}>
+      <CookieModale />
       <Header {...pageProps} />
       <Component {...pageProps} />
       {!isHomepage && <Footer />}

@@ -20,6 +20,16 @@ export const translations = {
             titleWord3: 'Improve experience',
             titleWord4: 'Grow business',
         },
+        languages: 'Languages',
+        cookie: {
+            accept: 'Accepter',
+            refuse: 'Refuser',
+            title: "Les Cookies, qu'est ce que c'est?",
+            text: "We use cookies to analyse your needs and preferences in order to provide you a customized content. Pour plus d'i nformation, visiter notre ",
+            settings: 'Personnaliser mes choix',
+            policy: 'Politique de confidentialité.',
+            statistiques: 'Data is the key of success in Data Driven Development. Help us providing you better insights using statistics!'
+        },
         header:{
             navigation: 'Navigation',
             home: 'Homepage',
@@ -38,6 +48,12 @@ export const translations = {
             nav6: '',
             nav7: '',
         },
+        quote: {
+            development: {
+                title: 'Web development',
+                text: 'First quote in english',
+            }
+        },
         showcase: {
             threeSpecialties: "3 Domaines d'expertise",
             detailDesign: 'Un soin du détail remarqué',
@@ -53,11 +69,27 @@ export const translations = {
         subtitleGoodPractices: "Best practices text explaination dummy",
         subtitleAI: "Artificial Intelligence text explaination dummy",
         subtitleDesign: "User oriented design text explaination dummy",
+        languages: 'Languages',
         HomePresentation: {
             title: 'Assistance digitale pour les entreprises',
             body: 'Approche scientifique approach of the digital, support of the business for any situation', 
             link: '/about',
             linkPlaceholder: 'Plus à propos de nous'
+        },
+        cookie: {
+            accept: 'Accepter',
+            refuse: 'Refuser',
+            title: "Les Cookies, qu'est ce que c'est?",
+            text: "We use cookies to analyse your needs and preferences in order to provide you a customized content. Pour plus d'i nformation, visiter notre ",
+            settings: 'Personnaliser mes choix',
+            policy: 'Politique de confidentialité.',
+            statistiques: 'Data is the key of success in Data Driven Development. Help us providing you better insights using statistics!'
+        },
+        quote: {
+            development: {
+                author: 'Mr Harris Dwight',
+                title: "Le dévelopment informatique est une science qui doit s'appuyer sur des données",
+            }
         },
         home: {
             titlePresentation: 'Webmasters',
@@ -96,6 +128,13 @@ export const translations = {
     },
     'en-SET': {
         more: '',
+        quote: {
+            development: {
+                title: '',
+                text: '',
+            }
+        },
+        languages: '',
         titleGoodPractices: "",
         titleAI: "",
         titleDesign: "",
@@ -107,6 +146,12 @@ export const translations = {
             body: "",
             link: "",
             linkPlaceholder: "",
+        },
+        cookie: {
+            accept: 'Accept',
+            refuse: 'Refuse',
+            title: 'Personalize my experience',
+            text: 'We use cookies to analyse your needs and preferences in order to provide you a customized content.'
         },
         home: {
             titlePresentation: "",

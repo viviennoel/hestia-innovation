@@ -1,0 +1,20 @@
+.model3D{
+    width:100vw;
+    height: 50vh;
+    overflow: hidden;
+    position: relative;
+
+    iframe {
+        position: absolute;
+        top: -10vh;
+        width: 100vw;
+        height: 70vh;
+    }
+}
+
+.background{
+    height: 10vh;
+    width:100vw;
+    background-color:#f6f6f6;
+    margin: auto;
+}

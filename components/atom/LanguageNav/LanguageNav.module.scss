@@ -23,11 +23,16 @@
     transform: none !important;
     inset: 0 0 auto auto !important;
     right: 0;
-    z-index: -1 !important;
+    z-index: 1 !important;
     border: none !important;
     border-radius: 0 !important;
 
     a span{
         font-family: 'Marcellus SC', serif;
+        color: white;
+
+        &:hover {
+            color: black;
+        }
     }
 }

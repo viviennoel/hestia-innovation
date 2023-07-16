@@ -6,7 +6,6 @@ import styles from './Highlights.module.scss';
 import { HighLightsProps } from './../../../types/componentProps'
 
 export const Highlights = ({content}:HighLightsProps) => {
-    console.log(content)
     return(
       <div>
         <Container className={styles.container}>

@@ -43,7 +43,7 @@ export const LanguageNav = () => {
       </Dropdown.Toggle>
       <Dropdown.Menu className={styles.menu}>
         <div className='d-flex justify-content-between'>
-          <h2 className={styles.subsection}>Languages</h2>
+          <h2 className={`${styles.subsection} ms-3`}>{translations[language].languages}</h2>
         </div>
         <Dropdown.Item onClick={()=>updateLanguage(Countries.FRANCE)} className='d-flex justify-content-between pb-2'>
           <span className='me-5'>Français</span> <img width="30" height="30" src={`https://img.icons8.com/color/48/${Countries.FRANCE}.png`} alt={country}/>

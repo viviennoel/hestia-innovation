@@ -9,7 +9,7 @@ export const BulletPoints = (props:{content:BulletPointsProps[]}) => {
         <Container>
             <div className={`${styles.container} mb-5 mt-3 m-auto`}>
                 {props.content.map((bulletPoint, index) => 
-                    <Row className='d-flex ms-md-5 mb-5 mb-md-0 text-center'>
+                    <Row className='d-flex ms-md-5 mb-5 mb-md-0 text-center' key={`item${index}`}>
                         <Col md={4} 
                             style={{ backgroundImage: `url(${bulletPoint.img})` }}
                             className={`${styles.image} mb-3 mt-md-3`}

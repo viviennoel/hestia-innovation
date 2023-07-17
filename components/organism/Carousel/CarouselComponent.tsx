@@ -6,8 +6,8 @@ import styles from './CarouselComponent.module.scss';
 const CarouselComponent = (props:{content:CarouselProps[]}) => {
   return (
     <Carousel fade className={`${styles.carousel} mb-5`}>
-    {props.content.map(item =>
-            <Carousel.Item className={styles.item}>
+    {props.content.map((item, index) =>
+            <Carousel.Item className={styles.item} key={`item${index}`}>
                 <Link href={item.link}>
                   <div className={styles.image}>
                     <img

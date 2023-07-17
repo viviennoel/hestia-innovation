@@ -85,6 +85,9 @@ export const translations = {
             policy: 'Politique de confidentialité.',
             statistiques: 'Data is the key of success in Data Driven Development. Help us providing you better insights using statistics!'
         },
+        about:{
+            navigate: 'Déplacez vous dans nos bureau, grace à la réalité augmentée!'
+        },
         quote: {
             development: {
                 author: 'Mr Harris Dwight',
@@ -133,6 +136,9 @@ export const translations = {
                 title: '',
                 text: '',
             }
+        },
+        about:{
+            navigate: ''
         },
         languages: '',
         titleGoodPractices: "",

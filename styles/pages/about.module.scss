@@ -3,6 +3,7 @@
     height: 50vh;
     overflow: hidden;
     position: relative;
+    background-color: #3b3b3b;
 
     iframe {
         position: absolute;
@@ -18,3 +19,25 @@
     background-color:#f6f6f6;
     margin: auto;
 }
+
+.navigate{
+    position: absolute;
+    top: 10vh;
+    width: 100%;
+    margin: auto;
+    text-align: center;
+    background-image: linear-gradient(to right, rgba(255, 255, 255, 0.267), white, rgba(255, 255, 255, 0.267));
+    animation: disappear 1s ease-in-out 2s forwards;
+}
+
+@keyframes disappear {
+    from {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  
+    to {
+      opacity: 0;
+      transform: translateY(-10vh);
+    }
+  }

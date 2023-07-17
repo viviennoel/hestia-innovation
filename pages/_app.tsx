@@ -11,6 +11,8 @@ export default function App({ Component, pageProps }) {
   const [language, setLanguage] = useState<string>("en-SET");
   const router = useRouter()
   const isHomepage = router.pathname === '/';
+  const isCookieSettings = router.pathname === '/legal/cookie-settings';
+  console.log(router.pathname)
 
   const getNavigatorLanguage = () => {
     if(navigator.language === 'en-GB' || navigator.language === 'fr-FR'){
@@ -36,7 +38,7 @@ export default function App({ Component, pageProps }) {
 
   return (
     <LanguageContext.Provider value={{ language, setLanguage }}>
-      <CookieModale />
+      {!isCookieSettings && <CookieModale />}
       <Header {...pageProps} />
       <Component {...pageProps} />
       {!isHomepage && <Footer />}

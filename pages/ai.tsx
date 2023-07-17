@@ -1,11 +1,18 @@
 import AWS from 'aws-sdk';
-import { useContext, useEffect, useState } from 'react';
+import { useContext, useState } from 'react';
 import LanguageContext from '../context/languageContext';
 import { createClient } from 'pexels';
 import Container from 'react-bootstrap/Container';
 import Spinner from 'react-bootstrap/Spinner';
 import styles from './ai.module.scss';
-import { ButtonCustom } from './../components/atom/Button';
+import {BannerImage} from './../components/organism/BannerImage';
+import {BannerTextImage} from './../components/organism/BannerTextImage';
+import {BulletPoints} from './../components/organism/BulletPoints/BulletPoints';
+import {AnimatedText} from './../components/atom/AnimatedText/AnimatedText';
+import {Subtitle} from './../components/atom/Subtitle/Subtitle';
+import CarouselComponent from './../components/organism/Carousel/CarouselComponent'
+
+import { translations } from '../translations/translations';
 
 const AI = () => {
 const [anwswer, setAnswer] = useState(undefined);
@@ -16,6 +23,29 @@ const [image, setImage] = useState({
 });
 const [formData, setFormData] = useState({question: "", image: "", pswd:""});
 const { language } = useContext(LanguageContext);
+
+const contentBulletPoint = [{
+  img: 'https://res.cloudinary.com/djlwtz7qw/image/upload/v1615571569/samples/animals/reindeer.jpg',
+  title: translations[language].titleAI,
+  text:translations[language].subtitleAI,
+}]
+
+const contentCarousel = [
+  {
+      source: 'https://res.cloudinary.com/djlwtz7qw/image/upload/v1615571569/samples/animals/reindeer.jpg',
+      alt: 'string',
+      link: '/string',
+      title: 'string',
+      text: 'string'
+  },
+  {
+      source: 'https://res.cloudinary.com/djlwtz7qw/image/upload/v1615571569/samples/animals/reindeer.jpg',
+      alt: 'string',
+      link: '/string1',
+      title: 'string1',
+      text: 'string1'
+  },
+]
 
 const handleChange = (event) => {
     const { name, value } = event.target;
@@ -116,7 +146,14 @@ const resetStatus = () => {
 }
     
 return (
-    <Container className={styles.container}>
+  <>
+    <BannerImage 
+        size='medium'
+        background='https://res.cloudinary.com/djlwtz7qw/image/upload/v1684920923/cld-sample-2.jpg'
+    >
+        <AnimatedText words={translations[language].titleGoodPractices} />
+    </BannerImage>
+    <Container>
           <div className={status === 'loading' ? styles.spinner : styles.linkedin}>
             {((!anwswer || !image.src) && status === 'loading') &&
               <div className='m-auto'>
@@ -128,7 +165,7 @@ return (
               {image.src && <img src={image.src} alt={image.alt} className='w-100 pb-5'></img>}
             </div>
 
-            <div className='m-auto'>
+            <div className='m-auto mb-5'>
               {status === 'success' ? 
               <div className={`${styles.form} text-center`}>
                 <h2 className='pb-5'>Your post have been posted!</h2>
@@ -143,12 +180,57 @@ return (
                 <input type="text" id="image" name="image" value={formData.image} onChange={handleChange} className={styles.input} required/>
                 
                 <label htmlFor="name">Admin password</label>
-                <input type="text" id="pswd" name="pswd" value={formData.pswd} onChange={handleChange} className={styles.input} required/>
+                <input type="password" id="pswd" name="pswd" value={formData.pswd} onChange={handleChange} className={styles.input} required/>
                 
                 <button type="submit" className={styles.button}>Submit</button>
               </form>}
             </div>
-    </Container> 
+    </Container>
+    <Subtitle content={translations[language].showcase.discoverArticles} />
+            <BannerTextImage
+                imageSrc='https://res.cloudinary.com/djlwtz7qw/image/upload/v1684920923/cld-sample-2.jpg'
+                title={translations[language].HomePresentation.title} 
+                body={translations[language].HomePresentation.body} 
+                link={translations[language].HomePresentation.link} 
+                linkPlaceholder={translations[language].HomePresentation.linkPlaceholder}
+                variation='light'
+                textSide='right'
+            />
+
+            <Subtitle content={translations[language].showcase.discoverArticles} />
+            <CarouselComponent content={contentCarousel}></CarouselComponent> 
+
+            <BannerTextImage
+                imageSrc='https://res.cloudinary.com/djlwtz7qw/image/upload/v1684920923/cld-sample-2.jpg'
+                title={translations[language].HomePresentation.title} 
+                body={translations[language].HomePresentation.body} 
+                link={translations[language].HomePresentation.link} 
+                linkPlaceholder={translations[language].HomePresentation.linkPlaceholder}
+                textSide='left'
+                variation='light'
+            />
+
+            <Subtitle content={translations[language].showcase.discoverArticles} />
+            <BulletPoints content={contentBulletPoint}/> 
+
+            <Subtitle content={translations[language].showcase.discoverArticles} />
+            <BannerTextImage
+                imageSrc='https://res.cloudinary.com/djlwtz7qw/image/upload/v1684920923/cld-sample-2.jpg'
+                title={translations[language].HomePresentation.title} 
+                body={translations[language].HomePresentation.body} 
+                link={translations[language].HomePresentation.link} 
+                linkPlaceholder={translations[language].HomePresentation.linkPlaceholder}
+                variation='light'
+                textSide='right'
+            />
+
+            <Subtitle content={translations[language].showcase.discoverArticles} />
+            <Container className='mb-5'>
+                <p>{translations[language].HomePresentation.linkPlaceholder}</p>
+                <p>{translations[language].HomePresentation.linkPlaceholder}</p>
+                <p>{translations[language].HomePresentation.linkPlaceholder}</p>
+            </Container>
+  </>
 )
 }
 

@@ -1,5 +1,4 @@
 import { useContext } from 'react';
-import { BannerHome } from '../components/organism/BannerHome';
 import { Highlights } from '../components/organism/Highlights';
 import LanguageContext from '../context/languageContext';
 import { translations } from '../translations/translations';

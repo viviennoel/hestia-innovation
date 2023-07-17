@@ -6,9 +6,17 @@ import { useContext } from 'react';
 import LanguageContext from '../context/languageContext';
 import { BannerTextImage } from '../components/organism/BannerTextImage';
 import { AnimatedText } from '../components/atom/AnimatedText/AnimatedText';
+import Container from 'react-bootstrap/Container';
+import {BulletPoints} from './../components/organism/BulletPoints/BulletPoints';
 
 const About = () => {
     const { language } = useContext(LanguageContext);
+
+    const contentBulletPoint = [{
+        img: 'https://res.cloudinary.com/djlwtz7qw/image/upload/v1615571569/samples/animals/reindeer.jpg',
+        title: translations[language].titleAI,
+        text:translations[language].subtitleAI,
+    }]
     
     return(
         <div>
@@ -34,6 +42,44 @@ const About = () => {
                 variation='light'
                 textSide='right'
             />
+
+            <Subtitle content={translations[language].showcase.discoverArticles} />
+            <Container className='mb-5'>
+                <p>{translations[language].HomePresentation.linkPlaceholder}</p>
+                <p>{translations[language].HomePresentation.linkPlaceholder}</p>
+                <p>{translations[language].HomePresentation.linkPlaceholder}</p>
+            </Container>
+
+            <BannerTextImage
+                imageSrc='https://res.cloudinary.com/djlwtz7qw/image/upload/v1684920923/cld-sample-2.jpg'
+                title={translations[language].HomePresentation.title} 
+                body={translations[language].HomePresentation.body} 
+                link={translations[language].HomePresentation.link} 
+                linkPlaceholder={translations[language].HomePresentation.linkPlaceholder}
+                textSide='left'
+                variation='light'
+            />
+
+            <Subtitle content={translations[language].showcase.discoverArticles} />
+            <BulletPoints content={contentBulletPoint}/> 
+
+            <Subtitle content={translations[language].showcase.discoverArticles} />
+            <BannerTextImage
+                imageSrc='https://res.cloudinary.com/djlwtz7qw/image/upload/v1684920923/cld-sample-2.jpg'
+                title={translations[language].HomePresentation.title} 
+                body={translations[language].HomePresentation.body} 
+                link={translations[language].HomePresentation.link} 
+                linkPlaceholder={translations[language].HomePresentation.linkPlaceholder}
+                variation='light'
+                textSide='right'
+            />
+
+            <Subtitle content={translations[language].showcase.discoverArticles} />
+            <Container className='mb-5'>
+                <p>{translations[language].HomePresentation.linkPlaceholder}</p>
+                <p>{translations[language].HomePresentation.linkPlaceholder}</p>
+                <p>{translations[language].HomePresentation.linkPlaceholder}</p>
+            </Container>
         </div>
     )
 }

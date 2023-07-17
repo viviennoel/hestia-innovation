@@ -4,7 +4,7 @@ import LanguageContext from '../context/languageContext';
 import { createClient } from 'pexels';
 import Container from 'react-bootstrap/Container';
 import Spinner from 'react-bootstrap/Spinner';
-import styles from './ai.module.scss';
+import styles from './../styles/pages/ai.module.scss';
 import {BannerImage} from './../components/organism/BannerImage';
 import {BannerTextImage} from './../components/organism/BannerTextImage';
 import {BulletPoints} from './../components/organism/BulletPoints/BulletPoints';
@@ -186,7 +186,7 @@ return (
               </form>}
             </div>
     </Container>
-    
+
     <Subtitle content={translations[language].showcase.discoverArticles} />
     <BannerTextImage
         imageSrc='https://res.cloudinary.com/djlwtz7qw/image/upload/v1684920923/cld-sample-2.jpg'

@@ -6,7 +6,7 @@ import LanguageContext from '../../context/languageContext';
 import { translations } from '../../translations/translations';
 import Container from 'react-bootstrap/Container';
 
-const cookieSettings = () => {
+const CookieSettings = () => {
     const { language } = useContext(LanguageContext);
 
     return(
@@ -47,4 +47,4 @@ const cookieSettings = () => {
     )
 }
 
-export default cookieSettings;
+export default CookieSettings;

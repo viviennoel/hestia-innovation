@@ -1,7 +1,7 @@
 import {BannerImage} from './../components/organism/BannerImage';
 import {AnimatedText} from './../components/atom/AnimatedText/AnimatedText';
 import {Subtitle} from './../components/atom/Subtitle/Subtitle';
-import { useContext } from 'react';
+import { useContext, useState } from 'react';
 import LanguageContext from '../context/languageContext';
 import { translations } from '../translations/translations';
 import Container from 'react-bootstrap/Container';
@@ -11,6 +11,40 @@ import styles from './../styles/pages/contact.module.scss';
 
 const Contact = () => {
     const { language } = useContext(LanguageContext);
+    const [formData, setFormData] = useState({email: "", message: ""});
+    const [status, setStatus] = useState(undefined);
+
+    const handleChange = (event) => {
+        console.log('test')
+        const { name, value } = event.target;
+        setFormData((prevFormData) => ({ ...prevFormData, [name]: value }));
+    };
+    
+    const handleSubmit = async (event) => {
+        event.preventDefault();
+        if(language !== 'en-SET'){
+            setStatus('loading')
+            const result = await sendEmail(formData.email, formData.message);
+        }
+    }
+
+    const sendEmail = (email:string, message: string) => {
+        const body= { email, message }
+      
+      fetch("https://vivien-thomas-noel.npkn.net/74d768/", {
+          headers: {
+            'Accept': "application/json",
+            'Content-Type': "application/json",
+            "Access-Control-Allow-Headers": "*",
+            "Access-Control-Allow-Origins": "*",
+            "Access-Control-Allow-Methods": "*",
+          },
+          method: 'POST',
+          body: JSON.stringify(body),
+      })
+          .then(result => setStatus('success'))
+          .catch(error => setStatus('error'));
+      }
 
     return(
         <div>
@@ -23,21 +57,24 @@ const Contact = () => {
             <div className='mb-5'>
                 <Subtitle content={translations[language].showcase.discoverArticles} />
                 <Container className='mb-5'>
-                    <Form>
+                    <Form  onSubmit={handleSubmit} >
                         <Form.Group className="mb-3" controlId="exampleForm.ControlInput1">
                             <Form.Label>Votre email</Form.Label>
-                            <Form.Control type="email" placeholder="name@example.com" />
+                            <Form.Control type="email" placeholder="name@example.com"  name="email" value={formData.email} onChange={handleChange} />
                         </Form.Group>
                         <Form.Group className="mb-3" controlId="exampleForm.ControlTextarea1">
                             <Form.Label>Your message</Form.Label>
-                            <Form.Control as="textarea" rows={3} />
+                            <Form.Control as="textarea" rows={3}  name="message" value={formData.message} onChange={handleChange} />
                         </Form.Group>
-                        <Form.Group className="mb-3" controlId="formBasicCheckbox">
-                            <Form.Check type="checkbox" label="I accept the general conditions of use" />
-                        </Form.Group>
+                        {/* <Form.Group className="mb-3" controlId="formBasicCheckbox">
+                            <Form.Check type="checkbox" required label="I accept the general conditions of use" />
+                        </Form.Group> */}
                         <Button variant="dark" type="submit">
                             Submit
                         </Button>
+                        {status === 'loading' && <p>Loading !</p>}
+                        {status === 'success' && <p>Success !</p>}
+                        {status === 'error' && <p>error !</p>}
                     </Form>
                 </Container>
             </div>

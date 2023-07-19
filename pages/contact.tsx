@@ -72,7 +72,7 @@ const Contact = () => {
                         <Button variant="dark" type="submit">
                             Submit
                         </Button>
-                        {status === 'loading' && <p>Loading !</p>}
+                        {status === 'loading' && <p>Analysing message</p>}
                         {status === 'success' && <p>Success !</p>}
                         {status === 'error' && <p>error !</p>}
                     </Form>

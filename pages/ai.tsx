@@ -13,6 +13,7 @@ import {Subtitle} from './../components/atom/Subtitle/Subtitle';
 import CarouselComponent from './../components/organism/Carousel/CarouselComponent'
 
 import { translations } from '../translations/translations';
+import { postOnFacebook } from '../helpers/facebook';
 
 const AI = () => {
 const [anwswer, setAnswer] = useState(undefined);
@@ -54,12 +55,18 @@ const handleChange = (event) => {
 
 const handleSubmit = async (event) => {
     event.preventDefault();
-    if(language !== 'en-SET'){
+    const isLocalServer = process.env.NEXT_PUBLIC_ENV === 'dev';
+    
+    if(language !== 'en-SET' && !isLocalServer){
       setStatus('loading');
       const text = await getTextFromOpenAI();
       const articleImage = await getPictureFromPexel();
-      const result = await postOnLinkedIn(text, articleImage);
+      await postOnLinkedIn(text, articleImage);
       setStatus('success')
+    } else if(language !== 'en-SET'){
+      const text = await getTextFromOpenAI();
+      const articleImage = await getPictureFromPexel();
+      await postOnFacebook(text, articleImage);
     }
 }
 
@@ -118,7 +125,7 @@ const postOnLinkedIn = (text:string, articleImage:{src:string, alt: string}) => 
   const body= {
     text: text,
     articleImage,
-}
+  }
 
 fetch("https://vivien-thomas-noel.npkn.net/5c2b24/", {
     headers: {

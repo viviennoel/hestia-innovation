@@ -27,6 +27,8 @@ export default function Document() {
           href="https://fonts.googleapis.com/css2?family=Marcellus+SC&family=Quicksand&family=Diphylleia&display=swap" 
           type="text/css" 
           crossOrigin="anonymous" />
+
+        <meta name="facebook-domain-verification" content="6e618qmh5r91uxw6wfwrpa49er24bt" />
       </Head>
       <body className="overflow-x-hidden antialiased">
         <Main />

@@ -11,25 +11,49 @@ import { Subtitle } from '../components/atom/Subtitle/Subtitle';
 const Showcase = () => {
     const { language } = useContext(LanguageContext);
 
-    const contentHighlight = [
+    const contentExpertise = [
         {
-            source: 'https://res.cloudinary.com/djlwtz7qw/image/upload/v1615571569/samples/animals/reindeer.jpg',
-            title: translations[language].titleAI,
-            text:translations[language].subtitleAI,
+            source: translations[language].showcase.expertise[0].src,
+            title: translations[language].showcase.expertise[0].title,
+            text: translations[language].showcase.expertise[0].description,
             link:'',
             delay:'0'
         },
         {
-            source:'https://res.cloudinary.com/djlwtz7qw/image/upload/v1615571569/samples/animals/reindeer.jpg',
-            title: translations[language].titleDesign,
-            text:translations[language].subtitleDesign,
+            source: translations[language].showcase.expertise[1].src,
+            title: translations[language].showcase.expertise[1].title,
+            text: translations[language].showcase.expertise[1].description,
             link:'/',
             delay:'300'
         },
         {
-            source:'https://res.cloudinary.com/djlwtz7qw/image/upload/v1615571569/samples/animals/reindeer.jpg',
-            title: translations[language].titleGoodPractices,
-            text:translations[language].subtitleGoodPractices,
+            source: translations[language].showcase.expertise[2].src,
+            title: translations[language].showcase.expertise[2].title,
+            text: translations[language].showcase.expertise[2].description,
+            link:'/',
+            delay:'600'
+        }
+    ]
+    
+    const contentHighlight = [
+        {
+            source: translations[language].showcase.highlights[0].highlightsImage.src,
+            title: translations[language].showcase.highlights[0].title,
+            text: translations[language].showcase.highlights[0].description,
+            link:'',
+            delay:'0'
+        },
+        {
+            source: translations[language].showcase.highlights[1].highlightsImage.src,
+            title: translations[language].showcase.highlights[1].title,
+            text: translations[language].showcase.highlights[1].description,
+            link:'/',
+            delay:'300'
+        },
+        {
+            source: translations[language].showcase.highlights[2].highlightsImage.src,
+            title: translations[language].showcase.highlights[2].title,
+            text: translations[language].showcase.highlights[2].description,
             link:'/',
             delay:'600'
         }
@@ -39,36 +63,36 @@ const Showcase = () => {
         <div>
             <BannerImage 
                 size='medium'
-                background='https://res.cloudinary.com/djlwtz7qw/image/upload/v1684920923/cld-sample-2.jpg'
+                background={translations[language].showcase.src}
             >
-                <AnimatedText words={translations[language].titleGoodPractices} />
+                <AnimatedText words={translations[language].showcase.title} />
             </BannerImage>
             
-            <Subtitle content={translations[language].showcase.threeSpecialties} />
-            <HighlightHover content={contentHighlight}/>
+            <Subtitle content={translations[language].showcase.section1Title} />
+            <HighlightHover content={contentExpertise}/>
             
-            <Subtitle content={translations[language].showcase.detailDesign} />
+            <Subtitle content={translations[language].showcase.section2Title} />
             <BannerTextImage
-                imageSrc='https://res.cloudinary.com/djlwtz7qw/image/upload/v1684920923/cld-sample-2.jpg'
-                title={translations[language].HomePresentation.title} 
-                body={translations[language].HomePresentation.body} 
-                link={translations[language].HomePresentation.link} 
-                linkPlaceholder={translations[language].HomePresentation.linkPlaceholder}
+                imageSrc={translations[language].showcase.bannerSection2Image}
+                title={translations[language].showcase.bannerSection2Title} 
+                body={translations[language].showcase.bannerSection2Description} 
+                link='/articles/'
+                linkPlaceholder={translations[language].showcase.bannerSection2Button}
                 variation='light'
                 textSide='right'
             />
             
-            <Subtitle content={translations[language].showcase.discoverArticles} />
+            <Subtitle content={translations[language].showcase.section3Title} />
             <Highlights content={contentHighlight}/>
 
-            <Subtitle content={translations[language].showcase.assessYourNeeds} />
+            <Subtitle content={translations[language].showcase.section4Title} />
             <BannerTextImage
-                imageSrc='https://res.cloudinary.com/djlwtz7qw/image/upload/v1684920923/cld-sample-2.jpg'
-                title={translations[language].HomePresentation.title} 
-                body={translations[language].HomePresentation.body} 
-                link={translations[language].HomePresentation.link} 
-                linkPlaceholder={translations[language].HomePresentation.linkPlaceholder}
-                variation='light'
+                 imageSrc={translations[language].showcase.bannerSection4Image}
+                 title={translations[language].showcase.bannerSection4Title} 
+                 body={translations[language].showcase.bannerSection4Description} 
+                 link='/articles/'
+                 linkPlaceholder={translations[language].showcase.bannerSection4Button}
+                 variation='light'
                 textSide='left'
             />
         </div>

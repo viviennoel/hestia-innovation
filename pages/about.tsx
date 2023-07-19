@@ -13,9 +13,9 @@ const About = () => {
     const { language } = useContext(LanguageContext);
 
     const contentBulletPoint = [{
-        img: 'https://res.cloudinary.com/djlwtz7qw/image/upload/v1615571569/samples/animals/reindeer.jpg',
-        title: translations[language].titleAI,
-        text:translations[language].subtitleAI,
+        img: translations[language].about.bulletsSection3Image,
+        title: translations[language].about.bulletsSection3Title,
+        text:translations[language].about.bulletsSection3Description,
     }]
     
     return(
@@ -26,59 +26,59 @@ const About = () => {
                     <img width="50" height="50" src="https://img.icons8.com/carbon-copy/100/street-view.png" alt="street-view"/>
                     <h5 className='my-auto ps-3'>{translations[language].about.navigate}</h5>
                 </div>
-                <AnimatedText words={translations[language].titleGoodPractices} />
+                <AnimatedText words={translations[language].about.title} />
             </div>
             <div className={styles.background}></div>
 
-            <Quote title={translations[language].quote.development.title} text={translations[language].quote.development.author}></Quote>
+            <Quote title={translations[language].about.quote} text={translations[language].about.quoteAuthor}></Quote>
             
-            <Subtitle content={translations[language].showcase.discoverArticles} />
+            <Subtitle content={translations[language].about.section1Title} />
             <BannerTextImage
-                imageSrc='https://res.cloudinary.com/djlwtz7qw/image/upload/v1684920923/cld-sample-2.jpg'
-                title={translations[language].HomePresentation.title} 
-                body={translations[language].HomePresentation.body} 
-                link={translations[language].HomePresentation.link} 
-                linkPlaceholder={translations[language].HomePresentation.linkPlaceholder}
+                imageSrc={translations[language].about.bannerSection1Image.src}
+                title={translations[language].about.bannerSection1Title} 
+                body={translations[language].about.bannerSection1Description} 
+                link='/articles/' 
+                linkPlaceholder={translations[language].about.bannerSection1Button}
                 variation='light'
                 textSide='right'
             />
 
-            <Subtitle content={translations[language].showcase.discoverArticles} />
+            <Subtitle content={translations[language].about.section2Title} />
             <Container className='mb-5'>
-                <p>{translations[language].HomePresentation.linkPlaceholder}</p>
-                <p>{translations[language].HomePresentation.linkPlaceholder}</p>
-                <p>{translations[language].HomePresentation.linkPlaceholder}</p>
+                <p>✨ {translations[language].about.paragraph1Section2}</p>
+                <p>✨ {translations[language].about.paragraph2Section2}</p>
+                <p>✨ {translations[language].about.paragraph3Section2}</p>
             </Container>
 
             <BannerTextImage
                 imageSrc='https://res.cloudinary.com/djlwtz7qw/image/upload/v1684920923/cld-sample-2.jpg'
-                title={translations[language].HomePresentation.title} 
-                body={translations[language].HomePresentation.body} 
-                link={translations[language].HomePresentation.link} 
-                linkPlaceholder={translations[language].HomePresentation.linkPlaceholder}
+                title={translations[language].about.bannerSection2Title} 
+                body={translations[language].about.bannerSection2Description} 
+                link='/articles/'
+                linkPlaceholder={translations[language].about.bannerSection2Button}
                 textSide='left'
                 variation='light'
             />
 
-            <Subtitle content={translations[language].showcase.discoverArticles} />
+            <Subtitle content={translations[language].about.bannerSection3Title} />
             <BulletPoints content={contentBulletPoint}/> 
 
-            <Subtitle content={translations[language].showcase.discoverArticles} />
+            <Subtitle content={translations[language].about.section4Title} />
             <BannerTextImage
                 imageSrc='https://res.cloudinary.com/djlwtz7qw/image/upload/v1684920923/cld-sample-2.jpg'
-                title={translations[language].HomePresentation.title} 
-                body={translations[language].HomePresentation.body} 
-                link={translations[language].HomePresentation.link} 
-                linkPlaceholder={translations[language].HomePresentation.linkPlaceholder}
+                title={translations[language].about.bannerSection4Title} 
+                body={translations[language].about.bannerSection4Description} 
+                link='/articles/' 
+                linkPlaceholder={translations[language].about.bannerSection4Button}
                 variation='light'
                 textSide='right'
             />
 
-            <Subtitle content={translations[language].showcase.discoverArticles} />
+            <Subtitle content={translations[language].about.section5Title} />
             <Container className='mb-5'>
-                <p>{translations[language].HomePresentation.linkPlaceholder}</p>
-                <p>{translations[language].HomePresentation.linkPlaceholder}</p>
-                <p>{translations[language].HomePresentation.linkPlaceholder}</p>
+                <p>✨ {translations[language].about.paragraph1Section5}</p>
+                <p>✨ {translations[language].about.paragraph2Section5}</p>
+                <p>✨ {translations[language].about.paragraph3Section5}</p>
             </Container>
         </div>
     )

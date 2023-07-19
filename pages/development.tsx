@@ -14,45 +14,53 @@ const Index = () => {
     const { language } = useContext(LanguageContext);
 
     const contentBulletPoint = [{
-        img: 'https://res.cloudinary.com/djlwtz7qw/image/upload/v1615571569/samples/animals/reindeer.jpg',
-        title: translations[language].titleAI,
-        text:translations[language].subtitleAI,
+        img: translations[language].development.bullets[0].bulletsImage.src,
+        title: translations[language].development.bullets[0].title,
+        text: translations[language].development.bullets[0].description,
     },
     {
-        img: 'https://res.cloudinary.com/djlwtz7qw/image/upload/v1615571569/samples/animals/reindeer.jpg',
-        title: 'translations[language].titleAI',
-        text:translations[language].subtitleAI,
+        img: translations[language].development.bullets[1].bulletsImage.src,
+        title: translations[language].development.bullets[1].title,
+        text: translations[language].development.bullets[1].description,
     },
     {
-        img: 'https://res.cloudinary.com/djlwtz7qw/image/upload/v1615571569/samples/animals/reindeer.jpg',
-        title: translations[language].titleAI,
-        text:translations[language].subtitleAI,
+        img: translations[language].development.bullets[2].bulletsImage.src,
+        title: translations[language].development.bullets[2].title,
+        text: translations[language].development.bullets[2].description,
     },
     {
-        img: 'https://res.cloudinary.com/djlwtz7qw/image/upload/v1615571569/samples/animals/reindeer.jpg',
-        title: 'translations[language].titleAI',
-        text:translations[language].subtitleAI,
+        img: translations[language].development.bullets[3].bulletsImage.src,
+        title: translations[language].development.bullets[3].title,
+        text: translations[language].development.bullets[3].description,
+    },
+    {
+        img: translations[language].development.bullets[4].bulletsImage.src,
+        title: translations[language].development.bullets[4].title,
+        text: translations[language].development.bullets[4].description,
     }]
 
     const contentHighlight = [
         {
-            source: 'https://res.cloudinary.com/djlwtz7qw/image/upload/v1615571569/samples/animals/reindeer.jpg',
-            title: translations[language].titleAI,
-            text:translations[language].subtitleAI,
+            source: translations[language].development.highlights[0].highlightImage.src,
+            title: translations[language].development.highlights[0].title,
+            text:translations[language].development.highlights[0].description,
+            alt: translations[language].development.highlights[0].highlightImage.alt,
             link:'',
             delay:'0'
         },
         {
-            source:'https://res.cloudinary.com/djlwtz7qw/image/upload/v1615571569/samples/animals/reindeer.jpg',
-            title: translations[language].titleDesign,
-            text:translations[language].subtitleDesign,
+            source: translations[language].development.highlights[1].highlightImage.src,
+            title: translations[language].development.highlights[1].title,
+            text:translations[language].development.highlights[1].description,
+            alt: translations[language].development.highlights[1].highlightImage.alt,
             link:'/',
             delay:'300'
         },
         {
-            source:'https://res.cloudinary.com/djlwtz7qw/image/upload/v1615571569/samples/animals/reindeer.jpg',
-            title: translations[language].titleGoodPractices,
-            text:translations[language].subtitleGoodPractices,
+            source: translations[language].development.highlights[2].highlightImage.src,
+            title: translations[language].development.highlights[2].title,
+            text:translations[language].development.highlights[2].description,
+            alt: translations[language].development.highlights[2].highlightImage.alt,
             link:'/',
             delay:'600'
         }
@@ -60,58 +68,65 @@ const Index = () => {
 
     const contentCarousel = [
         {
-            source: 'https://res.cloudinary.com/djlwtz7qw/image/upload/v1615571569/samples/animals/reindeer.jpg',
-            alt: 'string',
+            source: translations[language].development.articlesCarousel[0].carouselImage.src,
+            alt: translations[language].development.articlesCarousel[0].carouselImage.alt,
             link: '/string',
-            title: 'string',
-            text: 'string'
+            title: translations[language].development.articlesCarousel[0].title,
+            text: translations[language].development.articlesCarousel[0].description
+        },
+        {            
+            source: translations[language].development.articlesCarousel[1].carouselImage.src,
+            alt: translations[language].development.articlesCarousel[1].carouselImage.alt,
+            link: '/string',
+            title: translations[language].development.articlesCarousel[1].title,
+            text: translations[language].development.articlesCarousel[1].description
         },
         {
-            source: 'https://res.cloudinary.com/djlwtz7qw/image/upload/v1615571569/samples/animals/reindeer.jpg',
-            alt: 'string',
-            link: '/string1',
-            title: 'string1',
-            text: 'string1'
-        },
+            source: translations[language].development.articlesCarousel[2].carouselImage.src,
+            alt: translations[language].development.articlesCarousel[2].carouselImage.alt,
+            link: '/string',
+            title: translations[language].development.articlesCarousel[2].title,
+            text: translations[language].development.articlesCarousel[2].description
+        }
     ]
 
     return(
         <div>
             <BannerImage 
                 size='medium'
-                background='https://res.cloudinary.com/djlwtz7qw/image/upload/v1684920923/cld-sample-2.jpg'
+                background={translations[language].development.src}
             >
-                <AnimatedText words={translations[language].titleGoodPractices} />
+                <AnimatedText words={translations[language].development.title} />
             </BannerImage>
-            <Quote title={translations[language].quote.development.title} text={translations[language].quote.development.author}></Quote>
+            <Quote title={translations[language].development.quote} text={translations[language].development.quoteAuthor}></Quote>
             
-            <Subtitle content={translations[language].showcase.discoverArticles} />
+            <Subtitle content={translations[language].development.section1Title} />
             <Highlights content={contentHighlight}/>
             
-            <Subtitle content={translations[language].showcase.discoverArticles} />
+            <Subtitle content={translations[language].development.section2Title} />
             <BannerTextImage
-                imageSrc='https://res.cloudinary.com/djlwtz7qw/image/upload/v1684920923/cld-sample-2.jpg'
-                title={translations[language].HomePresentation.title} 
-                body={translations[language].HomePresentation.body} 
-                link={translations[language].HomePresentation.link} 
-                linkPlaceholder={translations[language].HomePresentation.linkPlaceholder}
+                imageSrc={translations[language].development.bannerSection2Image.src}
+                title={translations[language].development.bannerSection2Title} 
+                body={translations[language].development.bannerSection2Description} 
+                link='/articles/'
+                linkPlaceholder={translations[language].development.bannerSection2Button}
                 variation='light'
                 textSide='right'
             />
 
-            <Subtitle content={translations[language].showcase.discoverArticles} />
+            <Subtitle content={translations[language].development.section3Title} />
             <BulletPoints content={contentBulletPoint}/> 
 
-            <Subtitle content={translations[language].showcase.discoverArticles} />
+            <Subtitle content={translations[language].development.section4Title} />
             <CarouselComponent content={contentCarousel}></CarouselComponent> 
 
-            <Subtitle content={translations[language].showcase.discoverArticles} />
+            <Subtitle content={translations[language].development.section5Title} />
             <BannerTextImage
-                imageSrc='https://res.cloudinary.com/djlwtz7qw/image/upload/v1684920923/cld-sample-2.jpg'
-                title={translations[language].HomePresentation.title} 
-                body={translations[language].HomePresentation.body} 
-                link={translations[language].HomePresentation.link} 
-                linkPlaceholder={translations[language].HomePresentation.linkPlaceholder}
+                imageSrc={translations[language].development.bannerSection5Image.src}
+                title={translations[language].development.bannerSection5Title} 
+                body={translations[language].development.bannerSection5Description} 
+                link='/articles/'
+                linkPlaceholder={translations[language].development.bannerSection5Button}
             />
         </div>
     )

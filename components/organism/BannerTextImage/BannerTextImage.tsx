@@ -23,7 +23,7 @@ export const BannerTextImage = ({imageSrc, title, body, link, linkPlaceholder, v
                     <Col md className='d-none d-md-block'>
                         <div className={styles.image} style={{backgroundImage:`url(${imageSrc})`}}></div>
                     </Col>}
-                    <Col md>
+                    <Col md className='m-md-auto'>
                         <h2 className='pb-4 pb-md-3'>{title}</h2>
 
                         <Col className='d-md-none pb-4'>

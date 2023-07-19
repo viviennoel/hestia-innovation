@@ -57,7 +57,7 @@ const Designs = () => {
       <div style={{minHeight: '100vh'}}>
         <BannerDesign />
         <Container>
-          <h2 className={styles.title}>{translations[language].more}</h2>
+          <h2 className={styles.title}>{translations[language].title}</h2>
         </Container>
         <Highlights content={contentHighlight}/>
 

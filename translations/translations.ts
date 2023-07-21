@@ -47,7 +47,7 @@ export const translations = {
         },
         about: {
             title: "About us",
-            src: "https://stock.adobe.com/fr/search?filters%5Bcontent_type%3Aphoto%5D=1&filters%5Bcontent_type%3Aillustration%5D=1&filters%5Bcontent_type%3Azip_vector%5D=1&filters%5Bcontent_type%3Avideo%5D=1&filters%5Bcontent_type%3Atemplate%5D=1&filters%5Bcontent_type%3A3d%5D=1&filters%5Bcontent_type%3Aimage%5D=1&k=hands+computer+office+team&order=relevance&safe_search=1&limit=100&search_page=1&search_type=details-find-similar&acp=&aco=hands+computer+office+team&serie_id=&model_id=&native_visual_search=&similar_content_id=608478007&find_similar_by=all&get_facets=0&asset_id=257117422",
+            src: "https://res.cloudinary.com/djlwtz7qw/image/upload/v1689947307/hestia/AdobeStock_464279454_ad2kcr.webp",
             navigate: 'Discover our offices through the multiverse!',
             
             quote: "Technology alone is not enough. It's technology married with the liberal arts, married with the humanities, that yields us the results that make our hearts sing.",
@@ -58,7 +58,7 @@ export const translations = {
             bannerSection1Description: "We are a small development company driven by a passion for tackling high-challenge projects and pushing the boundaries of what's possible. Our expertise lies in data-driven development and automation.",
             bannerSection1Button: "Learn more",
             bannerSection1Image: {
-            src: "https://stock.adobe.com/fr/search?filters%5Bcontent_type%3Aphoto%5D=1&filters%5Bcontent_type%3Aillustration%5D=1&filters%5Bcontent_type%3Azip_vector%5D=1&filters%5Bcontent_type%3Avideo%5D=1&filters%5Bcontent_type%3Atemplate%5D=1&filters%5Bcontent_type%3A3d%5D=1&filters%5Bcontent_type%3Aimage%5D=1&k=team+office&order=relevance&safe_search=1&limit=100&search_page=1&search_type=usertyped&acp=&aco=team+office&get_facets=0&asset_id=177912003",
+            src: "https://res.cloudinary.com/djlwtz7qw/image/upload/v1689947305/hestia/AdobeStock_177912003_mmomwr.webp",
             alt: "agile web development consulting"
             },
            
@@ -71,7 +71,7 @@ export const translations = {
             bannerSection2Description: "While we are passionate about cutting-edge technology and automation, we understand the importance of keeping the human touch in everything we do. Our solutions are designed with the end-users in mind, providing intuitive experiences that truly make a difference.",
             bannerSection2Button: "Discover more",
             bannerSection2Image: {
-            src: "https://stock.adobe.com/fr/search?filters%5Bcontent_type%3Aphoto%5D=1&filters%5Bcontent_type%3Aillustration%5D=1&filters%5Bcontent_type%3Azip_vector%5D=1&filters%5Bcontent_type%3Avideo%5D=1&filters%5Bcontent_type%3Atemplate%5D=1&filters%5Bcontent_type%3A3d%5D=1&filters%5Bcontent_type%3Aimage%5D=1&k=business+web&order=relevance&safe_search=1&limit=100&search_page=1&search_type=filter-select&acp=&aco=business+web&get_facets=1&asset_id=609626533",
+            src: "https://res.cloudinary.com/djlwtz7qw/image/upload/v1689947305/hestia/AdobeStock_609626533_utv0pt.webp",
             alt: ""
             },
            
@@ -79,7 +79,7 @@ export const translations = {
             bulletsSection3Title: "Collaboration and Excellence",
             bulletsSection3Description: "At Hestia Innovation, we believe in building strong collaborative partnerships with our clients. We work closely with you throughout the development process, ensuring transparency, effective communication, and successful project outcomes. Our commitment to excellence drives us to continuously improve and deliver the highest quality solutions.",
             bulletsSection3Image: {
-            src: "https://stock.adobe.com/fr/search?filters%5Bcontent_type%3Aphoto%5D=1&filters%5Bcontent_type%3Aillustration%5D=1&filters%5Bcontent_type%3Azip_vector%5D=1&filters%5Bcontent_type%3Avideo%5D=1&filters%5Bcontent_type%3Atemplate%5D=1&filters%5Bcontent_type%3A3d%5D=1&filters%5Bcontent_type%3Aimage%5D=1&k=handshake+web+client&order=relevance&safe_search=1&limit=100&search_page=1&search_type=usertyped&acp=&aco=handshake+web+client&get_facets=1&asset_id=620982533",
+            src: "https://res.cloudinary.com/djlwtz7qw/image/upload/v1689947305/hestia/AdobeStock_620982533_e8zzdd.webp",
             alt: ""
             },
            
@@ -88,7 +88,7 @@ export const translations = {
             bannerSection4Description: "With our deep technical expertise and innovative mindset, we excel at translating complex concepts into user-friendly and scalable solutions. Partner with us to bring your vision to life.",
             bannerSection4Button: "Get in touch",
             bannerSection4Image: {
-            src: "https://stock.adobe.com/fr/search?filters%5Bcontent_type%3Aphoto%5D=1&filters%5Bcontent_type%3Aillustration%5D=1&filters%5Bcontent_type%3Azip_vector%5D=1&filters%5Bcontent_type%3Avideo%5D=1&filters%5Bcontent_type%3Atemplate%5D=1&filters%5Bcontent_type%3A3d%5D=1&filters%5Bcontent_type%3Aimage%5D=1&k=agile+web+team&order=relevance&safe_search=1&limit=100&search_page=1&search_type=details-find-similar&acp=&aco=agile+web+team&serie_id=&model_id=&native_visual_search=&similar_content_id=254846506&find_similar_by=all&get_facets=1&asset_id=254846475",
+            src: "https://res.cloudinary.com/djlwtz7qw/image/upload/v1689947307/hestia/AdobeStock_254846475_butasd.webp",
             alt: ""
             },
            
@@ -98,7 +98,7 @@ export const translations = {
             paragraph3Section5: "Partner with Hestia Innovation to embark on a transformative journey and achieve your business objectives with confidence."
         },
         development: {
-            src: "https://stock.adobe.com/fr/search?filters%5Bcontent_type%3Aphoto%5D=1&filters%5Bcontent_type%3Aillustration%5D=1&filters%5Bcontent_type%3Azip_vector%5D=1&filters%5Bcontent_type%3Avideo%5D=1&filters%5Bcontent_type%3Atemplate%5D=1&filters%5Bcontent_type%3A3d%5D=1&filters%5Bcontent_type%3Aimage%5D=1&k=web+developers&order=relevance&safe_search=1&limit=100&search_page=1&search_type=usertyped&acp=&aco=web+developers&get_facets=1&asset_id=167160211",
+            src: "https://res.cloudinary.com/djlwtz7qw/image/upload/v1689947307/hestia/AdobeStock_257117422_omp8vt.webp",
             title: "Web, Security & Performances",
             quote: "Web development is not just about writing code; it's about effective communication, collaboration, and problem-solving.",
             quoteAuthor: "Brad Feld",
@@ -109,7 +109,7 @@ export const translations = {
             title: "Security & Architecture",
             description: "We prioritize security and implement robust architectures to safeguard your web applications and protect sensitive data.",
             highlightImage: {
-            src: "https://stock.adobe.com/fr/search?filters%5Bcontent_type%3Aphoto%5D=1&filters%5Bcontent_type%3Aillustration%5D=1&filters%5Bcontent_type%3Azip_vector%5D=1&filters%5Bcontent_type%3Avideo%5D=1&filters%5Bcontent_type%3Atemplate%5D=1&filters%5Bcontent_type%3A3d%5D=1&filters%5Bcontent_type%3Aaudio%5D=0&filters%5Binclude_stock_enterprise%5D=0&filters%5Bis_editorial%5D=0&filters%5Bfree_collection%5D=0&filters%5Bcontent_type%3Aimage%5D=1&k=web+security&order=relevance&safe_search=1&limit=100&search_page=1&search_type=usertyped&acp=&aco=web+security&get_facets=1&asset_id=186885581",
+            src: "https://res.cloudinary.com/djlwtz7qw/image/upload/v1689947308/hestia/AdobeStock_186885581_mkb7kp.webp",
             alt: ""
             }
             },
@@ -117,14 +117,14 @@ export const translations = {
             title: "Data-driven Development",
             description: "We leverage the power of data to drive insights, make informed decisions, and deliver solutions that align with your business objectives.",
             highlightImage: {
-            src: "https://stock.adobe.com/fr/search?filters%5Bcontent_type%3Aphoto%5D=1&filters%5Bcontent_type%3Aillustration%5D=1&filters%5Bcontent_type%3Azip_vector%5D=1&filters%5Bcontent_type%3Avideo%5D=1&filters%5Bcontent_type%3Atemplate%5D=1&filters%5Bcontent_type%3A3d%5D=1&filters%5Bcontent_type%3Aimage%5D=1&k=data+human+analysis&order=relevance&safe_search=1&limit=100&search_page=1&search_type=usertyped&acp=&aco=data+human+analysis&get_facets=1&asset_id=597676975",
+            src: "https://res.cloudinary.com/djlwtz7qw/image/upload/v1689947306/hestia/AdobeStock_597676975_qgtkv1.webp",
             alt: ""
             }},
             {
             title: "Performances & SEO",
             description: "We optimize web performance and ensure search engine friendliness to enhance user experience and increase your online visibility.",
             highlightImage: {
-            src: "https://stock.adobe.com/fr/search?filters%5Bcontent_type%3Aphoto%5D=1&filters%5Bcontent_type%3Aillustration%5D=1&filters%5Bcontent_type%3Azip_vector%5D=1&filters%5Bcontent_type%3Avideo%5D=1&filters%5Bcontent_type%3Atemplate%5D=1&filters%5Bcontent_type%3A3d%5D=1&filters%5Bcontent_type%3Aimage%5D=1&k=seo&order=relevance&safe_search=1&limit=100&search_page=1&search_type=usertyped&acp=&aco=seo&get_facets=1&asset_id=176565736",
+            src: "",
             alt: ""
             }
             }
@@ -135,7 +135,7 @@ export const translations = {
             bannerSection2Description: "Embracing cutting-edge technologies empowers your business to gain a competitive edge, unlock new possibilities, and thrive in the digital landscape.",
             bannerSection2Button: "Learn more",
             bannerSection2Image: {
-            src: "https://stock.adobe.com/fr/search?k=web+and+businesses&search_type=usertyped&asset_id=608662653",
+            src: "https://res.cloudinary.com/djlwtz7qw/image/upload/v1689947306/hestia/AdobeStock_608662653_rmenrp.webp",
             alt: ""
             },
            
@@ -145,28 +145,28 @@ export const translations = {
             title: "NextJS & NodeJS",
             description: "Explore the rising technologies of NextJS and NodeJS and discover why they are revolutionizing web development.",
             bulletsImage: {
-                src: "https://stock.adobe.com/fr/search?filters%5Bcontent_type%3Aphoto%5D=1&filters%5Bcontent_type%3Aillustration%5D=1&filters%5Bcontent_type%3Azip_vector%5D=1&filters%5Bcontent_type%3Avideo%5D=1&filters%5Bcontent_type%3Atemplate%5D=1&filters%5Bcontent_type%3A3d%5D=1&filters%5Bcontent_type%3Aimage%5D=1&k=test+web&order=relevance&safe_search=1&search_page=1&search_type=usertyped&acp=&aco=test+web%24&get_facets=0&asset_id=567219708",
+                src: "https://res.cloudinary.com/djlwtz7qw/image/upload/v1689947306/hestia/AdobeStock_517556566_uj9wjp.webp",
                 alt: ""
                 }},
             {
             title: "Jest! Unit Tests & CI/CD",
             description: "Learn about the importance of unit testing with Jest and how continuous integration and deployment (CI/CD) practices enhance software quality.",
             bulletsImage: {
-            src: "https://stock.adobe.com/fr/search?filters%5Bcontent_type%3Aphoto%5D=1&filters%5Bcontent_type%3Aillustration%5D=1&filters%5Bcontent_type%3Azip_vector%5D=1&filters%5Bcontent_type%3Avideo%5D=1&filters%5Bcontent_type%3Atemplate%5D=1&filters%5Bcontent_type%3A3d%5D=1&filters%5Bcontent_type%3Aimage%5D=1&k=test+web&order=relevance&safe_search=1&search_page=1&search_type=usertyped&acp=&aco=test+web%24&get_facets=0&asset_id=567219708",
+            src: "https://res.cloudinary.com/djlwtz7qw/image/upload/v1689947307/hestia/AdobeStock_567219708_yoj8ck.webp",
             alt: ""
             }},
             {
             title: "Cypress for End-to-End Testing",
             description: "Discover how Cypress enables end-to-end testing for your web applications, ensuring a smooth user experience and robust functionality.",
             bulletsImage: {
-            src: "https://stock.adobe.com/fr/search?filters%5Bcontent_type%3Aphoto%5D=1&filters%5Bcontent_type%3Aillustration%5D=1&filters%5Bcontent_type%3Azip_vector%5D=1&filters%5Bcontent_type%3Avideo%5D=1&filters%5Bcontent_type%3Atemplate%5D=1&filters%5Bcontent_type%3A3d%5D=1&filters%5Bcontent_type%3Aimage%5D=1&k=automation&order=relevance&safe_search=1&limit=100&search_page=1&search_type=usertyped&acp=&aco=automation&get_facets=0&asset_id=593395544",
+            src: "https://res.cloudinary.com/djlwtz7qw/image/upload/v1689947307/hestia/AdobeStock_601930650_cjluby.webp",
             alt: ""
             }},
             {
             title: "Cloud Providers - AWS and Azure",
             description: "Explore the capabilities of cloud providers like AWS and Azure and how they offer scalable, reliable, and secure infrastructure for your web applications.",
             bulletsImage: {
-            src: "https://stock.adobe.com/fr/search?filters%5Bcontent_type%3Aphoto%5D=1&filters%5Bcontent_type%3Aillustration%5D=1&filters%5Bcontent_type%3Azip_vector%5D=1&filters%5Bcontent_type%3Avideo%5D=1&filters%5Bcontent_type%3Atemplate%5D=1&filters%5Bcontent_type%3A3d%5D=1&filters%5Bcontent_type%3Aimage%5D=1&k=automation+web&order=relevance&safe_search=1&limit=100&search_page=1&search_type=usertyped&acp=&aco=automation+web&get_facets=0&asset_id=472057796",
+            src: "https://res.cloudinary.com/djlwtz7qw/image/upload/v1689947308/hestia/AdobeStock_95262204_hr3slp.webp",
             alt: ""
             }},
             {
@@ -184,21 +184,21 @@ export const translations = {
             title: "Why is Data-Driven Development a Game Changer?",
             description: "Discover the power of data, from behavior analysis to generative AI integration.",
             carouselImage: {
-            src: "https://stock.adobe.com/fr/search?filters%5Bcontent_type%3Aphoto%5D=1&filters%5Bcontent_type%3Aillustration%5D=1&filters%5Bcontent_type%3Azip_vector%5D=1&filters%5Bcontent_type%3Avideo%5D=1&filters%5Bcontent_type%3Atemplate%5D=1&filters%5Bcontent_type%3A3d%5D=1&filters%5Bcontent_type%3Aimage%5D=1&k=analytics&order=relevance&safe_search=1&limit=100&search_page=1&search_type=usertyped&acp=&aco=analytics&get_facets=0&asset_id=279424236",
+            src: "https://res.cloudinary.com/djlwtz7qw/image/upload/v1689947307/hestia/AdobeStock_279424236_auulss.webp",
             alt: ""
             }},
             {
             title: "Security in IT",
             description: "Explore the latest trends and practices in IT security to protect your web applications and safeguard your data.",
             carouselImage: {
-            src: "https://stock.adobe.com/fr/search?filters%5Bcontent_type%3Aphoto%5D=1&filters%5Bcontent_type%3Aillustration%5D=1&filters%5Bcontent_type%3Azip_vector%5D=1&filters%5Bcontent_type%3Avideo%5D=1&filters%5Bcontent_type%3Atemplate%5D=1&filters%5Bcontent_type%3A3d%5D=1&filters%5Bcontent_type%3Aimage%5D=1&k=security+IT&order=relevance&safe_search=1&limit=100&search_page=1&search_type=usertyped&acp=&aco=security+IT&get_facets=0&asset_id=594956378",
+            src: "https://res.cloudinary.com/djlwtz7qw/image/upload/v1689947306/hestia/AdobeStock_594956378_moijsg.webp",
             alt: ""
             }},
             {
             title: "How to Grow Business with Automation",
             description: "Learn how automation can optimize processes, increase efficiency, and fuel business growth in the digital age.",
             carouselImage: {
-            src: "https://stock.adobe.com/fr/search?filters%5Bcontent_type%3Aphoto%5D=1&filters%5Bcontent_type%3Aillustration%5D=1&filters%5Bcontent_type%3Azip_vector%5D=1&filters%5Bcontent_type%3Avideo%5D=1&filters%5Bcontent_type%3Atemplate%5D=1&filters%5Bcontent_type%3A3d%5D=1&filters%5Bcontent_type%3Aimage%5D=1&k=data+driven+development&order=relevance&safe_search=1&limit=100&search_page=1&search_type=usertyped&acp=&aco=data+driven+development&get_facets=1&asset_id=141563631",
+            src: "https://res.cloudinary.com/djlwtz7qw/image/upload/v1689947308/hestia/AdobeStock_141563631_gstmhk.webp",
             alt: ""
             }}
             ],
@@ -214,23 +214,23 @@ export const translations = {
             },
         showcase: {
             title: "Showcase",
-            src: "",
+            src: "https://res.cloudinary.com/djlwtz7qw/image/upload/v1689947305/hestia/AdobeStock_618197686_bb5ccc.webp",
             section1Title: "3 Domains of Expertise",
             expertise: [
             {
             title: "Web & Security",
             description: "We specialize in developing secure web applications and implementing robust security measures to protect your valuable data and ensure a safe online environment.",
-            src: "https://stock.adobe.com/fr/search?filters%5Bcontent_type%3Aphoto%5D=1&filters%5Bcontent_type%3Aillustration%5D=1&filters%5Bcontent_type%3Azip_vector%5D=1&filters%5Bcontent_type%3Avideo%5D=1&filters%5Bcontent_type%3Atemplate%5D=1&filters%5Bcontent_type%3A3d%5D=1&filters%5Bcontent_type%3Aimage%5D=1&order=relevance&safe_search=1&limit=100&search_page=1&search_type=usertyped&acp=&aco=web+security&k=web+security&get_facets=0&asset_id=609566083"
+            src: "https://res.cloudinary.com/djlwtz7qw/image/upload/v1689947306/hestia/AdobeStock_548008794_wjwscl.webp"
             },
             {
             title: "Design & SEO",
             description: "Our expert designers combine creativity and usability to deliver visually stunning and user-friendly websites. We also optimize your website for search engines to increase online visibility and drive organic traffic.",
-            src: "https://stock.adobe.com/fr/search?filters%5Bcontent_type%3Aphoto%5D=1&filters%5Bcontent_type%3Aillustration%5D=1&filters%5Bcontent_type%3Azip_vector%5D=1&filters%5Bcontent_type%3Avideo%5D=1&filters%5Bcontent_type%3Atemplate%5D=1&filters%5Bcontent_type%3A3d%5D=1&filters%5Bcontent_type%3Aimage%5D=1&order=relevance&safe_search=1&limit=100&search_page=1&search_type=usertyped&acp=&aco=web+designer&k=web+designer&get_facets=0&asset_id=194912334"
+            src: ""
             },
             {
             title: "IA & Automation",
             description: "We leverage the power of Artificial Intelligence (AI) and automation to streamline processes, enhance efficiency, and improve decision-making. Our AI solutions empower your business to achieve new levels of productivity and innovation.",
-            src: "https://stock.adobe.com/fr/search?filters%5Bcontent_type%3Aphoto%5D=1&filters%5Bcontent_type%3Aillustration%5D=1&filters%5Bcontent_type%3Azip_vector%5D=1&filters%5Bcontent_type%3Avideo%5D=1&filters%5Bcontent_type%3Atemplate%5D=1&filters%5Bcontent_type%3A3d%5D=1&filters%5Bcontent_type%3Aimage%5D=1&order=relevance&safe_search=1&limit=100&search_page=1&search_type=usertyped&acp=&aco=ai&k=ai&get_facets=0&asset_id=205994896"
+            src: "https://res.cloudinary.com/djlwtz7qw/image/upload/v1689947307/hestia/AdobeStock_205994896_mxm9wm.webp"
             }
             ],
             section2Title: "The Balance Between Design & Performance",
@@ -238,7 +238,7 @@ export const translations = {
             bannerSection2Description: "By conducting a comprehensive situation analysis, we identify key challenges and make informed decisions to strike the perfect balance between cutting-edge design and optimal website performance.",
             bannerSection2Button: "Read the article",
             bannerSection2Image: {
-            src: "https://stock.adobe.com/fr/search?filters%5Bcontent_type%3Aphoto%5D=1&filters%5Bcontent_type%3Aillustration%5D=1&filters%5Bcontent_type%3Azip_vector%5D=1&filters%5Bcontent_type%3Avideo%5D=1&filters%5Bcontent_type%3Atemplate%5D=1&filters%5Bcontent_type%3A3d%5D=1&filters%5Bcontent_type%3Aimage%5D=1&order=relevance&safe_search=1&limit=100&search_page=1&search_type=usertyped&acp=&aco=efficiency&k=efficiency&get_facets=0&asset_id=81346463",
+            src: "https://res.cloudinary.com/djlwtz7qw/image/upload/v1689947308/hestia/AdobeStock_81346463_cz9lc4.webp",
             alt: ""
             },
             
@@ -248,14 +248,14 @@ export const translations = {
             title: "Automation and AI - Not Only ChatGPT",
             description: "Discover how we harness the potential of automation and AI beyond just ChatGPT, revolutionizing workflows, enhancing customer experiences, and driving business growth.",
             highlightsImage: {
-            src: "https://stock.adobe.com/fr/search?filters%5Bcontent_type%3Aphoto%5D=1&filters%5Bcontent_type%3Aillustration%5D=1&filters%5Bcontent_type%3Azip_vector%5D=1&filters%5Bcontent_type%3Avideo%5D=1&filters%5Bcontent_type%3Atemplate%5D=1&filters%5Bcontent_type%3A3d%5D=1&filters%5Bcontent_type%3Aimage%5D=1&order=relevance&safe_search=1&limit=100&search_page=1&search_type=usertyped&acp=&aco=ai+logistics&k=ai+logistics&get_facets=0&asset_id=593395544",
+            src: "https://res.cloudinary.com/djlwtz7qw/image/upload/v1689947306/hestia/AdobeStock_593395544_d6ixbm.webp",
             alt: ""
             }},
             {
             title: "Tests Pixel Perfect - Avoiding Regressions with Big Teams",
             description: "Learn about our meticulous testing processes that ensure pixel-perfect precision, preventing regressions and maintaining top-notch quality even in projects with large development teams.",
             highlightsImage: {
-            src: "https://stock.adobe.com/fr/search?filters%5Bcontent_type%3Aphoto%5D=1&filters%5Bcontent_type%3Aillustration%5D=1&filters%5Bcontent_type%3Azip_vector%5D=1&filters%5Bcontent_type%3Avideo%5D=1&filters%5Bcontent_type%3Atemplate%5D=1&filters%5Bcontent_type%3A3d%5D=1&filters%5Bcontent_type%3Aimage%5D=1&order=relevance&safe_search=1&limit=100&search_page=1&search_type=usertyped&acp=&aco=success&k=success&get_facets=0&asset_id=215484326",
+            src: "https://res.cloudinary.com/djlwtz7qw/image/upload/v1689929639/hestia/article21Compressed_cqm2pf.webp",
             alt: ""
             }
             },
@@ -263,7 +263,7 @@ export const translations = {
             title: "Agile & North Star Metric",
             description: "Explore how we embrace Agile methodologies and utilize the North Star Metric framework to deliver iterative and customer-centric solutions, accelerating your business growth and success.",
             highlightsImage: {
-            src: "",
+            src: "https://res.cloudinary.com/djlwtz7qw/image/upload/v1689929639/hestia/article20Compressed_htsrbf.webp",
             alt: ""
             }
             }
@@ -273,7 +273,7 @@ export const translations = {
             bannerSection4Description: "We understand the importance of personal connections. Get in touch with our expert team to discuss your unique requirements and how we can help you achieve your business goals.",
             bannerSection4Button: "Meet an expert",
             bannerSection4Image: {
-            src: "",
+            src: "https://res.cloudinary.com/djlwtz7qw/image/upload/v1689947305/hestia/AdobeStock_609954749_jssbam.webp",
             alt: ""
             }
             },

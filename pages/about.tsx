@@ -2,6 +2,7 @@ import styles from './../styles/pages/about.module.scss';
 import { Subtitle } from '../components/atom/Subtitle/Subtitle';
 import { Quote } from '../components/atom/Quote/Quote';
 import { translations } from '../translations/translations';
+import { BannerImage } from '../components/organism/BannerImage';
 import { useContext } from 'react';
 import LanguageContext from '../context/languageContext';
 import { BannerTextImage } from '../components/organism/BannerTextImage';
@@ -20,15 +21,12 @@ const About = () => {
     
     return(
         <div>
-            <div className={styles.model3D}>
-                <iframe className={styles.iframe} title="VR Meeting Office | Conference Room | Baked" frameBorder="0" allowFullScreen allow="autoplay; fullscreen; xr-spatial-tracking" xr-spatial-tracking execution-while-out-of-viewport execution-while-not-rendered web-share src="https://sketchfab.com/models/0bedb56a494f4d0cb1443af6d496c4f2/embed?autostart=1&dnt=1"> </iframe> 
-                <div className={`${styles.navigate} d-flex justify-content-center`}>
-                    <img width="50" height="50" src="https://img.icons8.com/carbon-copy/100/street-view.png" alt="street-view"/>
-                    <h5 className='my-auto ps-3'>{translations[language].about.navigate}</h5>
-                </div>
+            <BannerImage 
+                size='medium'
+                background={translations[language].about.src}
+            >
                 <AnimatedText words={translations[language].about.title} />
-            </div>
-            <div className={styles.background}></div>
+            </BannerImage>
 
             <Quote title={translations[language].about.quote} text={translations[language].about.quoteAuthor}></Quote>
             
@@ -43,6 +41,16 @@ const About = () => {
                 textSide='right'
             />
 
+            <Subtitle content={translations[language].about.multiverseTitle} />
+            <div className={styles.model3D}>
+                <iframe className={styles.iframe} title="VR Meeting Office | Conference Room | Baked" frameBorder="0" allowFullScreen allow="autoplay; fullscreen; xr-spatial-tracking" xr-spatial-tracking execution-while-out-of-viewport execution-while-not-rendered web-share src="https://sketchfab.com/models/0bedb56a494f4d0cb1443af6d496c4f2/embed?autostart=1&dnt=1"> </iframe> 
+                <div className={`${styles.navigate} d-flex justify-content-center`}>
+                    <img width="50" height="50" src="https://img.icons8.com/carbon-copy/100/street-view.png" alt="street-view"/>
+                    <h5 className='my-auto ps-3'>{translations[language].about.navigate}</h5>
+                </div>
+            </div>
+            <div className={styles.background}></div>
+
             <Subtitle content={translations[language].about.section2Title} />
             <Container className='mb-5'>
                 <p>✨ {translations[language].about.paragraph1Section2}</p>
@@ -51,7 +59,7 @@ const About = () => {
             </Container>
 
             <BannerTextImage
-                imageSrc='https://res.cloudinary.com/djlwtz7qw/image/upload/v1684920923/cld-sample-2.jpg'
+                imageSrc={translations[language].about.bannerSection2Image.src}
                 title={translations[language].about.bannerSection2Title} 
                 body={translations[language].about.bannerSection2Description} 
                 link='/articles/'
@@ -65,7 +73,7 @@ const About = () => {
 
             <Subtitle content={translations[language].about.section4Title} />
             <BannerTextImage
-                imageSrc='https://res.cloudinary.com/djlwtz7qw/image/upload/v1684920923/cld-sample-2.jpg'
+                imageSrc={translations[language].about.bannerSection4Image.src}
                 title={translations[language].about.bannerSection4Title} 
                 body={translations[language].about.bannerSection4Description} 
                 link='/articles/' 

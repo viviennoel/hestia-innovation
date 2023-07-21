@@ -284,7 +284,7 @@ export const translations = {
             title: "Users and Conversion Channel",
             description: "Discover how our data-driven design approach optimizes user experience and conversion rates.",
             highlightsImage: {
-            src: "",
+            src: "https://res.cloudinary.com/djlwtz7qw/image/upload/c_scale,w_636/v1689929638/hestia/article18Compressed_yxgwff.webp",
             alt: ""
             }
             },
@@ -292,7 +292,7 @@ export const translations = {
             title: "Accessibility & Green IT",
             description: "Explore how we create inclusive and environmentally-friendly web designs.",
             highlightsImage: {
-            src: "https://stock.adobe.com/fr/search?filters%5Bcontent_type%3Aphoto%5D=1&filters%5Bcontent_type%3Aillustration%5D=1&filters%5Bcontent_type%3Azip_vector%5D=1&filters%5Bcontent_type%3Avideo%5D=1&filters%5Bcontent_type%3Atemplate%5D=1&filters%5Bcontent_type%3A3d%5D=1&filters%5Bcontent_type%3Aimage%5D=1&k=technology&order=relevance&safe_search=1&limit=100&search_page=1&search_type=usertyped&acp=&aco=technology&get_facets=0&asset_id=297885276",
+            src: "https://res.cloudinary.com/djlwtz7qw/image/upload/c_scale,w_636/v1689929638/hestia/article17Compressed_ukz4np.webp",
             alt: ""
             }
             },
@@ -300,7 +300,7 @@ export const translations = {
             title: "3D Modeling: Enhancing Visual Experiences",
             description: "Learn how our expertise in 3D modeling brings captivating visuals to web design projects.",
             highlightsImage: {
-            src: "https://stock.adobe.com/fr/search?filters%5Bcontent_type%3Aphoto%5D=1&filters%5Bcontent_type%3Aillustration%5D=1&filters%5Bcontent_type%3Azip_vector%5D=1&filters%5Bcontent_type%3Avideo%5D=1&filters%5Bcontent_type%3Atemplate%5D=1&filters%5Bcontent_type%3A3d%5D=1&filters%5Bcontent_type%3Aimage%5D=1&order=relevance&safe_search=1&limit=100&search_page=1&search_type=usertyped&acp=&aco=3D+modeling&k=3D+modeling&get_facets=0&asset_id=595668928",
+            src: "https://res.cloudinary.com/djlwtz7qw/image/upload/c_scale,w_636/v1689929638/hestia/article16Compressed_fwi7gy.webp",
             alt: ""
             }
             }
@@ -310,7 +310,7 @@ export const translations = {
             bannerSection2Description: "The ultimate guide for developers who want to enhance their web designs with immersive storytelling experiences.",
             bannerSection2Button: "Read the article",
             bannerSection2Image: {
-            src: "",
+            src: "https://res.cloudinary.com/djlwtz7qw/image/upload/c_scale,w_636/v1689929639/hestia/article19Compressed_n0uvtt.webp",
             alt: ""
             },
            
@@ -321,7 +321,7 @@ export const translations = {
             bannerSection3Description: "Ensuring pixel-perfect web designs across devices and browsers with the power of Cypress visual testing.",
             bannerSection3Button: "Explore Visual Testing",
             bannerSection3Image: {
-            src: "",
+            src: "https://res.cloudinary.com/djlwtz7qw/image/upload/c_scale,w_636/v1689929638/hestia/article15Compressed_q6dl7r.webp",
             alt: ""
             },
            
@@ -331,7 +331,7 @@ export const translations = {
             title: "Customized Design Strategies",
             description: "Tailored web design solutions that align with your brand identity and business goals."
             ,bulletsImage: {
-            src: "",
+            src: "https://res.cloudinary.com/djlwtz7qw/image/upload/c_scale,w_636/v1689929638/hestia/article14Compressed_cxwytk.webp",
             alt: ""
             }
             },
@@ -339,7 +339,7 @@ export const translations = {
             title: "Optimized User Experience",
             description: "Delivering seamless user experiences through intuitive interfaces and user-centric design principles."
             ,bulletsImage: {
-            src: "",
+            src: "https://res.cloudinary.com/djlwtz7qw/image/upload/c_scale,w_636/v1689929637/hestia/adobe13Compressed_bfrbxj.webp",
             alt: ""
             }
             },
@@ -347,17 +347,21 @@ export const translations = {
             title: "Cross-Platform Compatibility",
             description: "Ensuring your web design looks and functions flawlessly across various devices and platforms."
             ,bulletsImage: {
-            src: "",
+            src: "https://res.cloudinary.com/djlwtz7qw/image/upload/c_scale,w_636/v1689929637/hestia/adobe12Compressed_fbtfi1.webp",
             alt: ""
             }
             }
             ]
             },
-            automation: {
+        automation: {
+            title: 'Automation & AI',
+            src:'https://res.cloudinary.com/djlwtz7qw/image/upload/c_scale,w_636/v1689929638/hestia/adobe11Compressed_vyqayq.webp',
             form: {
             title: "Social Media Automation",
             subject: "What is the post about?",
             link: "Link to the article",
+            success: 'Your post have been posted!',
+            newPost: 'Create a new post',
             thumbnail: "Thumbnail of the article",
             target: "Target of the post",
             postSize: "Size of the post",
@@ -369,38 +373,39 @@ export const translations = {
             bannerSection1Description: "The point is not to automate everything, but to focus your energy on what brings value to your company. Technology can speed up repetitive tasks, reduce bottlenecks, and open new business opportunities. But keep in mind the real goal of any software development: to bring a better service to your users!",
             bannerSection1Button: "Learn more",
             bannerSection1Image: {
-            src: "",
+            src: "https://res.cloudinary.com/djlwtz7qw/image/upload/c_scale,w_636/v1689929637/hestia/adobe10Compressed_zgakaw.webp",
             alt: ""
             },
            
+            section2Title: "Our articles about Automation",
             articlesCarousel: [
-            {
-            title: "Revolutionizing Workflows: How Automation and AI Are Reshaping Industries",
-            description: "This article explores how automation and AI technologies are transforming traditional workflows across various industries. It discusses real-world examples of automation and AI implementation, the benefits they bring, and the potential impact on productivity, efficiency, and job roles."
-            ,carouselImage: {
-            src: "",
-            alt: ""
-            }},
-            {
-            title: "Unleashing the Power of AI in Customer Service: Redefining Customer Experience",
-            description: "This article dives into the innovative ways AI is revolutionizing customer service. It covers topics such as chatbots, virtual assistants, personalized recommendations, sentiment analysis, and AI-powered customer insights. It explores how these advancements enhance customer experience, streamline support processes, and drive customer satisfaction."
-            ,carouselImage: {
-            src: "",
-            alt: ""
-            }},
-            {
-            title: "AI-Powered Healthcare: Transforming Diagnosis, Treatment, and Patient Care",
-            description: "This article highlights the transformative impact of AI in healthcare. It explores topics such as medical imaging analysis, predictive analytics, virtual healthcare assistants, and AI-driven drug discovery. It discusses how AI automation is improving diagnosis accuracy, treatment planning, patient monitoring, and overall healthcare outcomes."
-            ,carouselImage: {
-            src: "https://stock.adobe.com/fr/search?filters%5Bcontent_type%3Aphoto%5D=1&filters%5Bcontent_type%3Aillustration%5D=1&filters%5Bcontent_type%3Azip_vector%5D=1&filters%5Bcontent_type%3Avideo%5D=1&filters%5Bcontent_type%3Atemplate%5D=1&filters%5Bcontent_type%3A3d%5D=1&filters%5Bcontent_type%3Aimage%5D=1&order=relevance&safe_search=1&limit=100&search_page=1&search_type=usertyped&acp=&aco=lock+web&k=lock+web&get_facets=0&asset_id=584754272",
-            alt: ""
-            }}
+                {
+                    title: "AI-Powered Healthcare: Transforming Diagnosis, Treatment, and Patient Care",
+                    description: "Explore topics such as medical imaging analysis, predictive analytics, virtual healthcare assistants, and AI-driven drug discovery. It discusses how AI automation is improving diagnosis accuracy, treatment planning, patient monitoring, and overall healthcare outcomes."
+                    ,carouselImage: {
+                    src: "https://res.cloudinary.com/djlwtz7qw/image/upload/c_scale,w_636/v1689929638/hestia/adobe7Compressed_tzamdw.webp",
+                    alt: ""
+                }},
+                {
+                title: "Revolutionizing Workflows: How Automation and AI Are Reshaping Industries",
+                description: "Discusse real-world examples of automation and AI implementation, the benefits they bring, and the potential impact on productivity, efficiency, and job roles."
+                ,carouselImage: {
+                src: "https://res.cloudinary.com/djlwtz7qw/image/upload/c_scale,w_636/v1689929638/hestia/adobe9Compressed_hyvabe.webp",
+                alt: ""
+                }},
+                {
+                title: "Unleashing the Power of AI in Customer Service: Redefining Customer Experience",
+                description: "Cover topics such as chatbots, virtual assistants, personalized recommendations, sentiment analysis, and AI-powered customer insights. It explores how these advancements enhance customer experience, streamline support processes, and drive customer satisfaction."
+                ,carouselImage: {
+                src: "https://res.cloudinary.com/djlwtz7qw/image/upload/c_scale,w_636/v1689929637/hestia/adobe8Compressed_swfngf.webp",
+                alt: ""
+                }}
             ],
             bannerSection2Title: "Unlocking the Potential of Automation and AI",
             bannerSection2Description: "Discover how automation and AI can revolutionize your business by streamlining processes, improving efficiency, and unlocking new opportunities for growth.",
             bannerSection2Button: "Explore Solutions",
             bannerSection2Image: {
-            src: "",
+            src: "https://res.cloudinary.com/djlwtz7qw/image/upload/c_scale,w_636/v1689929637/hestia/adobe6Compressed_cfphgb.webp",
             alt: ""
             },
            
@@ -410,38 +415,39 @@ export const translations = {
             title: "Increased Efficiency",
             description: "Automating repetitive tasks allows your team to focus on high-value activities, boosting overall productivity and efficiency."
             ,bulletsImage: {
-            src: "",
+            src: "https://res.cloudinary.com/djlwtz7qw/image/upload/c_scale,w_636/v1689929637/hestia/adobe5Compressed_e9q0ub.webp",
             alt: ""
             }},
             {
             title: "Improved Accuracy",
             description: "AI-powered algorithms deliver precise and consistent results, minimizing errors and enhancing decision-making processes."
             ,bulletsImage: {
-            src: "",
+            src: "https://res.cloudinary.com/djlwtz7qw/image/upload/c_scale,w_500/v1689929637/hestia/adobe4Compressed_d75fbq.webp",
             alt: ""
             }},
             {
             title: "Enhanced Customer Experience",
             description: "Automation and AI enable personalized and tailored experiences, improving customer satisfaction and loyalty."
             ,bulletsImage: {
-            src: "",
+            src: "https://res.cloudinary.com/djlwtz7qw/image/upload/c_scale,w_500/v1689929637/hestia/adobe3Compressed_dylb6n.webp",
             alt: ""
             }},
             {
             title: "Unlocking Insights",
             description: "Data-driven automation and AI uncover valuable insights, empowering data-based decision-making and business growth."
             ,bulletsImage: {
-            src: "",
+            src: "https://res.cloudinary.com/djlwtz7qw/image/upload/c_scale,w_500/v1689929637/hestia/adobe2Compressed_yfmrk0.webp",
             alt: ""
             }}
             ],
+
             section4Title: "Contact Us",
             bannerSection4Title: "Unlock the Power of Automation and AI",
             bannerSection4Description: "Ready to embrace the potential of automation and AI in your business? Contact us today to discuss your unique requirements and discover how we can help you achieve your goals.",
             bannerSection4Button: "Schedule a Consultation",
             bannerSection4Image: {
-            src: "",
-            alt: ""
+            src: "https://res.cloudinary.com/djlwtz7qw/image/upload/c_scale,w_636/v1689929637/hestia/adobe1Compressed_lvfaof.webp",
+            alt: "contact hestia innovation"
             }
             }
     },
@@ -521,10 +527,10 @@ export const translations = {
         subtitleDesign: "User oriented design text explaination dummy",
         home: {
             titlePresentation: 'Webmasters',
-            titleWord1: '💫 Web development',
-            titleWord2: '📈 Data Driven Development',
-            titleWord3: '🫶 Outstanding experience',
-            titleWord4: '🤝🏻 Growing business',
+            titleWord1: 'Web development',
+            titleWord2: 'Data Driven Development',
+            titleWord3: 'Outstanding experience',
+            titleWord4: 'Growing business',
         },
         languages: 'Languages',
         cookie: {
@@ -579,7 +585,6 @@ export const translations = {
             paragraph2Section2: "We specialize in leveraging data-driven approaches to drive insights, improve decision-making, and optimize performance. Our expertise in automation allows us to streamline processes and increase efficiency, helping businesses achieve their goals faster.",
             paragraph3Section2: "With a focus on continuous learning and staying at the forefront of technological advancements, we are ready to take on any challenge and turn ideas into reality.",
            
-            section4Title: "Technology and users",
             bannerSection2Title: "Balancing Technology and Human Relational",
             bannerSection2Description: "While we are passionate about cutting-edge technology and automation, we understand the importance of keeping the human touch in everything we do. Our solutions are designed with the end-users in mind, providing intuitive experiences that truly make a difference.",
             bannerSection2Button: "Discover more",
@@ -596,7 +601,7 @@ export const translations = {
             alt: ""
             },
            
-           
+            section4Title: "Users, Leadership and Technology",
             bannerSection4Title: "Transforming Ideas into Solutions",
             bannerSection4Description: "With our deep technical expertise and innovative mindset, we excel at translating complex concepts into user-friendly and scalable solutions. Partner with us to bring your vision to life.",
             bannerSection4Button: "Get in touch",
@@ -609,8 +614,8 @@ export const translations = {
             paragraph1Section5: " Agility is at the core of our approach. We embrace flexibility and adaptability to stay ahead in a rapidly evolving digital landscape. By harnessing the power of agile methodologies, we ensure that our solutions are not only technically robust but also perfectly aligned with your business goals.",
             paragraph2Section5: "With our focus on delivering exceptional results within tight timelines, we empower businesses to seize new opportunities, gain a competitive edge, and drive growth.",
             paragraph3Section5: "Partner with Hestia Innovation to embark on a transformative journey and achieve your business objectives with confidence."
-            },
-            development: {
+        },
+        development: {
             src: "https://stock.adobe.com/fr/search?filters%5Bcontent_type%3Aphoto%5D=1&filters%5Bcontent_type%3Aillustration%5D=1&filters%5Bcontent_type%3Azip_vector%5D=1&filters%5Bcontent_type%3Avideo%5D=1&filters%5Bcontent_type%3Atemplate%5D=1&filters%5Bcontent_type%3A3d%5D=1&filters%5Bcontent_type%3Aimage%5D=1&k=web+developers&order=relevance&safe_search=1&limit=100&search_page=1&search_type=usertyped&acp=&aco=web+developers&get_facets=1&asset_id=167160211",
             title: "Web, Security & Performances",
             quote: "Web development is not just about writing code; it's about effective communication, collaboration, and problem-solving.",
@@ -656,8 +661,11 @@ export const translations = {
             bullets: [
             {
             title: "NextJS & NodeJS",
-            description: "Explore the rising technologies of NextJS and NodeJS and discover why they are revolutionizing web development."
-            },
+            description: "Explore the rising technologies of NextJS and NodeJS and discover why they are revolutionizing web development.",
+            bulletsImage: {
+                src: "https://stock.adobe.com/fr/search?filters%5Bcontent_type%3Aphoto%5D=1&filters%5Bcontent_type%3Aillustration%5D=1&filters%5Bcontent_type%3Azip_vector%5D=1&filters%5Bcontent_type%3Avideo%5D=1&filters%5Bcontent_type%3Atemplate%5D=1&filters%5Bcontent_type%3A3d%5D=1&filters%5Bcontent_type%3Aimage%5D=1&k=test+web&order=relevance&safe_search=1&search_page=1&search_type=usertyped&acp=&aco=test+web%24&get_facets=0&asset_id=567219708",
+                alt: ""
+                }},
             {
             title: "Jest! Unit Tests & CI/CD",
             description: "Learn about the importance of unit testing with Jest and how continuous integration and deployment (CI/CD) practices enhance software quality.",
@@ -722,8 +730,9 @@ export const translations = {
             alt: ""
             } 
             },
-            showcase: {
+        showcase: {
             title: "Showcase",
+            src: "",
             section1Title: "3 Domains of Expertise",
             expertise: [
             {
@@ -786,7 +795,7 @@ export const translations = {
             alt: ""
             }
             },
-            designs: {
+        designs: {
             title: "Design & 3D Modeling",
             highlights: [
             {
@@ -862,11 +871,14 @@ export const translations = {
             }
             ]
             },
-            automation: {
+        automation: {
+            title: 'Automation & AI',
             form: {
             title: "Social Media Automation",
             subject: "What is the post about?",
             link: "Link to the article",
+            success: 'Your post have been posted!',
+            newPost: 'Create a new post',
             thumbnail: "Thumbnail of the article",
             target: "Target of the post",
             postSize: "Size of the post",
@@ -944,6 +956,7 @@ export const translations = {
             alt: ""
             }}
             ],
+            
             section4Title: "Contact Us",
             bannerSection4Title: "Unlock the Power of Automation and AI",
             bannerSection4Description: "Ready to embrace the potential of automation and AI in your business? Contact us today to discuss your unique requirements and discover how we can help you achieve your goals.",

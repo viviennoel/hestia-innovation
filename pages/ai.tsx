@@ -26,26 +26,48 @@ const [formData, setFormData] = useState({question: "", image: "", pswd:""});
 const { language } = useContext(LanguageContext);
 
 const contentBulletPoint = [{
-  img: 'https://res.cloudinary.com/djlwtz7qw/image/upload/v1615571569/samples/animals/reindeer.jpg',
-  title: translations[language].titleAI,
-  text:translations[language].subtitleAI,
+  img: translations[language].automation.bullets[0].bulletsImage.src,
+  title: translations[language].automation.bullets[0].title,
+  text:translations[language].automation.bullets[0].description,
+},
+{
+  img: translations[language].automation.bullets[1].bulletsImage.src,
+  title: translations[language].automation.bullets[1].title,
+  text:translations[language].automation.bullets[1].description,
+},
+{
+  img: translations[language].automation.bullets[2].bulletsImage.src,
+  title: translations[language].automation.bullets[2].title,
+  text:translations[language].automation.bullets[2].description,
+},
+{
+  img: translations[language].automation.bullets[3].bulletsImage.src,
+  title: translations[language].automation.bullets[3].title,
+  text:translations[language].automation.bullets[3].description,
 }]
 
 const contentCarousel = [
   {
-      source: 'https://res.cloudinary.com/djlwtz7qw/image/upload/v1615571569/samples/animals/reindeer.jpg',
-      alt: 'string',
-      link: '/string',
-      title: 'string',
-      text: 'string'
+    source: translations[language].automation.articlesCarousel[0].carouselImage.src,
+    alt: translations[language].automation.articlesCarousel[0].carouselImage.alt,
+    link: '/articles/',
+    title: translations[language].automation.articlesCarousel[0].title,
+    text: translations[language].automation.articlesCarousel[0].description
   },
   {
-      source: 'https://res.cloudinary.com/djlwtz7qw/image/upload/v1615571569/samples/animals/reindeer.jpg',
-      alt: 'string',
-      link: '/string1',
-      title: 'string1',
-      text: 'string1'
+    source: translations[language].automation.articlesCarousel[1].carouselImage.src,
+    alt: translations[language].automation.articlesCarousel[1].carouselImage.alt,
+    link: '/articles/',
+    title: translations[language].automation.articlesCarousel[1].title,
+    text: translations[language].automation.articlesCarousel[1].description
   },
+  {
+    source: translations[language].automation.articlesCarousel[2].carouselImage.src,
+    alt: translations[language].automation.articlesCarousel[2].carouselImage.alt,
+    link: '/articles/',
+    title: translations[language].automation.articlesCarousel[2].title,
+    text: translations[language].automation.articlesCarousel[2].description
+  }
 ]
 
 const handleChange = (event) => {
@@ -66,7 +88,7 @@ const handleSubmit = async (event) => {
     } else if(language !== 'en-SET'){
       const text = await getTextFromOpenAI();
       const articleImage = await getPictureFromPexel();
-      await postOnFacebook(text, articleImage);
+      // await postOnFacebook(text, articleImage);
     }
 }
 
@@ -156,9 +178,9 @@ return (
   <>
     <BannerImage 
         size='medium'
-        background='https://res.cloudinary.com/djlwtz7qw/image/upload/v1684920923/cld-sample-2.jpg'
+        background={translations[language].automation.src}
     >
-        <AnimatedText words={translations[language].titleGoodPractices} />
+        <AnimatedText words={translations[language].automation.title} />
     </BannerImage>
     <Container>
           <div className={status === 'loading' ? styles.spinner : styles.linkedin}>
@@ -175,69 +197,62 @@ return (
             <div className='m-auto mb-5'>
               {status === 'success' ? 
               <div className={`${styles.form} text-center`}>
-                <h2 className='pb-5'>Your post have been posted!</h2>
-                <button onClick={resetStatus} className={styles.button}>Create a new post!</button>
+                <h2 className='pb-5'>{translations[language].automation.success}</h2>
+                <button onClick={resetStatus} className={styles.button}>{translations[language].automation.newPost}</button>
               </div>
               :<form onSubmit={handleSubmit} className={`${styles.form} text-center`}>
-                <h2 className='pb-5 text-center'>LinkedIn post by IA</h2>
-                <label htmlFor="name">Subject of the post</label>
+                <h2 className='pb-5 text-center'>{translations[language].automation.form.title}</h2>
+                <label htmlFor="name">{translations[language].automation.form.subject}</label>
                 <input type="text" id="question" name="question" value={formData.question}  onChange={handleChange} className={styles.input} required/>
                 
-                <label htmlFor="name">Find an image to illustrate the post</label>
+                <label htmlFor="name">{translations[language].automation.form.title}</label>
                 <input type="text" id="image" name="image" value={formData.image} onChange={handleChange} className={styles.input} required/>
                 
-                <label htmlFor="name">Admin password</label>
+                <label htmlFor="name">{translations[language].automation.form.password}</label>
                 <input type="password" id="pswd" name="pswd" value={formData.pswd} onChange={handleChange} className={styles.input} required/>
                 
-                <button type="submit" className={styles.button}>Submit</button>
+                <button type="submit" className={styles.button}>{translations[language].automation.form.submit}</button>
               </form>}
             </div>
     </Container>
 
-    <Subtitle content={translations[language].showcase.discoverArticles} />
+    <Subtitle content={translations[language].automation.section1Title} />
     <BannerTextImage
-        imageSrc='https://res.cloudinary.com/djlwtz7qw/image/upload/v1684920923/cld-sample-2.jpg'
-        title={translations[language].HomePresentation.title} 
-        body={translations[language].HomePresentation.body} 
-        link={translations[language].HomePresentation.link} 
-        linkPlaceholder={translations[language].HomePresentation.linkPlaceholder}
+        imageSrc={translations[language].automation.bannerSection1Image.src}
+        title={translations[language].automation.bannerSection1Title} 
+        body={translations[language].automation.bannerSection1Description} 
+        link='/articles/'
+        linkPlaceholder={translations[language].automation.bannerSection1Button}
         variation='light'
         textSide='right'
     />
 
-    <Subtitle content={translations[language].showcase.discoverArticles} />
+    <Subtitle content={translations[language].automation.section2Title} />
     <CarouselComponent content={contentCarousel}></CarouselComponent> 
 
     <BannerTextImage
-        imageSrc='https://res.cloudinary.com/djlwtz7qw/image/upload/v1684920923/cld-sample-2.jpg'
-        title={translations[language].HomePresentation.title} 
-        body={translations[language].HomePresentation.body} 
-        link={translations[language].HomePresentation.link} 
-        linkPlaceholder={translations[language].HomePresentation.linkPlaceholder}
-        textSide='left'
-        variation='light'
-    />
-
-    <Subtitle content={translations[language].showcase.discoverArticles} />
-    <BulletPoints content={contentBulletPoint}/> 
-
-    <Subtitle content={translations[language].showcase.discoverArticles} />
-    <BannerTextImage
-        imageSrc='https://res.cloudinary.com/djlwtz7qw/image/upload/v1684920923/cld-sample-2.jpg'
-        title={translations[language].HomePresentation.title} 
-        body={translations[language].HomePresentation.body} 
-        link={translations[language].HomePresentation.link} 
-        linkPlaceholder={translations[language].HomePresentation.linkPlaceholder}
+        imageSrc={translations[language].automation.bannerSection2Image.src}
+        title={translations[language].automation.bannerSection2Title} 
+        body={translations[language].automation.bannerSection2Description} 
+        link='/articles/'
+        linkPlaceholder={translations[language].automation.bannerSection2Button}
         variation='light'
         textSide='right'
     />
 
-    <Subtitle content={translations[language].showcase.discoverArticles} />
-    <Container className='mb-5'>
-        <p>{translations[language].HomePresentation.linkPlaceholder}</p>
-        <p>{translations[language].HomePresentation.linkPlaceholder}</p>
-        <p>{translations[language].HomePresentation.linkPlaceholder}</p>
-    </Container>
+    <Subtitle content={translations[language].automation.section3Title} />
+    <BulletPoints content={contentBulletPoint}/> 
+
+    <Subtitle content={translations[language].automation.section4Title} />
+    <BannerTextImage
+        imageSrc={translations[language].automation.bannerSection4Image.src}
+        title={translations[language].automation.bannerSection4Title} 
+        body={translations[language].automation.bannerSection4Description} 
+        link='/articles/'
+        linkPlaceholder={translations[language].automation.bannerSection4Button}
+        variation='light'
+        textSide='right'
+    />
   </>
 )
 }

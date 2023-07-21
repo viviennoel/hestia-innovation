@@ -4,6 +4,7 @@ import { Quote } from '../components/atom/Quote/Quote';
 import { translations } from '../translations/translations';
 import { BannerImage } from '../components/organism/BannerImage';
 import { useContext } from 'react';
+import Button from 'react-bootstrap/Button';
 import LanguageContext from '../context/languageContext';
 import { BannerTextImage } from '../components/organism/BannerTextImage';
 import { AnimatedText } from '../components/atom/AnimatedText/AnimatedText';
@@ -14,7 +15,7 @@ const About = () => {
     const { language } = useContext(LanguageContext);
 
     const contentBulletPoint = [{
-        img: translations[language].about.bulletsSection3Image,
+        img: translations[language].about.bulletsSection3Image.src,
         title: translations[language].about.bulletsSection3Title,
         text:translations[language].about.bulletsSection3Description,
     }]
@@ -43,7 +44,7 @@ const About = () => {
 
             <Subtitle content={translations[language].about.multiverseTitle} />
             <div className={styles.model3D}>
-                <iframe className={styles.iframe} title="VR Meeting Office | Conference Room | Baked" frameBorder="0" allowFullScreen allow="autoplay; fullscreen; xr-spatial-tracking" xr-spatial-tracking execution-while-out-of-viewport execution-while-not-rendered web-share src="https://sketchfab.com/models/0bedb56a494f4d0cb1443af6d496c4f2/embed?autostart=1&dnt=1"> </iframe> 
+                <iframe className={styles.iframe} loading="lazy" title="VR Meeting Office | Conference Room | Baked" frameBorder="0" allowFullScreen allow="autoplay; fullscreen; xr-spatial-tracking" xr-spatial-tracking execution-while-out-of-viewport execution-while-not-rendered web-share src="https://sketchfab.com/models/0bedb56a494f4d0cb1443af6d496c4f2/embed?autostart=1&dnt=1"> </iframe> 
                 <div className={`${styles.navigate} d-flex justify-content-center`}>
                     <img width="50" height="50" src="https://img.icons8.com/carbon-copy/100/street-view.png" alt="street-view"/>
                     <h5 className='my-auto ps-3'>{translations[language].about.navigate}</h5>

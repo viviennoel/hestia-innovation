@@ -21,7 +21,7 @@ export const CardImage = ({content}) => {
             data-aos-duration="1000"
             className={styles.card}
         >
-            <Card.Img variant="top" src={source} />
+            <Card.Img variant="top" height={200} src={source} />
             <Card.Body>
             <Card.Title>{title}</Card.Title>
             <Card.Text>

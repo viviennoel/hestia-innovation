@@ -23,14 +23,14 @@
 
 .button{
     background-color: black;
-    border: solid 1px white;
+    border: solid 2px white;
     min-width: 200px;
     transition: all 1s;
     color: white;
 
     &:hover{
         background-color:white;
-        border: solid 1px black;
+        border: solid 2px black;
         color: black;
     }
 }

@@ -14,7 +14,7 @@ export const CardOnlyImage = ({content}) => {
     return(
         <Link href={link} className={styles.link}>
             <Card 
-                className="text-white" 
+                className="text-white h-100" 
                 data-aos="fade-down"
                 data-aos-anchor-placement="top-bottom"
                 data-aos-delay={delay}

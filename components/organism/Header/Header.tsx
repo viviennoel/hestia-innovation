@@ -31,6 +31,7 @@ export const Header = () => {
                     <div className={`my-auto ${styles.menuDesktop}`}>
                         <Link href="/">{translations[language].header.home}</Link>
                         <Link href="/about">{translations[language].header.about}</Link>
+                        <Link href="/showcase">{translations[language].header.showcase}</Link>
                         <Link href="/development">{translations[language].header.dev}</Link>
                         <Link href="/designs">{translations[language].header.design}</Link>
                         <Link href="/ai">{translations[language].header.automation}</Link>

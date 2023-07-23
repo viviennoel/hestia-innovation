@@ -73,7 +73,7 @@ const Showcase = () => {
             
             <Subtitle content={translations[language].showcase.section2Title} />
             <BannerTextImage
-                imageSrc={translations[language].showcase.bannerSection2Image}
+                imageSrc={translations[language].showcase.bannerSection2Image.src}
                 title={translations[language].showcase.bannerSection2Title} 
                 body={translations[language].showcase.bannerSection2Description} 
                 link='/articles/'
@@ -87,7 +87,7 @@ const Showcase = () => {
 
             <Subtitle content={translations[language].showcase.section4Title} />
             <BannerTextImage
-                 imageSrc={translations[language].showcase.bannerSection4Image}
+                 imageSrc={translations[language].showcase.bannerSection4Image.src}
                  title={translations[language].showcase.bannerSection4Title} 
                  body={translations[language].showcase.bannerSection4Description} 
                  link='/articles/'

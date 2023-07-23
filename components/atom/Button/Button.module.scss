@@ -21,7 +21,7 @@
     }
 }
 
-.darkBtn{
+.darkBtn, .darkBtn:focus, .darkBtn:active {
     background-color: black;
     border: solid 2px white;
     min-width: 200px;
@@ -36,6 +36,15 @@
     }
 
     &:hover{
+        background-color:white;
+        border: solid 2px black;
+        
+        a{
+            color: black;
+        }
+    }
+
+    &:focus{
         background-color:white;
         border: solid 2px black;
         

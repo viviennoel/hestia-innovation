@@ -20,10 +20,6 @@ export const CookieModale = () => {
                 localCookies === 'false' && setCookies(false);
                 !localCookies && setCookies(null);
             }
-
-            console.log(cookies ? cookies.toString() !== localCookies : 'undefined')
-            console.log(localCookies)
-            console.log(cookies)
         }
     }, [cookies])
 

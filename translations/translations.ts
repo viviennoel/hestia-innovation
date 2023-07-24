@@ -1,5 +1,44 @@
 export const translations = {
     'en-GB': {
+        articles:{
+            contact: 'Contact our Experts',
+            contactSrc: 'https://res.cloudinary.com/djlwtz7qw/image/upload/c_scale,w_636/v1689947307/hestia/AdobeStock_464279454_ad2kcr.webp',
+            contactDescription: 'You have your expertise and we have ours. Focus on what makes you unique, and optimize your processes to reach new business oportunities.',
+            contactTitle: 'Do you need more information?',
+            contactLink: 'Contact us',
+        },
+        'what-is-automation': {
+            title: 'What is automation?',
+            src: 'https://res.cloudinary.com/djlwtz7qw/image/upload/c_scale,w_636/v1689951522/hestia/AdobeStock_176565736_enyemm.webp',
+            paragraphs: [
+                {
+                    title: 'Automation',
+                    body: [
+                        'Title of the paragraph',
+                        'this is the first paragraph',
+                        'this is the second paragraph',
+                        'this is the third paragraph',
+                    ],
+                    img: {
+                        src: 'https://res.cloudinary.com/djlwtz7qw/image/upload/c_scale,w_636/v1689951522/hestia/AdobeStock_176565736_enyemm.webp',
+                        alt: ''
+                    }
+                },
+                {
+                    title: 'Automation',
+                    body: [
+                        'Title of the paragraph',
+                        'this is the first paragraph',
+                        'this is the second paragraph',
+                        'this is the third paragraph',
+                    ],
+                    img: {
+                        src: 'https://res.cloudinary.com/djlwtz7qw/image/upload/c_scale,w_636/v1689951522/hestia/AdobeStock_176565736_enyemm.webp',
+                        alt: ''
+                    }
+                }
+            ]
+        },
         discover: "Discover Hestia",
         contact: "Contact us",
         more: 'Read more',
@@ -456,21 +495,54 @@ export const translations = {
             }
     },
     'fr-FR': {
+        articles: {
+            contact: 'Contactez nos experts',
+            contactSrc: 'https://res.cloudinary.com/djlwtz7qw/image/upload/c_scale,w_636/v1689947307/hestia/AdobeStock_464279454_ad2kcr.webp',
+            contactDescription: "Vous avez votre expertise et nous avons la nôtre. Concentrez-vous sur ce qui vous rend unique et optimisez vos processus pour saisir de nouvelles opportunités commerciales.",
+            contactTitle: 'Vous avez besoin de plus d\'informations ?',
+            contactLink: 'Contactez-nous',
+        },
+        'what-is-automation': {
+            title: 'What is automation?',
+            src: 'https://res.cloudinary.com/djlwtz7qw/image/upload/c_scale,w_636/v1689951522/hestia/AdobeStock_176565736_enyemm.webp',
+            paragraphs: [
+                {
+                    title: 'Automation',
+                    body: [
+                        'Title of the paragraph',
+                        'this is the first paragraph',
+                        'this is the second paragraph',
+                        'this is the third paragraph',
+                    ],
+                    img: {
+                        src: 'https://res.cloudinary.com/djlwtz7qw/image/upload/c_scale,w_636/v1689951522/hestia/AdobeStock_176565736_enyemm.webp',
+                        alt: ''
+                    }
+                },
+                {
+                    title: 'Automation',
+                    body: [
+                        'Title of the paragraph',
+                        'this is the first paragraph',
+                        'this is the second paragraph',
+                        'this is the third paragraph',
+                    ],
+                    img: {
+                        src: 'https://res.cloudinary.com/djlwtz7qw/image/upload/c_scale,w_636/v1689951522/hestia/AdobeStock_176565736_enyemm.webp',
+                        alt: ''
+                    }
+                }
+            ]
+        },
         discover: "Découvrez Hestia",
-        contact: "Contactez nous",
+        contact: "Contactez-nous",
         more: 'Lire la suite',
-        titleGoodPractices: 'Meilleures pratiques',
-        titleAI: 'Intelligence artificielle',
-        titleDesign: 'Conception axée sur l\'utilisateur',
-        subtitleGoodPractices: 'Explication fictive du texte sur les meilleures pratiques',
-        subtitleAI: 'Explication fictive du texte sur l\'intelligence artificielle',
-        subtitleDesign: 'Explication fictive du texte de la conception axée sur l\'utilisateur',
         home: {
             titlePresentation: 'Webmasters',
             titleWord1: 'Développement Web',
             titleWord2: 'Développement axé sur les données',
-            titleWord3: 'Expérience exceptionnelle',
-            titleWord4: 'Entreprise en pleine croissance',
+            titleWord3: 'Une expérience unique',
+            titleWord4: 'Business & leadership',
         },
         languages: 'Langues',
         cookie: {
@@ -507,7 +579,7 @@ export const translations = {
         about: {
             title: "À propos de nous",
             src: "https://res.cloudinary.com/djlwtz7qw/image/upload/c_scale,w_636/v1689947307/hestia/AdobeStock_464279454_ad2kcr.webp",
-            navigate: "Découvrez nos bureaux à travers le multivers !",
+            navigate: "Découvrez nos bureaux via le multivers !",
             multiverseTitle: "Nos bureaux dans le multivers !",
             
             quote: "La technologie seule ne suffit pas. C'est la technologie associée aux arts libéraux, associée aux humanités, qui nous donne les résultats qui font chanter nos cœurs.",
@@ -600,7 +672,7 @@ export const translations = {
                 alt: ""
             },
             
-            section3Title: "Quelques stacks intéressants",
+            section3Title: "Quelques stacks intéressantes",
             bullets: [
                 {
                     title: "NextJS & NodeJS",
@@ -663,7 +735,7 @@ export const translations = {
                     }
                 },
                 {
-                    title: "Comment faire croître l'entreprise avec l'automatisation",
+                    title: "Comment faire croître votre entreprise avec l'automatisation",
                     description: "Découvrez comment l'automatisation peut optimiser les processus, accroître l'efficacité et stimuler la croissance des entreprises à l'ère numérique.",
                     carouselImage: {
                         src: "https://res.cloudinary.com/djlwtz7qw/image/upload/c_scale,w_636/v1689947308/hestia/AdobeStock_141563631_gstmhk.webp",
@@ -672,7 +744,7 @@ export const translations = {
                 }
             ],
             
-            section5Title: "Nous croyons en l'humain",
+            section5Title: "Vous avez du talent",
             bannerSection5Title: "Utilisez votre temps à bon escient, automatisez les tâches répétitives",
             bannerSection5Description: "Vos compétences comptent. L'automatisation des tâches répétitives vous permet de vous concentrer sur ce que vous faites de mieux et de saisir de nouvelles opportunités de croissance et d'innovation.",
             bannerSection5Button: "Lire l'article",
@@ -738,8 +810,8 @@ export const translations = {
                 }
             ],
             section4Title: "Contactez-nous",
-            bannerSection4Title: "Il est préférable de parler à un être humain !",
-            bannerSection4Description: "Nous comprenons l'importance des relations personnelles. Entrez en contact avec notre équipe d'experts pour discuter de vos besoins uniques et de la manière dont nous pouvons vous aider à atteindre vos objectifs commerciaux.",
+            bannerSection4Title: "Rencontrez un consultant !",
+            bannerSection4Description: "Nous comprenons l'importance de la relation client. Entrez en contact avec notre équipe d'experts pour discuter de vos besoins uniques et de la manière dont nous pouvons vous aider à atteindre vos objectifs commerciaux.",
             bannerSection4Button: "Rencontrer un expert",
             bannerSection4Image: {
                 src: "https://res.cloudinary.com/djlwtz7qw/image/upload/c_scale,w_636/v1689947305/hestia/AdobeStock_609954749_jssbam.webp",
@@ -922,6 +994,44 @@ export const translations = {
         }    
     },
     'en-SET': {
+        articles: {
+            contact: '',
+            contactSrc: '',
+            contactDescription: "",
+            contactTitle: '',
+            contactLink: '',
+        },
+        'what-is-automation': {
+            title: '',
+            paragraphs: [
+                {
+                    title: 'Automation',
+                    body: [
+                        'Title of the paragraph',
+                        'this is the first paragraph',
+                        'this is the second paragraph',
+                        'this is the third paragraph',
+                    ],
+                    img: {
+                        src: 'https://res.cloudinary.com/djlwtz7qw/image/upload/c_scale,w_636/v1689951522/hestia/AdobeStock_176565736_enyemm.webp',
+                        alt: ''
+                    }
+                },
+                {
+                    title: 'Automation',
+                    body: [
+                        'Title of the paragraph',
+                        'this is the first paragraph',
+                        'this is the second paragraph',
+                        'this is the third paragraph',
+                    ],
+                    img: {
+                        src: 'https://res.cloudinary.com/djlwtz7qw/image/upload/c_scale,w_636/v1689951522/hestia/AdobeStock_176565736_enyemm.webp',
+                        alt: ''
+                    }
+                }
+            ]
+        },
         discover: "Discover Hestia",
         contact: "Contact us",
         more: 'Read more',

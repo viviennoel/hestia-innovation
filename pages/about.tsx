@@ -15,7 +15,7 @@ const About = () => {
     const { language } = useContext(LanguageContext);
 
     const contentBulletPoint = [{
-        img: translations[language].about.bulletsSection3Image.src,
+        img: translations['en-GB'].about.bulletsSection3Image.src,
         title: translations[language].about.bulletsSection3Title,
         text:translations[language].about.bulletsSection3Description,
     }]
@@ -24,7 +24,7 @@ const About = () => {
         <div>
             <BannerImage 
                 size='medium'
-                background={translations[language].about.src}
+                background={translations['en-GB'].about.src}
             >
                 <AnimatedText words={translations[language].about.title} />
             </BannerImage>
@@ -33,7 +33,7 @@ const About = () => {
             
             <Subtitle content={translations[language].about.section1Title} />
             <BannerTextImage
-                imageSrc={translations[language].about.bannerSection1Image.src}
+                imageSrc={translations['en-GB'].about.bannerSection1Image.src}
                 title={translations[language].about.bannerSection1Title} 
                 body={translations[language].about.bannerSection1Description} 
                 link='/articles/' 
@@ -60,7 +60,7 @@ const About = () => {
             </Container>
 
             <BannerTextImage
-                imageSrc={translations[language].about.bannerSection2Image.src}
+                imageSrc={translations['en-GB'].about.bannerSection2Image.src}
                 title={translations[language].about.bannerSection2Title} 
                 body={translations[language].about.bannerSection2Description} 
                 link='/articles/'
@@ -74,7 +74,7 @@ const About = () => {
 
             <Subtitle content={translations[language].about.section4Title} />
             <BannerTextImage
-                imageSrc={translations[language].about.bannerSection4Image.src}
+                imageSrc={translations['en-GB'].about.bannerSection4Image.src}
                 title={translations[language].about.bannerSection4Title} 
                 body={translations[language].about.bannerSection4Description} 
                 link='/articles/' 

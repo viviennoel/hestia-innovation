@@ -14,21 +14,21 @@ const Designs = () => {
   const { language } = useContext(LanguageContext);
   const contentHighlight = [
     {
-        source: translations[language].designs.highlights[0].highlightsImage.src,
+        source: translations['en-GB'].designs.highlights[0].highlightsImage.src,
         title: translations[language].designs.highlights[0].title,
         text: translations[language].designs.highlights[0].description,
         link:'/articles/',
         delay:'0'
     },
     {
-        source: translations[language].designs.highlights[1].highlightsImage.src,
+        source: translations['en-GB'].designs.highlights[1].highlightsImage.src,
         title: translations[language].designs.highlights[1].title,
         text: translations[language].designs.highlights[1].description,
         link:'/articles/',
         delay:'300'
     },
     {
-        source: translations[language].designs.highlights[2].highlightsImage.src,
+        source: translations['en-GB'].designs.highlights[2].highlightsImage.src,
         title: translations[language].designs.highlights[2].title,
         text: translations[language].designs.highlights[2].description,
         link:'/articles/',
@@ -37,17 +37,17 @@ const Designs = () => {
   ]
 
   const contentBulletPoint = [{
-    img: translations[language].designs.bullets[0].bulletsImage.src,
+    img: translations['en-GB'].designs.bullets[0].bulletsImage.src,
     title: translations[language].designs.bullets[0].title,
     text:translations[language].designs.bullets[0].description,
 },
 {
-    img: translations[language].designs.bullets[1].bulletsImage.src,
+    img: translations['en-GB'].designs.bullets[1].bulletsImage.src,
     title: translations[language].designs.bullets[1].title,
     text:translations[language].designs.bullets[1].description,
 },
 {
-    img: translations[language].designs.bullets[2].bulletsImage.src,
+    img: translations['en-GB'].designs.bullets[2].bulletsImage.src,
     title: translations[language].designs.bullets[2].title,
     text:translations[language].designs.bullets[2].description,
 }]
@@ -63,7 +63,7 @@ const Designs = () => {
 
         <Subtitle content={translations[language].designs.section2Title} />
         <BannerTextImage
-            imageSrc={translations[language].designs.bannerSection2Image.src} 
+            imageSrc={translations['en-GB'].designs.bannerSection2Image.src} 
             title={translations[language].designs.bannerSection2Title} 
             body={translations[language].designs.bannerSection2Description} 
             link='/articles/'
@@ -75,7 +75,7 @@ const Designs = () => {
         <Quote title={translations[language].designs.quote} text={translations[language].designs.quoteAuthor}></Quote>
 
         <BannerTextImage
-            imageSrc={translations[language].designs.bannerSection3Image.src} 
+            imageSrc={translations['en-GB'].designs.bannerSection3Image.src} 
             title={translations[language].designs.bannerSection3Title} 
             body={translations[language].designs.bannerSection3Description} 
             link='/articles/'

@@ -13,21 +13,21 @@ const Showcase = () => {
 
     const contentExpertise = [
         {
-            source: translations[language].showcase.expertise[0].src,
+            source: translations['en-GB'].showcase.expertise[0].src,
             title: translations[language].showcase.expertise[0].title,
             text: translations[language].showcase.expertise[0].description,
             link:'',
             delay:'0'
         },
         {
-            source: translations[language].showcase.expertise[1].src,
+            source: translations['en-GB'].showcase.expertise[1].src,
             title: translations[language].showcase.expertise[1].title,
             text: translations[language].showcase.expertise[1].description,
             link:'/',
             delay:'300'
         },
         {
-            source: translations[language].showcase.expertise[2].src,
+            source: translations['en-GB'].showcase.expertise[2].src,
             title: translations[language].showcase.expertise[2].title,
             text: translations[language].showcase.expertise[2].description,
             link:'/',
@@ -37,21 +37,21 @@ const Showcase = () => {
     
     const contentHighlight = [
         {
-            source: translations[language].showcase.highlights[0].highlightsImage.src,
+            source: translations['en-GB'].showcase.highlights[0].highlightsImage.src,
             title: translations[language].showcase.highlights[0].title,
             text: translations[language].showcase.highlights[0].description,
             link:'',
             delay:'0'
         },
         {
-            source: translations[language].showcase.highlights[1].highlightsImage.src,
+            source: translations['en-GB'].showcase.highlights[1].highlightsImage.src,
             title: translations[language].showcase.highlights[1].title,
             text: translations[language].showcase.highlights[1].description,
             link:'/',
             delay:'300'
         },
         {
-            source: translations[language].showcase.highlights[2].highlightsImage.src,
+            source: translations['en-GB'].showcase.highlights[2].highlightsImage.src,
             title: translations[language].showcase.highlights[2].title,
             text: translations[language].showcase.highlights[2].description,
             link:'/',
@@ -63,7 +63,7 @@ const Showcase = () => {
         <div>
             <BannerImage 
                 size='medium'
-                background={translations[language].showcase.src}
+                background={translations['en-GB'].showcase.src}
             >
                 <AnimatedText words={translations[language].showcase.title} />
             </BannerImage>
@@ -73,7 +73,7 @@ const Showcase = () => {
             
             <Subtitle content={translations[language].showcase.section2Title} />
             <BannerTextImage
-                imageSrc={translations[language].showcase.bannerSection2Image.src}
+                imageSrc={translations['en-GB'].showcase.bannerSection2Image.src}
                 title={translations[language].showcase.bannerSection2Title} 
                 body={translations[language].showcase.bannerSection2Description} 
                 link='/articles/'
@@ -87,7 +87,7 @@ const Showcase = () => {
 
             <Subtitle content={translations[language].showcase.section4Title} />
             <BannerTextImage
-                 imageSrc={translations[language].showcase.bannerSection4Image.src}
+                 imageSrc={translations['en-GB'].showcase.bannerSection4Image.src}
                  title={translations[language].showcase.bannerSection4Title} 
                  body={translations[language].showcase.bannerSection4Description} 
                  link='/articles/'

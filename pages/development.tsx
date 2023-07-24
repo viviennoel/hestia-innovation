@@ -14,34 +14,34 @@ const Index = () => {
     const { language } = useContext(LanguageContext);
 
     const contentBulletPoint = [{
-        img: translations[language].development.bullets[0].bulletsImage.src,
+        img: translations['en-GB'].development.bullets[0].bulletsImage.src,
         title: translations[language].development.bullets[0].title,
         text: translations[language].development.bullets[0].description,
     },
     {
-        img: translations[language].development.bullets[1].bulletsImage.src,
+        img: translations['en-GB'].development.bullets[1].bulletsImage.src,
         title: translations[language].development.bullets[1].title,
         text: translations[language].development.bullets[1].description,
     },
     {
-        img: translations[language].development.bullets[2].bulletsImage.src,
+        img: translations['en-GB'].development.bullets[2].bulletsImage.src,
         title: translations[language].development.bullets[2].title,
         text: translations[language].development.bullets[2].description,
     },
     {
-        img: translations[language].development.bullets[3].bulletsImage.src,
+        img: translations['en-GB'].development.bullets[3].bulletsImage.src,
         title: translations[language].development.bullets[3].title,
         text: translations[language].development.bullets[3].description,
     },
     {
-        img: translations[language].development.bullets[4].bulletsImage.src,
+        img: translations['en-GB'].development.bullets[4].bulletsImage.src,
         title: translations[language].development.bullets[4].title,
         text: translations[language].development.bullets[4].description,
     }]
 
     const contentHighlight = [
         {
-            source: translations[language].development.highlights[0].highlightImage.src,
+            source: translations['en-GB'].development.highlights[0].highlightImage.src,
             title: translations[language].development.highlights[0].title,
             text:translations[language].development.highlights[0].description,
             alt: translations[language].development.highlights[0].highlightImage.alt,
@@ -49,7 +49,7 @@ const Index = () => {
             delay:'0'
         },
         {
-            source: translations[language].development.highlights[1].highlightImage.src,
+            source: translations['en-GB'].development.highlights[1].highlightImage.src,
             title: translations[language].development.highlights[1].title,
             text:translations[language].development.highlights[1].description,
             alt: translations[language].development.highlights[1].highlightImage.alt,
@@ -57,7 +57,7 @@ const Index = () => {
             delay:'300'
         },
         {
-            source: translations[language].development.highlights[2].highlightImage.src,
+            source: translations['en-GB'].development.highlights[2].highlightImage.src,
             title: translations[language].development.highlights[2].title,
             text:translations[language].development.highlights[2].description,
             alt: translations[language].development.highlights[2].highlightImage.alt,
@@ -68,21 +68,21 @@ const Index = () => {
 
     const contentCarousel = [
         {
-            source: translations[language].development.articlesCarousel[0].carouselImage.src,
+            source: translations['en-GB'].development.articlesCarousel[0].carouselImage.src,
             alt: translations[language].development.articlesCarousel[0].carouselImage.alt,
             link: '/string',
             title: translations[language].development.articlesCarousel[0].title,
             text: translations[language].development.articlesCarousel[0].description
         },
         {            
-            source: translations[language].development.articlesCarousel[1].carouselImage.src,
+            source: translations['en-GB'].development.articlesCarousel[1].carouselImage.src,
             alt: translations[language].development.articlesCarousel[1].carouselImage.alt,
             link: '/string',
             title: translations[language].development.articlesCarousel[1].title,
             text: translations[language].development.articlesCarousel[1].description
         },
         {
-            source: translations[language].development.articlesCarousel[2].carouselImage.src,
+            source: translations['en-GB'].development.articlesCarousel[2].carouselImage.src,
             alt: translations[language].development.articlesCarousel[2].carouselImage.alt,
             link: '/string',
             title: translations[language].development.articlesCarousel[2].title,
@@ -94,7 +94,7 @@ const Index = () => {
         <div>
             <BannerImage 
                 size='medium'
-                background={translations[language].development.src}
+                background={translations['en-GB'].development.src}
             >
                 <AnimatedText words={translations[language].development.title} />
             </BannerImage>
@@ -105,7 +105,7 @@ const Index = () => {
             
             <Subtitle content={translations[language].development.section2Title} />
             <BannerTextImage
-                imageSrc={translations[language].development.bannerSection2Image.src}
+                imageSrc={translations['en-GB'].development.bannerSection2Image.src}
                 title={translations[language].development.bannerSection2Title} 
                 body={translations[language].development.bannerSection2Description} 
                 link='/articles/'
@@ -122,7 +122,7 @@ const Index = () => {
 
             <Subtitle content={translations[language].development.section5Title} />
             <BannerTextImage
-                imageSrc={translations[language].development.bannerSection5Image.src}
+                imageSrc={translations['en-GB'].development.bannerSection5Image.src}
                 title={translations[language].development.bannerSection5Title} 
                 body={translations[language].development.bannerSection5Description} 
                 link='/articles/'

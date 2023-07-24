@@ -15,7 +15,6 @@ const Contact = () => {
     const [status, setStatus] = useState(undefined);
 
     const handleChange = (event) => {
-        console.log('test')
         const { name, value } = event.target;
         setFormData((prevFormData) => ({ ...prevFormData, [name]: value }));
     };

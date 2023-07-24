@@ -12,7 +12,6 @@ export default function App({ Component, pageProps }) {
   const router = useRouter()
   const isHomepage = router.pathname === '/';
   const isCookieSettings = router.pathname === '/legal/cookie-settings';
-  console.log(router.pathname)
 
   const getNavigatorLanguage = () => {
     if(navigator.language === 'en-GB' || navigator.language === 'fr-FR'){

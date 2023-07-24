@@ -12,7 +12,13 @@ export const LanguageNav = () => {
   useEffect(()=>{
     const language = window.localStorage.getItem("language")
     setCountry(language === "fr-FR" ? "france" : 'great-britain')
+    console.log(language)
   }, [country])
+
+  useEffect(()=>{
+    setCountry(language === "fr-FR" ? "france" : 'great-britain')
+    console.log(language)
+  }, [language])
 
     const updateLanguage = (language:string) => {
       setCountry(language)

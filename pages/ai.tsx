@@ -26,43 +26,43 @@ const [formData, setFormData] = useState({question: "", image: "", pswd:""});
 const { language } = useContext(LanguageContext);
 
 const contentBulletPoint = [{
-  img: translations[language].automation.bullets[0].bulletsImage.src,
+  img: translations['en-GB'].automation.bullets[0].bulletsImage.src,
   title: translations[language].automation.bullets[0].title,
   text:translations[language].automation.bullets[0].description,
 },
 {
-  img: translations[language].automation.bullets[1].bulletsImage.src,
+  img: translations['en-GB'].automation.bullets[1].bulletsImage.src,
   title: translations[language].automation.bullets[1].title,
   text:translations[language].automation.bullets[1].description,
 },
 {
-  img: translations[language].automation.bullets[2].bulletsImage.src,
+  img: translations['en-GB'].automation.bullets[2].bulletsImage.src,
   title: translations[language].automation.bullets[2].title,
   text:translations[language].automation.bullets[2].description,
 },
 {
-  img: translations[language].automation.bullets[3].bulletsImage.src,
+  img: translations['en-GB'].automation.bullets[3].bulletsImage.src,
   title: translations[language].automation.bullets[3].title,
   text:translations[language].automation.bullets[3].description,
 }]
 
 const contentCarousel = [
   {
-    source: translations[language].automation.articlesCarousel[0].carouselImage.src,
+    source: translations['en-GB'].automation.articlesCarousel[0].carouselImage.src,
     alt: translations[language].automation.articlesCarousel[0].carouselImage.alt,
     link: '/articles/',
     title: translations[language].automation.articlesCarousel[0].title,
     text: translations[language].automation.articlesCarousel[0].description
   },
   {
-    source: translations[language].automation.articlesCarousel[1].carouselImage.src,
+    source: translations['en-GB'].automation.articlesCarousel[1].carouselImage.src,
     alt: translations[language].automation.articlesCarousel[1].carouselImage.alt,
     link: '/articles/',
     title: translations[language].automation.articlesCarousel[1].title,
     text: translations[language].automation.articlesCarousel[1].description
   },
   {
-    source: translations[language].automation.articlesCarousel[2].carouselImage.src,
+    source: translations['en-GB'].automation.articlesCarousel[2].carouselImage.src,
     alt: translations[language].automation.articlesCarousel[2].carouselImage.alt,
     link: '/articles/',
     title: translations[language].automation.articlesCarousel[2].title,
@@ -160,8 +160,8 @@ fetch("https://vivien-thomas-noel.npkn.net/5c2b24/", {
     method: 'POST',
     body: JSON.stringify(body),
 })
-    .then(result => console.log(result))
-    .catch(error => console.log('error', error));
+    .then(result => console.log('ai', result))
+    .catch(error => console.log('error_ai', error));
 }
 
 const resetStatus = () => {
@@ -178,7 +178,7 @@ return (
   <>
     <BannerImage 
         size='medium'
-        background={translations[language].automation.src}
+        background={translations['en-GB'].automation.src}
     >
         <AnimatedText words={translations[language].automation.title} />
     </BannerImage>
@@ -218,7 +218,7 @@ return (
 
     <Subtitle content={translations[language].automation.section1Title} />
     <BannerTextImage
-        imageSrc={translations[language].automation.bannerSection1Image.src}
+        imageSrc={translations['en-GB'].automation.bannerSection1Image.src}
         title={translations[language].automation.bannerSection1Title} 
         body={translations[language].automation.bannerSection1Description} 
         link='/articles/'
@@ -231,7 +231,7 @@ return (
     <CarouselComponent content={contentCarousel}></CarouselComponent> 
 
     <BannerTextImage
-        imageSrc={translations[language].automation.bannerSection2Image.src}
+        imageSrc={translations['en-GB'].automation.bannerSection2Image.src}
         title={translations[language].automation.bannerSection2Title} 
         body={translations[language].automation.bannerSection2Description} 
         link='/articles/'
@@ -245,7 +245,7 @@ return (
 
     <Subtitle content={translations[language].automation.section4Title} />
     <BannerTextImage
-        imageSrc={translations[language].automation.bannerSection4Image.src}
+        imageSrc={translations['en-GB'].automation.bannerSection4Image.src}
         title={translations[language].automation.bannerSection4Title} 
         body={translations[language].automation.bannerSection4Description} 
         link='/articles/'

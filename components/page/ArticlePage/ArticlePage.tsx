@@ -23,13 +23,13 @@ export const ArticlePage = ({article}: {article:string}) => {
                  <AnimatedText words={translations[language][article].title} />
             </BannerImage>
             {translations[language][article].paragraphs.map(paragraph => 
-                <section>
+                <section key={paragraph.title}>
                     <Container className={styles.container}>
                         <h2 className='mb-5'>{paragraph.title}</h2>
                         {paragraph.body.map((bodyPart, index) => {
                             return (
-                                index === 0 ? <h3 className={styles.subtitle}>{bodyPart}</h3>
-                                : <p>{bodyPart}</p>
+                                index === 0 ? <h3 className={styles.subtitle} key={index}>{bodyPart}</h3>
+                                : <p key={index}>{bodyPart}</p>
                             )
                         })}
                         {paragraph.img && <img src={paragraph.img.src} alt={paragraph.img.src} className={`${styles.image} mx-auto`}></img>}

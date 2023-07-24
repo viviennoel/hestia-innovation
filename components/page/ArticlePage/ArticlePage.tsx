@@ -11,7 +11,6 @@ import styles from './ArticlePage.module.scss';
 
 export const ArticlePage = ({article}: {article:string}) => {
     const { language } = useContext(LanguageContext);
-    console.log(article)
     
     return(
         <div>

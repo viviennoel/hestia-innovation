@@ -1,19 +1,24 @@
 import {BannerImage} from './../../organism/BannerImage';
 import {BannerTextImage} from './../../organism/BannerTextImage';
-import {BulletPoints} from './../../organism/BulletPoints/BulletPoints';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 import {Subtitle} from './../../atom/Subtitle/Subtitle';
 import Container from 'react-bootstrap/Container';
 import {AnimatedText} from './../../atom/AnimatedText/AnimatedText';
 import { translations } from '../../../translations/translations';
-import { useContext } from 'react';
+import { useContext, useEffect } from 'react';
 import LanguageContext from '../../../context/languageContext';
 import styles from './ArticlePage.module.scss';
 
 export const ArticlePage = ({article}: {article:string}) => {
     const { language } = useContext(LanguageContext);
     
+    useEffect(() => {
+        AOS.init();
+    }, [])
+
     return(
-        <div>
+        <div className={styles.wrapper}>
             {article && <div>
                 <BannerImage 
                 size='medium'
@@ -24,11 +29,21 @@ export const ArticlePage = ({article}: {article:string}) => {
             {translations[language][article].paragraphs.map(paragraph => 
                 <section key={paragraph.title}>
                     <Container className={styles.container}>
-                        <h2 className='mb-5'>{paragraph.title}</h2>
+                        <h2 className='mb-5' data-aos="fade-left"
+                                    data-aos-anchor-placement="top-bottom"
+                                    data-aos-duration="1000">{paragraph.title}</h2>
                         {paragraph.body.map((bodyPart, index) => {
                             return (
-                                index === 0 ? <h3 className={styles.subtitle} key={index}>{bodyPart}</h3>
-                                : <p key={index}>{bodyPart}</p>
+                                bodyPart.split('ubtitle: ').length > 1 ? 
+                                    <h3 className={styles.subtitle} key={index}  data-aos="fade-right"
+                                        data-aos-anchor-placement="top-bottom"
+                                        data-aos-duration="1000"
+                                    >
+                                        {bodyPart.split('Subtitle: ')[1]}
+                                    </h3>
+                                : <p key={index}>
+                                    {bodyPart}
+                                </p>
                             )
                         })}
                         {paragraph.img && <img src={paragraph.img.src} alt={paragraph.img.src} className={`${styles.image} mx-auto`}></img>}

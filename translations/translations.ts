@@ -1,3 +1,8 @@
+import { aiDataManagement } from "./articles/aiDataManagement";
+import { aiPoweredHealthcare } from "./articles/aiPoweredHealthcare";
+import { CISACyberEssentials } from "./articles/CISACyberEssentials";
+import { whatIsAutomation } from "./articles/whatIsAutomation";
+
 export const translations = {
     'en-GB': {
         articles:{
@@ -6,39 +11,17 @@ export const translations = {
             contactDescription: 'You have your expertise and we have ours. Focus on what makes you unique, and optimize your processes to reach new business oportunities.',
             contactTitle: 'Do you need more information?',
             contactLink: 'Contact us',
-        },
-        'what-is-automation': {
-            title: 'What is automation?',
-            src: 'https://res.cloudinary.com/djlwtz7qw/image/upload/c_scale,w_636/v1689951522/hestia/AdobeStock_176565736_enyemm.webp',
-            paragraphs: [
-                {
-                    title: 'Automation',
-                    body: [
-                        'Title of the paragraph',
-                        'this is the first paragraph',
-                        'this is the second paragraph',
-                        'this is the third paragraph',
-                    ],
-                    img: {
-                        src: 'https://res.cloudinary.com/djlwtz7qw/image/upload/c_scale,w_636/v1689951522/hestia/AdobeStock_176565736_enyemm.webp',
-                        alt: ''
-                    }
-                },
-                {
-                    title: 'Automation',
-                    body: [
-                        'Title of the paragraph',
-                        'this is the first paragraph',
-                        'this is the second paragraph',
-                        'this is the third paragraph',
-                    ],
-                    img: {
-                        src: 'https://res.cloudinary.com/djlwtz7qw/image/upload/c_scale,w_636/v1689951522/hestia/AdobeStock_176565736_enyemm.webp',
-                        alt: ''
-                    }
-                }
+            slugs: [
+                "what-is-automation",
+                "ai-powered-healthcare",
+                "ai-data-management",
+                "cisa-cyber-essentials"
             ]
         },
+        "what-is-automation": whatIsAutomation["en-GB"],
+        "ai-powered-healthcare": aiPoweredHealthcare["en-GB"],
+        "ai-data-management": aiDataManagement["en-GB"],
+        "cisa-cyber-essentials": CISACyberEssentials["en-GB"],
         discover: "Discover Hestia",
         contact: "Contact us",
         more: 'Read more',
@@ -502,38 +485,10 @@ export const translations = {
             contactTitle: 'Vous avez besoin de plus d\'informations ?',
             contactLink: 'Contactez-nous',
         },
-        'what-is-automation': {
-            title: 'What is automation?',
-            src: 'https://res.cloudinary.com/djlwtz7qw/image/upload/c_scale,w_636/v1689951522/hestia/AdobeStock_176565736_enyemm.webp',
-            paragraphs: [
-                {
-                    title: 'Automation',
-                    body: [
-                        'Title of the paragraph',
-                        'this is the first paragraph',
-                        'this is the second paragraph',
-                        'this is the third paragraph',
-                    ],
-                    img: {
-                        src: 'https://res.cloudinary.com/djlwtz7qw/image/upload/c_scale,w_636/v1689951522/hestia/AdobeStock_176565736_enyemm.webp',
-                        alt: ''
-                    }
-                },
-                {
-                    title: 'Automation',
-                    body: [
-                        'Title of the paragraph',
-                        'this is the first paragraph',
-                        'this is the second paragraph',
-                        'this is the third paragraph',
-                    ],
-                    img: {
-                        src: 'https://res.cloudinary.com/djlwtz7qw/image/upload/c_scale,w_636/v1689951522/hestia/AdobeStock_176565736_enyemm.webp',
-                        alt: ''
-                    }
-                }
-            ]
-        },
+        "what-is-automation": whatIsAutomation["fr-FR"],
+        "ai-powered-healthcare": aiPoweredHealthcare["fr-FR"],
+        "ai-data-management": aiDataManagement["fr-FR"],
+        "cisa-cyber-essentials": CISACyberEssentials["fr-FR"],
         discover: "Découvrez Hestia",
         contact: "Contactez-nous",
         more: 'Lire la suite',
@@ -1001,37 +956,10 @@ export const translations = {
             contactTitle: '',
             contactLink: '',
         },
-        'what-is-automation': {
-            title: '',
-            paragraphs: [
-                {
-                    title: 'Automation',
-                    body: [
-                        'Title of the paragraph',
-                        'this is the first paragraph',
-                        'this is the second paragraph',
-                        'this is the third paragraph',
-                    ],
-                    img: {
-                        src: 'https://res.cloudinary.com/djlwtz7qw/image/upload/c_scale,w_636/v1689951522/hestia/AdobeStock_176565736_enyemm.webp',
-                        alt: ''
-                    }
-                },
-                {
-                    title: 'Automation',
-                    body: [
-                        'Title of the paragraph',
-                        'this is the first paragraph',
-                        'this is the second paragraph',
-                        'this is the third paragraph',
-                    ],
-                    img: {
-                        src: 'https://res.cloudinary.com/djlwtz7qw/image/upload/c_scale,w_636/v1689951522/hestia/AdobeStock_176565736_enyemm.webp',
-                        alt: ''
-                    }
-                }
-            ]
-        },
+        'what-is-automation': whatIsAutomation["en-SET"],
+        "ai-powered-healthcare": aiPoweredHealthcare["en-SET"],
+        "ai-data-management": aiDataManagement["en-SET"],
+        "cisa-cyber-essentials": CISACyberEssentials["en-SET"],
         discover: "Discover Hestia",
         contact: "Contact us",
         more: 'Read more',

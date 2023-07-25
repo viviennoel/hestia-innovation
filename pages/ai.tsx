@@ -50,21 +50,21 @@ const contentCarousel = [
   {
     source: translations['en-GB'].automation.articlesCarousel[0].carouselImage.src,
     alt: translations[language].automation.articlesCarousel[0].carouselImage.alt,
-    link: '/articles/',
+    link: '/articles/ai-powered-healthcare',
     title: translations[language].automation.articlesCarousel[0].title,
     text: translations[language].automation.articlesCarousel[0].description
   },
   {
     source: translations['en-GB'].automation.articlesCarousel[1].carouselImage.src,
     alt: translations[language].automation.articlesCarousel[1].carouselImage.alt,
-    link: '/articles/',
+    link: '/articles/ai-data-management',
     title: translations[language].automation.articlesCarousel[1].title,
     text: translations[language].automation.articlesCarousel[1].description
   },
   {
     source: translations['en-GB'].automation.articlesCarousel[2].carouselImage.src,
     alt: translations[language].automation.articlesCarousel[2].carouselImage.alt,
-    link: '/articles/',
+    link: '/articles/cisa-cyber-essentials',
     title: translations[language].automation.articlesCarousel[2].title,
     text: translations[language].automation.articlesCarousel[2].description
   }
@@ -221,7 +221,7 @@ return (
         imageSrc={translations['en-GB'].automation.bannerSection1Image.src}
         title={translations[language].automation.bannerSection1Title} 
         body={translations[language].automation.bannerSection1Description} 
-        link='/articles/'
+        link='/articles/what-is-automation'
         linkPlaceholder={translations[language].automation.bannerSection1Button}
         variation='light'
         textSide='right'

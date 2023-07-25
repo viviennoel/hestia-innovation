@@ -6,6 +6,7 @@ import LanguageContext from "../context/languageContext";
 import { Footer } from '../components/organism/Footer';
 import { useRouter } from 'next/router';
 import { CookieModale } from '../components/organism/CookieModale/CookieModale';
+import { Inter } from 'next/font/google'
 
 export default function App({ Component, pageProps }) {
   const [language, setLanguage] = useState<string>("en-SET");
@@ -20,6 +21,8 @@ export default function App({ Component, pageProps }) {
 
     return 'en-GB';
   }
+ 
+  const inter = Inter({ subsets: ['latin'] })
 
   useEffect(() => {
     if (typeof window !== "undefined" && typeof navigator !== "undefined") {
@@ -37,6 +40,11 @@ export default function App({ Component, pageProps }) {
 
   return (
     <LanguageContext.Provider value={{ language, setLanguage }}>
+      <style jsx global>{`
+        h1 {
+          font-family: ${inter.style.fontFamily} !important;
+        }
+      `}</style>
       {!isCookieSettings && <CookieModale />}
       <Header {...pageProps} />
       <Component {...pageProps} />

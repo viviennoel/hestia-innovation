@@ -484,6 +484,12 @@ export const translations = {
             }
     },
     'fr-FR': {
+        seo:{
+            title: 'Hestia Innovation | Expert Web Development and Automation Solutions',
+            description: "At Hestia Innovation, we offer top-notch web development and automation solutions to elevate your online presence. Our expert consultants ensure seamless functionality and efficiency for your business. Contact us for cutting-edge technology and personalized strategies.",
+            keywords: "Hestia Innovation, web development, automation solutions, expert consultants, cutting-edge technology, personalized strategies",
+            author: 'Hestia Innovation'
+        },
         articles: {
             contact: 'Contactez nos experts',
             contactSrc: 'https://res.cloudinary.com/djlwtz7qw/image/upload/c_scale,w_636/v1689947307/hestia/AdobeStock_464279454_ad2kcr.webp',
@@ -955,6 +961,12 @@ export const translations = {
         }    
     },
     'en-SET': {
+        seo:{
+            title: 'Hestia Innovation | Expert Web Development and Automation Solutions',
+            description: "At Hestia Innovation, we offer top-notch web development and automation solutions to elevate your online presence. Our expert consultants ensure seamless functionality and efficiency for your business. Contact us for cutting-edge technology and personalized strategies.",
+            keywords: "Hestia Innovation, web development, automation solutions, expert consultants, cutting-edge technology, personalized strategies",
+            author: 'Hestia Innovation'
+        },
         articles: {
             contact: '',
             contactSrc: '',

@@ -1,7 +1,11 @@
 import { Html, Head, Main, NextScript } from "next/document";
 import Script from 'next/script'
+import { useContext } from "react";
+import { translations } from "../translations/translations";
+import LanguageContext from "../context/languageContext";
 
 export default function Document() {
+  const { language } = useContext(LanguageContext);
   return (
     <Html>
       <Head>
@@ -28,7 +32,13 @@ export default function Document() {
           type="text/css" 
           crossOrigin="anonymous" />
 
+        
+        <meta name="description" content={translations[language].seo.description} />
+        <meta name="keywords" content={translations[language].seo.keywords} />
+        <meta name="author" content={translations[language].seo.author} />
+        <title>{translations[language].seo.title}</title>
         <meta name="facebook-domain-verification" content="6e618qmh5r91uxw6wfwrpa49er24bt" />
+      
       </Head>
       <body className="overflow-x-hidden antialiased">
         <Main />

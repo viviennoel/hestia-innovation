@@ -6,9 +6,9 @@ import LanguageContext from "../context/languageContext";
 import { Footer } from '../components/organism/Footer';
 import { useRouter } from 'next/router';
 import { CookieModale } from '../components/organism/CookieModale/CookieModale';
-import { Comfortaa } from 'next/font/google';
+import { Kurale } from 'next/font/google';
 
-const comfortaa = Comfortaa({ subsets: ['latin'] })
+const kurale = Kurale({ subsets: ['latin'] })
 
 export default function App({ Component, pageProps }) {
   const [language, setLanguage] = useState<string>("en-SET");
@@ -42,7 +42,7 @@ export default function App({ Component, pageProps }) {
     <LanguageContext.Provider value={{ language, setLanguage }}>
       <style jsx global>{`
         h1, h2, h3, a {
-          font-family: ${comfortaa.style.fontFamily} !important;
+          font-family: ${kurale.style.fontFamily} !important;
         }
       `}</style>
       {!isCookieSettings && <CookieModale />}

@@ -1,6 +1,6 @@
 export const GreenIT = {
 "en-GB": {
-"title": "🌱🌐 The Importance of Accessibility & GreenIT: Unleashing New Business Opportunities 🌱🌐",
+"title": "The Importance of Accessibility & GreenIT: Unleashing New Business Opportunities",
 "src": "",
 "paragraphs": [
 {
@@ -59,7 +59,7 @@ export const GreenIT = {
 ]
 },
 "fr-FR": {
-  "title": "🌱🌐 L'Importance de l'Accessibilité & du GreenIT : Découverte de Nouvelles Opportunités Commerciales 🌱🌐",
+  "title": "L'Importance de l'Accessibilité & du GreenIT : Découverte de Nouvelles Opportunités Commerciales",
   "src": "",
   "paragraphs": [
     {

@@ -8,7 +8,7 @@ import { useRouter } from 'next/router';
 import { CookieModale } from '../components/organism/CookieModale/CookieModale';
 import { Kurale } from 'next/font/google';
 
-const kurale = Kurale({ subsets: ['latin'] })
+const kurale = Kurale({ weight: "400", subsets: ["latin"]})
 
 export default function App({ Component, pageProps }) {
   const [language, setLanguage] = useState<string>("en-SET");

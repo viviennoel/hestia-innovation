@@ -1,6 +1,6 @@
 export const RealOpportunity = {
   "en-GB": {
-  "title": "🚀💡 A Real Opportunity for Business: Embracing Cutting-Edge Technologies 🚀💻",
+  "title": "A Real Opportunity for Business: Embracing Cutting-Edge Technologies",
   "src": "",
   "paragraphs": [
     {
@@ -68,7 +68,7 @@ export const RealOpportunity = {
   ]
 },
 "fr-FR": {
-  "title": "🚀💡 Une Véritable Opportunité pour les Entreprises : Adopter des Technologies de Pointe 🚀💻",
+  "title": "Une Véritable Opportunité pour les Entreprises : Adopter des Technologies de Pointe",
   "src": "",
   "paragraphs": [
     {

@@ -16,21 +16,21 @@ const Showcase = () => {
             source: translations['en-GB'].showcase.expertise[0].src,
             title: translations[language].showcase.expertise[0].title,
             text: translations[language].showcase.expertise[0].description,
-            link:'',
+            link:'/development',
             delay:'0'
         },
         {
             source: translations['en-GB'].showcase.expertise[1].src,
             title: translations[language].showcase.expertise[1].title,
             text: translations[language].showcase.expertise[1].description,
-            link:'/',
+            link:'/designs',
             delay:'300'
         },
         {
             source: translations['en-GB'].showcase.expertise[2].src,
             title: translations[language].showcase.expertise[2].title,
             text: translations[language].showcase.expertise[2].description,
-            link:'/',
+            link:'/ai',
             delay:'600'
         }
     ]
@@ -40,21 +40,21 @@ const Showcase = () => {
             source: translations['en-GB'].showcase.highlights[0].highlightsImage.src,
             title: translations[language].showcase.highlights[0].title,
             text: translations[language].showcase.highlights[0].description,
-            link:'',
+            link:'/articles/automation-wide-application-for-business',
             delay:'0'
         },
         {
             source: translations['en-GB'].showcase.highlights[1].highlightsImage.src,
             title: translations[language].showcase.highlights[1].title,
             text: translations[language].showcase.highlights[1].description,
-            link:'/',
+            link:'/articles/pixel-perfect-testing-for-big-teams',
             delay:'300'
         },
         {
             source: translations['en-GB'].showcase.highlights[2].highlightsImage.src,
             title: translations[language].showcase.highlights[2].title,
             text: translations[language].showcase.highlights[2].description,
-            link:'/',
+            link:'/articles/agile-north-star-metric',
             delay:'600'
         }
     ]
@@ -76,7 +76,7 @@ const Showcase = () => {
                 imageSrc={translations['en-GB'].showcase.bannerSection2Image.src}
                 title={translations[language].showcase.bannerSection2Title} 
                 body={translations[language].showcase.bannerSection2Description} 
-                link='/articles/'
+                link='/articles/situation-analysis-and-decisions'
                 linkPlaceholder={translations[language].showcase.bannerSection2Button}
                 variation='light'
                 textSide='right'
@@ -90,7 +90,7 @@ const Showcase = () => {
                  imageSrc={translations['en-GB'].showcase.bannerSection4Image.src}
                  title={translations[language].showcase.bannerSection4Title} 
                  body={translations[language].showcase.bannerSection4Description} 
-                 link='/articles/'
+                 link='/contact'
                  linkPlaceholder={translations[language].showcase.bannerSection4Button}
                  variation='light'
                 textSide='left'

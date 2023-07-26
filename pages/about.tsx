@@ -40,6 +40,7 @@ const About = () => {
                 linkPlaceholder={translations[language].about.bannerSection1Button}
                 variation='light'
                 textSide='right'
+                cta={false}
             />
 
             <Subtitle content={translations[language].about.multiverseTitle} />
@@ -63,7 +64,7 @@ const About = () => {
                 imageSrc={translations['en-GB'].about.bannerSection2Image.src}
                 title={translations[language].about.bannerSection2Title} 
                 body={translations[language].about.bannerSection2Description} 
-                link='/articles/'
+                link='/articles/human-relations-and-technology'
                 linkPlaceholder={translations[language].about.bannerSection2Button}
                 textSide='left'
                 variation='light'
@@ -77,7 +78,7 @@ const About = () => {
                 imageSrc={translations['en-GB'].about.bannerSection4Image.src}
                 title={translations[language].about.bannerSection4Title} 
                 body={translations[language].about.bannerSection4Description} 
-                link='/articles/' 
+                link='/showcase' 
                 linkPlaceholder={translations[language].about.bannerSection4Button}
                 variation='light'
                 textSide='right'

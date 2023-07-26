@@ -17,21 +17,21 @@ const Designs = () => {
         source: translations['en-GB'].designs.highlights[0].highlightsImage.src,
         title: translations[language].designs.highlights[0].title,
         text: translations[language].designs.highlights[0].description,
-        link:'/articles/',
+        link:'/articles/why-Data-Driven-Development-is-a-game-changer',
         delay:'0'
     },
     {
         source: translations['en-GB'].designs.highlights[1].highlightsImage.src,
         title: translations[language].designs.highlights[1].title,
         text: translations[language].designs.highlights[1].description,
-        link:'/articles/',
+        link:'/articles/green-it-opportunity-and-accessibility',
         delay:'300'
     },
     {
         source: translations['en-GB'].designs.highlights[2].highlightsImage.src,
         title: translations[language].designs.highlights[2].title,
         text: translations[language].designs.highlights[2].description,
-        link:'/articles/',
+        link:'/articles/modeling-3D-immersive',
         delay:'600'
     }
   ]
@@ -66,7 +66,7 @@ const Designs = () => {
             imageSrc={translations['en-GB'].designs.bannerSection2Image.src} 
             title={translations[language].designs.bannerSection2Title} 
             body={translations[language].designs.bannerSection2Description} 
-            link='/articles/'
+            link='/articles/modeling-3D-immersive'
             linkPlaceholder={translations[language].designs.bannerSection2Button}
             variation='light'
             textSide='right'
@@ -78,7 +78,7 @@ const Designs = () => {
             imageSrc={translations['en-GB'].designs.bannerSection3Image.src} 
             title={translations[language].designs.bannerSection3Title} 
             body={translations[language].designs.bannerSection3Description} 
-            link='/articles/'
+            link='https://www.cypress.io/app/'
             linkPlaceholder={translations[language].designs.bannerSection3Button}
             variation='light'
             textSide='left'

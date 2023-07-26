@@ -5,8 +5,8 @@ import styles from './BannerTextImage.module.scss'
 import { BannerTextImageProps } from '../../../types/componentProps';
 import Button from 'react-bootstrap/Button';
 
-export const BannerTextImage = ({imageSrc, title, body, link, linkPlaceholder, variation, textSide}: BannerTextImageProps) => {
-    const isVisibleButton = linkPlaceholder && link;
+export const BannerTextImage = ({imageSrc, title, body, link, linkPlaceholder, variation, textSide, cta}: BannerTextImageProps) => {
+    const isVisibleButton = linkPlaceholder && link && cta !== false;
     const isTextRight = textSide === 'right';
 
     return(
@@ -31,7 +31,7 @@ export const BannerTextImage = ({imageSrc, title, body, link, linkPlaceholder, v
                         </Col>
 
                         <p className={`pb-md-3 ${styles.body}`}>{body}</p>
-                        {isVisibleButton && <Button href={link} className={`${styles.button}`}>{linkPlaceholder}</Button>}
+                        {isVisibleButton && <Button href={link} target={link.includes('https') ? '_blank' : ''} className={`${styles.button}`}>{linkPlaceholder}</Button>}
                     </Col>
                     {textSide !== 'right' &&
                     <Col md className={`${!isTextRight ? 'pt-3 pt-md-0' : ''} d-none d-md-block`}>

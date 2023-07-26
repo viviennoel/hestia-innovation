@@ -1,9 +1,6 @@
 export const AICustomerService = {
-  "en-GB":Sure! Here's the translated version of the article:
-
-```json
-{
-  "title": "🌐💻 How to Foster Customer Engagement with AI in the B2C Sector 🚀🎯",
+  "en-GB":{
+  "title": "How to Foster Customer Engagement with AI in the B2C Sector",
   "src": "",
   "paragraphs": [
     {
@@ -38,9 +35,7 @@ export const AICustomerService = {
         "Seizing the Opportunity 🚀💼",
         "To leapfrog competitors in using customer service to foster engagement, financial institutions can start by focusing on a few imperatives.",
         "1. Envision the future of service, keeping customers and their engagement at the core while also defining the strategic value to be attained—for example, a larger share of wallet with existing customers? Expansion of particular services, lines of business, or demographics?",
-        "2. Rethink every customer
-
- touchpoint, whether digital or assisted, together with opportunities to enhance the experience while also increasing efficiencies.",
+        "2. Rethink every customer touchpoint, whether digital or assisted, together with opportunities to enhance the experience while also increasing efficiencies.",
         "3. Maximize every customer service interaction, to deepen customer relationships, build loyalty, and drive greater value over the customer’s lifetime.",
         "4. Leverage AI and an end-to-end technology stack, to provide a more proactive and personalized customer service experience that supports self-service and decision-making for customers as well as employees.",
         "5. Adapt agile and collaborative approaches to drive transformation, comprised of SMEs from different business and support functions of the organization.",
@@ -50,7 +45,7 @@ export const AICustomerService = {
   ]
 },
   "fr-FR":{
-  "title": "🌐💻 Comment Favoriser l'Engagement des Clients avec l'IA dans le Secteur B2C 🚀🎯",
+  "title": "Comment Favoriser l'Engagement des Clients avec l'IA dans le Secteur B2C",
   "src": "",
   "paragraphs": [
     {
@@ -76,9 +71,7 @@ export const AICustomerService = {
       "title": "Comment Réaliser la Promesse de l'IA pour l'Engagement Client 🌟🔍",
       "body": [
         "Pour concrétiser la promesse de l'IA pour l'engagement client, les entreprises peuvent aligner la vision réinventée de l'engagement sur tous les points de contact clients avec les outils alimentés par l'IA, la technologie de base et les données appropriés. L'exposition 1 illustre le nouveau modèle de service client, depuis la communication avec les clients avant même qu'ils ne formulent une demande spécifique, jusqu'à la fourniture de solutions prises en charge par l'IA et l'évaluation des performances après coup.",
-        "Il est essentiel de souligner que l'IA ne signifie pas uniquement l'automatisation. Certes, les chatbots et les technologies similaires peuvent fournir un service client proactif en réduisant le nombre d'interactions humaines et les coûts tout en simplifiant l'expérience client. Cependant, environ 75 % des clients utilisent plusieurs canaux dans leur expérience continue. Un modèle de service client avec l'IA doit donc englober tous les points de contact, non seulement les canaux numériques en libre-service, mais aussi les options assistées par
-
- des agents dans les agences ou sur les plateformes de médias sociaux, où l'IA peut aider les employés en temps réel pour fournir des résultats de haute qualité.",
+        "Il est essentiel de souligner que l'IA ne signifie pas uniquement l'automatisation. Certes, les chatbots et les technologies similaires peuvent fournir un service client proactif en réduisant le nombre d'interactions humaines et les coûts tout en simplifiant l'expérience client. Cependant, environ 75 % des clients utilisent plusieurs canaux dans leur expérience continue. Un modèle de service client avec l'IA doit donc englober tous les points de contact, non seulement les canaux numériques en libre-service, mais aussi les options assistées par des agents dans les agences ou sur les plateformes de médias sociaux, où l'IA peut aider les employés en temps réel pour fournir des résultats de haute qualité.",
         "Avant même que les clients ne prennent contact, un système assisté par l'IA peut anticiper leurs besoins probables et générer des incitations pour les agents. Par exemple, le système peut signaler que la facture de carte de crédit du client est plus élevée que d'habitude, tout en mettant en évidence les exigences de solde minimum et en suggérant des options de plan de paiement à proposer. Si le client appelle, l'agent peut non seulement répondre à une question immédiate, mais également offrir un soutien qui approfondit la relation et évite potentiellement un appel supplémentaire du client ultérieurement.",
         "Un modèle de service client basé sur l'IA consiste donc à aligner l'IA, la technologie et les données pour réinventer le service client. 🌟🔍💻"
       ]

@@ -1,6 +1,6 @@
 export const ThreeDModeling = {
   "en-GB": {
-  "title": "🌐💻 WebGL and 3D Modeling in Websites: Exploring New Dimensions 🚀🎨",
+  "title": "WebGL and 3D Modeling in Websites: Exploring New Dimensions",
   "src": "",
   "paragraphs": [
     {
@@ -62,7 +62,7 @@ export const ThreeDModeling = {
   ]
 },
 "fr-FR": {
-  "title": "🌐💻 WebGL et Modélisation 3D sur les Sites Web : Explorer de Nouvelles Dimensions 🚀🎨",
+  "title": "WebGL et Modélisation 3D sur les Sites Web : Explorer de Nouvelles Dimensions",
   "src": "",
   "paragraphs": [
     {

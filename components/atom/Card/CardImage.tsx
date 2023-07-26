@@ -7,7 +7,7 @@ import styles from './CardImage.module.scss';
 import { translations } from "../../../translations/translations";
 import LanguageContext from "../../../context/languageContext";
 
-export const CardImage = ({content}) => {
+export const CardImage = ({content, cta}) => {
     const {source, title, text, link, delay} = content;
     const { language } = useContext(LanguageContext);
     useEffect(() => {
@@ -28,13 +28,13 @@ export const CardImage = ({content}) => {
                 {text}
             </Card.Text>
             </Card.Body>
-            <Card.Footer className='pb-2'>
+            {cta!==false && <Card.Footer className='pb-2'>
                 <small className="text-muted">
                     <Link href={link}>
                         {translations[language].more}
                     </Link>
                 </small>
-            </Card.Footer>
+            </Card.Footer>}
         </Card>
     )
 }

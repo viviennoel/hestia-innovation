@@ -64,7 +64,7 @@ const contentCarousel = [
   {
     source: translations['en-GB'].automation.articlesCarousel[2].carouselImage.src,
     alt: translations[language].automation.articlesCarousel[2].carouselImage.alt,
-    link: '/articles/cisa-cyber-essentials',
+    link: '/articles/ai-customer-service',
     title: translations[language].automation.articlesCarousel[2].title,
     text: translations[language].automation.articlesCarousel[2].description
   }
@@ -234,7 +234,7 @@ return (
         imageSrc={translations['en-GB'].automation.bannerSection2Image.src}
         title={translations[language].automation.bannerSection2Title} 
         body={translations[language].automation.bannerSection2Description} 
-        link='/articles/'
+        link='/articles/ai-data-management'
         linkPlaceholder={translations[language].automation.bannerSection2Button}
         variation='light'
         textSide='right'

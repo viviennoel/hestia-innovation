@@ -7,7 +7,8 @@ export type BannerImageProps = {
 }
 
 export type HighLightsProps = {
-    content: HighlightsContent[]
+    content: HighlightsContent[],
+    cta?: boolean;
 }
 type HighlightsContent = {
     source:string,
@@ -38,7 +39,8 @@ export type BannerTextImageProps = {
     link: string,
     linkPlaceholder: string,
     variation?: 'dark' | 'light',
-    textSide?: 'left' | 'right'
+    textSide?: 'left' | 'right',
+    cta?: boolean
 }
 
 export type ButtonProps = {

@@ -1,6 +1,14 @@
+import { AICustomerService } from "./articles/AICustomerService";
 import { aiDataManagement } from "./articles/aiDataManagement";
 import { aiPoweredHealthcare } from "./articles/aiPoweredHealthcare";
+import { AutomationWideApplications } from "./articles/AutomationWideApplications";
 import { CISACyberEssentials } from "./articles/CISACyberEssentials";
+import { GreenIT } from "./articles/GreenIT";
+import { HumanRelationAndTechnology } from "./articles/HumanRelationAndTechnology";
+import { PixelPerfectTesting } from "./articles/PixelPerfectTesting";
+import { RealOpportunity } from "./articles/RealOpportunity";
+import { SituationAnalysisDecision } from "./articles/SituationAnalysisDecision";
+import { ThreeDModeling } from "./articles/ThreeDModeling";
 import { whatIsAutomation } from "./articles/whatIsAutomation";
 
 export const translations = {
@@ -18,16 +26,40 @@ export const translations = {
             contactTitle: 'Do you need more information?',
             contactLink: 'Contact us',
             slugs: [
-                "what-is-automation",
-                "ai-powered-healthcare",
+                "what-is-automation", // development
+                "ai-powered-healthcare", //ai
                 "ai-data-management",
-                "cisa-cyber-essentials"
+                "cisa-cyber-essentials", //development
+                "ai-customer-service", // ai
+                "automation-wide-application-for-business", // showcase
+                "green-it-opportunity-and-accessibility", // design
+                "human-relations-and-technology", // about
+                "pixel-perfect-testing-for-big-teams", // showcase
+                "technology-real-opportunity-for-business", // development
+                "situation-analysis-and-decisions", // showcase
+                "modeling-3D-immersive", // design
+                "why-Data-Driven-Development-is-a-game-changer", // TO BE WRITTEN -- development
+                "grow-business-with-automation",
+                "agile-north-star-metric", // TO BE WRITTEN -- showcase
             ]
         },
         "what-is-automation": whatIsAutomation["en-GB"],
         "ai-powered-healthcare": aiPoweredHealthcare["en-GB"],
         "ai-data-management": aiDataManagement["en-GB"],
         "cisa-cyber-essentials": CISACyberEssentials["en-GB"],
+
+        "ai-customer-service": AICustomerService["en-GB"],
+        "automation-wide-application-for-business": AutomationWideApplications["en-GB"],
+        "green-it-opportunity-and-accessibility": GreenIT["en-GB"],
+        "human-relations-and-technology": HumanRelationAndTechnology["en-GB"],
+        "pixel-perfect-testing-for-big-teams": PixelPerfectTesting["en-GB"],
+        "technology-real-opportunity-for-business": RealOpportunity["en-GB"],
+        "situation-analysis-and-decisions": SituationAnalysisDecision["en-GB"],
+        "modeling-3D-immersive": ThreeDModeling["en-GB"],
+
+        "why-Data-Driven-Development-is-a-game-changer": ThreeDModeling["en-GB"], // TO BE WRITTEN
+        "grow-business-with-automation": ThreeDModeling["en-GB"], // TO BE WRITTEN
+        "agile-north-star-metric": ThreeDModeling["en-GB"], // TO BE WRITTEN
         discover: "Discover Hestia",
         contact: "Contact us",
         more: 'Read more',
@@ -238,7 +270,7 @@ export const translations = {
             section5Title: "We Believe in Humans",
             bannerSection5Title: "Use Your Time Well, Automate Repetitive Tasks",
             bannerSection5Description: "Your skills matter. Automating repetitive tasks allows you to focus on what you do best and seize new opportunities for growth and innovation.",
-            bannerSection5Button: "Read the article",
+            bannerSection5Button: "Contact us",
             bannerSection5Image: {
             src: "https://res.cloudinary.com/djlwtz7qw/image/upload/c_scale,w_636/v1689947308/hestia/AdobeStock_190651191_xoygbj.webp",
             alt: ""
@@ -413,7 +445,7 @@ export const translations = {
             articlesCarousel: [
                 {
                     title: "AI-Powered Healthcare: Transforming Diagnosis, Treatment, and Patient Care",
-                    description: "Explore topics such as medical imaging analysis, predictive analytics, virtual healthcare assistants, and AI-driven drug discovery. It discusses how AI automation is improving diagnosis accuracy, treatment planning, patient monitoring, and overall healthcare outcomes."
+                    description: "Explore topics such as medical imaging analysis, predictive analytics, virtual healthcare assistants, and AI-driven drug discovery."
                     ,carouselImage: {
                     src: "https://res.cloudinary.com/djlwtz7qw/image/upload/c_scale,w_636/v1689929638/hestia/adobe7Compressed_tzamdw.webp",
                     alt: ""
@@ -427,7 +459,7 @@ export const translations = {
                 }},
                 {
                 title: "Unleashing the Power of AI in Customer Service: Redefining Customer Experience",
-                description: "Cover topics such as chatbots, virtual assistants, personalized recommendations, sentiment analysis, and AI-powered customer insights. It explores how these advancements enhance customer experience, streamline support processes, and drive customer satisfaction."
+                description: "Chatbots, virtual assistants, personalized recommendations, sentiment analysis, and AI-powered customer insights."
                 ,carouselImage: {
                 src: "https://res.cloudinary.com/djlwtz7qw/image/upload/c_scale,w_636/v1689929637/hestia/adobe8Compressed_swfngf.webp",
                 alt: ""
@@ -474,7 +506,7 @@ export const translations = {
             ],
 
             section4Title: "Contact Us",
-            bannerSection4Title: "Unlock the Power of Automation and AI",
+            bannerSection4Title: "We are here to help you!",
             bannerSection4Description: "Ready to embrace the potential of automation and AI in your business? Contact us today to discuss your unique requirements and discover how we can help you achieve your goals.",
             bannerSection4Button: "Schedule a Consultation",
             bannerSection4Image: {
@@ -501,6 +533,17 @@ export const translations = {
         "ai-powered-healthcare": aiPoweredHealthcare["fr-FR"],
         "ai-data-management": aiDataManagement["fr-FR"],
         "cisa-cyber-essentials": CISACyberEssentials["fr-FR"],
+        "ai-customer-service": AICustomerService["en-GB"],
+        "automation-wide-application-for-business": AutomationWideApplications["en-GB"],
+        "green-it-opportunity-and-accessibility": GreenIT["en-GB"],
+        "human-relations-and-technology": HumanRelationAndTechnology["en-GB"],
+        "pixel-perfect-testing-for-big-teams": PixelPerfectTesting["en-GB"],
+        "technology-real-opportunity-for-business": RealOpportunity["en-GB"],
+        "situation-analysis-and-decisions": SituationAnalysisDecision["en-GB"],
+        "modeling-3D-immersive": ThreeDModeling["en-GB"],
+        
+        "why-Data-Driven-Development-is-a-game-changer": ThreeDModeling["en-GB"], // TO BE WRITTEN
+        "grow-business-with-automation": ThreeDModeling["en-GB"], // TO BE WRITTEN
         discover: "Découvrez Hestia",
         contact: "Contactez-nous",
         more: 'Lire la suite',
@@ -714,7 +757,7 @@ export const translations = {
             section5Title: "Vous avez du talent",
             bannerSection5Title: "Utilisez votre temps à bon escient, automatisez les tâches répétitives",
             bannerSection5Description: "Vos compétences comptent. L'automatisation des tâches répétitives vous permet de vous concentrer sur ce que vous faites de mieux et de saisir de nouvelles opportunités de croissance et d'innovation.",
-            bannerSection5Button: "Lire l'article",
+            bannerSection5Button: "Contactez-nous",
             bannerSection5Image: {
                 src: "https://res.cloudinary.com/djlwtz7qw/image/upload/c_scale,w_636/v1689947308/hestia/AdobeStock_190651191_xoygbj.webp",
                 alt: ""
@@ -885,7 +928,7 @@ export const translations = {
             articlesCarousel: [
                 {
                     title: "Santé Alimentée par l'IA : Transformation du Diagnostic, du Traitement et des Soins aux Patients",
-                    description: "Explorez des sujets tels que l'analyse d'imagerie médicale, l'analyse prédictive, les assistants virtuels de soins de santé et la découverte de médicaments pilotée par l'IA. Il aborde la manière dont l'automatisation de l'IA améliore la précision du diagnostic, la planification du traitement, la surveillance des patients et les résultats globaux des soins de santé.",
+                    description: "Explorez des sujets tels que l'analyse d'imagerie médicale, l'analyse prédictive, les assistants virtuels de soins de santé et la découverte de médicaments pilotée par l'IA.",
                     carouselImage: {
                         src: "https://res.cloudinary.com/djlwtz7qw/image/upload/c_scale,w_636/v1689929638/hestia/adobe7Compressed_tzamdw.webp",
                         alt: ""
@@ -901,7 +944,7 @@ export const translations = {
                 },
                 {
                     title: "Libérer la Puissance de l'IA dans le Service Client : Redéfinir l'Expérience Client",
-                    description: "Abordez des sujets tels que les chatbots, les assistants virtuels, les recommandations personnalisées, l'analyse de sentiment et les informations clients alimentées par l'IA. Il explore comment ces avancées améliorent l'expérience client, rationalisent les processus de support et augmentent la satisfaction client.",
+                    description: "Abordez des sujets tels que les chatbots, les assistants virtuels, les recommandations personnalisées, l'analyse de sentiment et les informations clients alimentées par l'IA.",
                     carouselImage: {
                         src: "https://res.cloudinary.com/djlwtz7qw/image/upload/c_scale,w_636/v1689929637/hestia/adobe8Compressed_swfngf.webp",
                         alt: ""
@@ -951,7 +994,7 @@ export const translations = {
                 }
             ],
             section4Title: "Contactez-Nous",
-            bannerSection4Title: "Débloquez la Puissance de l'Automatisation et de l'IA",
+            bannerSection4Title: "Nous sommes là pour vous aider!",
             bannerSection4Description: "Prêt à embrasser le potentiel de l'automatisation et de l'IA dans votre entreprise ? Contactez-nous dès aujourd'hui pour discuter de vos besoins uniques et découvrir comment nous pouvons vous aider à atteindre vos objectifs.",
             bannerSection4Button: "Planifier une Consultation",
             bannerSection4Image: {
@@ -978,6 +1021,17 @@ export const translations = {
         "ai-powered-healthcare": aiPoweredHealthcare["en-SET"],
         "ai-data-management": aiDataManagement["en-SET"],
         "cisa-cyber-essentials": CISACyberEssentials["en-SET"],
+        "ai-customer-service": AICustomerService["en-GB"],
+        "automation-wide-application-for-business": AutomationWideApplications["en-GB"],
+        "green-it-opportunity-and-accessibility": GreenIT["en-GB"],
+        "human-relations-and-technology": HumanRelationAndTechnology["en-GB"],
+        "pixel-perfect-testing-for-big-teams": PixelPerfectTesting["en-GB"],
+        "technology-real-opportunity-for-business": RealOpportunity["en-GB"],
+        "situation-analysis-and-decisions": SituationAnalysisDecision["en-GB"],
+        "modeling-3D-immersive": ThreeDModeling["en-GB"],
+        
+        "why-Data-Driven-Development-is-a-game-changer": ThreeDModeling["en-GB"], // TO BE WRITTEN
+        "grow-business-with-automation": ThreeDModeling["en-GB"], // TO BE WRITTEN
         discover: "Discover Hestia",
         contact: "Contact us",
         more: 'Read more',

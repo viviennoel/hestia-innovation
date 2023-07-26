@@ -70,21 +70,21 @@ const Index = () => {
         {
             source: translations['en-GB'].development.articlesCarousel[0].carouselImage.src,
             alt: translations[language].development.articlesCarousel[0].carouselImage.alt,
-            link: '/string',
+            link: '/articles/why-Data-Driven-Development-is-a-game-changer',
             title: translations[language].development.articlesCarousel[0].title,
             text: translations[language].development.articlesCarousel[0].description
         },
         {            
             source: translations['en-GB'].development.articlesCarousel[1].carouselImage.src,
             alt: translations[language].development.articlesCarousel[1].carouselImage.alt,
-            link: '/string',
+            link: '/articles/cisa-cyber-essentials',
             title: translations[language].development.articlesCarousel[1].title,
             text: translations[language].development.articlesCarousel[1].description
         },
         {
             source: translations['en-GB'].development.articlesCarousel[2].carouselImage.src,
             alt: translations[language].development.articlesCarousel[2].carouselImage.alt,
-            link: '/string',
+            link: '/articles/what-is-automation',
             title: translations[language].development.articlesCarousel[2].title,
             text: translations[language].development.articlesCarousel[2].description
         }
@@ -101,14 +101,14 @@ const Index = () => {
             <Quote title={translations[language].development.quote} text={translations[language].development.quoteAuthor}></Quote>
             
             <Subtitle content={translations[language].development.section1Title} />
-            <Highlights content={contentHighlight}/>
+            <Highlights content={contentHighlight} cta={false}/>
             
             <Subtitle content={translations[language].development.section2Title} />
             <BannerTextImage
                 imageSrc={translations['en-GB'].development.bannerSection2Image.src}
                 title={translations[language].development.bannerSection2Title} 
                 body={translations[language].development.bannerSection2Description} 
-                link='/articles/'
+                link='/articles/technology-real-opportunity-for-business'
                 linkPlaceholder={translations[language].development.bannerSection2Button}
                 variation='light'
                 textSide='right'
@@ -125,7 +125,7 @@ const Index = () => {
                 imageSrc={translations['en-GB'].development.bannerSection5Image.src}
                 title={translations[language].development.bannerSection5Title} 
                 body={translations[language].development.bannerSection5Description} 
-                link='/articles/'
+                link='/contact'
                 linkPlaceholder={translations[language].development.bannerSection5Button}
             />
         </div>

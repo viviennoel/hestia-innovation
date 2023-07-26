@@ -1,6 +1,6 @@
 export const AutomationWideApplications = {
   "en-GB": {
-  "title": "🤖💻 The Power of Automation in Business 🤖💼",
+  "title": "The Power of Automation in Business",
   "src": "",
   "paragraphs": [
     {
@@ -62,7 +62,7 @@ export const AutomationWideApplications = {
   ]
 },
 "fr-FR": {
-  "title": "🤖💻 La Puissance de l'Automatisation en Entreprise 🤖💼",
+  "title": "La Puissance de l'Automatisation en Entreprise",
   "src": "",
   "paragraphs": [
     {

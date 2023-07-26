@@ -1,4 +1,4 @@
-const PixelPerfectTesting = {
+export const PixelPerfectTesting = {
   "en-GB": {
   "title": "Pixel Perfect Testing: Avoiding Regression in Big Teams",
   "src": "https://www.example.com",
@@ -71,9 +71,7 @@ const PixelPerfectTesting = {
       "body": [
         "In conclusion, Pixel Perfect Testing is a vital technique for big development teams seeking to maintain visual consistency and avoid regression issues. By ensuring that code changes do not negatively impact the application's visual appearance, teams can deliver a seamless and polished user experience.",
         "While there are challenges and complexities associated with Pixel Perfect Testing, the benefits it offers, such as improved collaboration, early bug detection, and enhanced user satisfaction, make it a valuable addition to the testing strategy.",
-        "As the field of software development continues to evolve, Pixel Perfect Testing presents exciting opportunities for growth, especially
-
- with the integration of AI, cloud-based testing, and cross-platform compatibility.",
+        "As the field of software development continues to evolve, Pixel Perfect Testing presents exciting opportunities for growth, especially with the integration of AI, cloud-based testing, and cross-platform compatibility.",
         "By leveraging the power of Pixel Perfect Testing and choosing the right tools for the job, big teams can elevate their software quality and deliver products that not only meet functional requirements but also delight users with their visually consistent and flawless interfaces. 🖥️🚀"
       ]
     }

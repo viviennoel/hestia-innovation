@@ -48,3 +48,9 @@
 .carousel{
     box-shadow: #121212c4 0px 0px 3px 0px;
 }
+
+.carouselWrap{
+    @include for-desktop-up {    
+        padding-right: 15vw;
+    }   
+}

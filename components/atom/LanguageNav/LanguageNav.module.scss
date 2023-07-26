@@ -15,6 +15,12 @@
     padding: 30px 0;
 }
 
+.item{
+    &:hover{
+        background-color: white;
+    }
+}
+
 .menu{
     height: 100vh;
     position: fixed !important;
@@ -32,7 +38,7 @@
         color: white;
 
         &:hover {
-            color: black;
+            color: rgb(209, 209, 209);
         }
     }
 }

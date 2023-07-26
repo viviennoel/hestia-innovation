@@ -1,5 +1,5 @@
-@import url(https://fonts.googleapis.com/css2?family=Marcellus+SC&family=Quicksand&family=Diphylleia&display=swap);
 @import "./customBootstrap.scss";
+@import './mixins.scss';
 
 h1, h2 {
     margin: unset;
@@ -13,3 +13,8 @@ h1, h2, h3 {
     font-family: 'Marcellus SC', serif;
 }
 
+p{
+    @include for-phone-only {
+        padding: 0 10px;
+    }
+}

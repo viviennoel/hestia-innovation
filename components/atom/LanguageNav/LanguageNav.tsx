@@ -51,10 +51,10 @@ export const LanguageNav = () => {
         <div className='d-flex justify-content-between'>
           <h2 className={`${styles.subsection} ms-3`}>{translations[language].languages}</h2>
         </div>
-        <Dropdown.Item onClick={()=>updateLanguage(Countries.FRANCE)} className='d-flex justify-content-between pb-2'>
+        <Dropdown.Item onClick={()=>updateLanguage(Countries.FRANCE)} className={`d-flex justify-content-between pb-2 ${styles.item}`}>
           <span className='me-5'>Français</span> <img width="30" height="30" src={`https://img.icons8.com/color/48/${Countries.FRANCE}.png`} alt={country}/>
         </Dropdown.Item>
-        <Dropdown.Item onClick={()=>updateLanguage(Countries.GREAT_BRITAIN)} className='d-flex justify-content-between pb-2'>
+        <Dropdown.Item onClick={()=>updateLanguage(Countries.GREAT_BRITAIN)} className={`d-flex justify-content-between pb-2 ${styles.item}`}>
           <span className='me-5'>English</span> <img width="30" height="30" src={`https://img.icons8.com/color/48/${Countries.GREAT_BRITAIN}.png`} alt={country}/>
         </Dropdown.Item>
       </Dropdown.Menu>

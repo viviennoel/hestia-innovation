@@ -58,22 +58,22 @@ const Contact = () => {
                 <Container className='mb-5'>
                     <Form  onSubmit={handleSubmit} >
                         <Form.Group className="mb-3" controlId="exampleForm.ControlInput1">
-                            <Form.Label>Votre email</Form.Label>
+                            <Form.Label>{translations[language].contact.email}</Form.Label>
                             <Form.Control type="email" placeholder="name@example.com"  name="email" value={formData.email} onChange={handleChange} />
                         </Form.Group>
                         <Form.Group className="mb-3" controlId="exampleForm.ControlTextarea1">
-                            <Form.Label>Your message</Form.Label>
+                            <Form.Label>{translations[language].contact.message}</Form.Label>
                             <Form.Control as="textarea" rows={3}  name="message" value={formData.message} onChange={handleChange} />
                         </Form.Group>
                         {/* <Form.Group className="mb-3" controlId="formBasicCheckbox">
                             <Form.Check type="checkbox" required label="I accept the general conditions of use" />
                         </Form.Group> */}
                         <Button variant="dark" type="submit">
-                            Submit
+                            {translations[language].contact.send}
                         </Button>
-                        {status === 'loading' && <p>Analysing message</p>}
-                        {status === 'success' && <p>Success !</p>}
-                        {status === 'error' && <p>error !</p>}
+                        {status === 'loading' && <p>{translations[language].contact.analysing}</p>}
+                        {status === 'success' && <p>{translations[language].contact.valid}</p>}
+                        {status === 'error' && <p>{translations[language].contact.error}</p>}
                     </Form>
                 </Container>
             </div>

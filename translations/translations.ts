@@ -13,6 +13,14 @@ import { whatIsAutomation } from "./articles/whatIsAutomation";
 
 export const translations = {
     'en-GB': {
+        contact: {
+            email: 'Your email',
+            message: 'Your message',
+            submit: 'send',
+            analysing: 'analysing your message',
+            valid: 'Your message have been sent successfully',
+            error: 'There was an error sending your messge. Please try again later',
+        },
         seo:{
             title: 'Hestia Innovation | Expert Web Development and Automation Solutions',
             description: "At Hestia Innovation, we offer top-notch web development and automation solutions to elevate your online presence. Our expert consultants ensure seamless functionality and efficiency for your business. Contact us for cutting-edge technology and personalized strategies.",
@@ -516,6 +524,14 @@ export const translations = {
             }
     },
     'fr-FR': {
+        contact: {
+            email: 'Votre adresse e-mail',
+            message: 'Votre message',
+            submit: 'Envoyer',
+            analysing: 'Analyse de votre message en cours',
+            valid: 'Votre message a été envoyé avec succès',
+            error: "Une erreur est survenue lors de l'envoi de votre message. Veuillez réessayer ultérieurement",
+        },
         seo:{
             title: 'Hestia Innovation | Expert Web Development and Automation Solutions',
             description: "At Hestia Innovation, we offer top-notch web development and automation solutions to elevate your online presence. Our expert consultants ensure seamless functionality and efficiency for your business. Contact us for cutting-edge technology and personalized strategies.",
@@ -628,7 +644,7 @@ export const translations = {
             section4Title: "Utilisateurs, leadership et technologie",
             bannerSection4Title: "Transformer les idées en solutions",
             bannerSection4Description: "Grâce à notre expertise technique approfondie et à notre état d'esprit novateur, nous excellons dans la traduction de concepts complexes en solutions conviviales et évolutives. Partenairez avec nous pour donner vie à votre vision.",
-            bannerSection4Button: "Entrer en contact",
+            bannerSection4Button: "Notre vitrine",
             bannerSection4Image: {
                 src: "https://res.cloudinary.com/djlwtz7qw/image/upload/c_scale,w_636/v1689947307/hestia/AdobeStock_254846475_butasd.webp",
                 alt: ""
@@ -1004,6 +1020,14 @@ export const translations = {
         }    
     },
     'en-SET': {
+        contact: {
+            email: '',
+            message: '',
+            submit: '',
+            analysing: '',
+            valid: '',
+            error: "",
+        },
         seo:{
             title: 'Hestia Innovation | Expert Web Development and Automation Solutions',
             description: "At Hestia Innovation, we offer top-notch web development and automation solutions to elevate your online presence. Our expert consultants ensure seamless functionality and efficiency for your business. Contact us for cutting-edge technology and personalized strategies.",
@@ -1122,7 +1146,7 @@ export const translations = {
             section4Title: "Users, Leadership and Technology",
             bannerSection4Title: "Transforming Ideas into Solutions",
             bannerSection4Description: "With our deep technical expertise and innovative mindset, we excel at translating complex concepts into user-friendly and scalable solutions. Partner with us to bring your vision to life.",
-            bannerSection4Button: "Get in touch",
+            bannerSection4Button: "Our showcase",
             bannerSection4Image: {
             src: "https://res.cloudinary.com/djlwtz7qw/image/upload/c_scale,w_636/v1689947307/hestia/AdobeStock_254846475_butasd.webp",
             alt: ""

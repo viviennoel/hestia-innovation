@@ -15,9 +15,11 @@ export const ArticlePage = ({article}:{article?:string}) => {
     const [articleQuery, setArticle] = useState(undefined);
 
     useEffect(()=> {
+        console.log('article', article)
         if(typeof window !== undefined && article === undefined){
             const urlParams = new URLSearchParams(window.location.search);
             const urlParamsArticle = urlParams.get('article');
+            console.log('urlParamsArticle', urlParamsArticle)
             setArticle(urlParamsArticle);
         }
 
@@ -30,6 +32,7 @@ export const ArticlePage = ({article}:{article?:string}) => {
 
     return(
         <div className={styles.wrapper}>
+            <p>{articleQuery}</p>
             { articleQuery && <div>
                 <BannerImage 
                 size='medium'

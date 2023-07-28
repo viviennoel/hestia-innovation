@@ -6,13 +6,21 @@ import {Subtitle} from './../../atom/Subtitle/Subtitle';
 import Container from 'react-bootstrap/Container';
 import {AnimatedText} from './../../atom/AnimatedText/AnimatedText';
 import { translations } from '../../../translations/translations';
-import { useContext, useEffect } from 'react';
+import { useContext, useEffect, useState } from 'react';
 import LanguageContext from '../../../context/languageContext';
 import styles from './ArticlePage.module.scss';
 
-export const ArticlePage = ({article}: {article:string}) => {
+export const ArticlePage = () => {
     const { language } = useContext(LanguageContext);
-    console.log(translations[language][article])
+    const [article, setArticle] = useState(undefined);
+
+    useEffect(()=> {
+        if(typeof window !== undefined){
+            const urlParams = new URLSearchParams(window.location.search);
+            const article = urlParams.get('article');
+            setArticle(article);
+        }
+    }, [])
     
     useEffect(() => {
         AOS.init();
@@ -20,7 +28,7 @@ export const ArticlePage = ({article}: {article:string}) => {
 
     return(
         <div className={styles.wrapper}>
-            {article && <div>
+            { article && <div>
                 <BannerImage 
                 size='medium'
                 background={translations['en-GB'][article].src}

@@ -36,7 +36,7 @@ const About = () => {
                 imageSrc={translations['en-GB'].about.bannerSection1Image.src}
                 title={translations[language].about.bannerSection1Title} 
                 body={translations[language].about.bannerSection1Description} 
-                link='/articles/' 
+                link='/articles?article=' 
                 linkPlaceholder={translations[language].about.bannerSection1Button}
                 variation='light'
                 textSide='right'
@@ -64,7 +64,7 @@ const About = () => {
                 imageSrc={translations['en-GB'].about.bannerSection2Image.src}
                 title={translations[language].about.bannerSection2Title} 
                 body={translations[language].about.bannerSection2Description} 
-                link='/articles/human-relations-and-technology'
+                link='/articles?article=human-relations-and-technology'
                 linkPlaceholder={translations[language].about.bannerSection2Button}
                 textSide='left'
                 variation='light'

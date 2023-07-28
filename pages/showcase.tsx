@@ -40,21 +40,21 @@ const Showcase = () => {
             source: translations['en-GB'].showcase.highlights[0].highlightsImage.src,
             title: translations[language].showcase.highlights[0].title,
             text: translations[language].showcase.highlights[0].description,
-            link:'/articles/automation-wide-application-for-business',
+            link:'/articles?article=automation-wide-application-for-business',
             delay:'0'
         },
         {
             source: translations['en-GB'].showcase.highlights[1].highlightsImage.src,
             title: translations[language].showcase.highlights[1].title,
             text: translations[language].showcase.highlights[1].description,
-            link:'/articles/pixel-perfect-testing-for-big-teams',
+            link:'/articles?article=pixel-perfect-testing-for-big-teams',
             delay:'300'
         },
         {
             source: translations['en-GB'].showcase.highlights[2].highlightsImage.src,
             title: translations[language].showcase.highlights[2].title,
             text: translations[language].showcase.highlights[2].description,
-            link:'/articles/agile-north-star-metric',
+            link:'/articles?article=agile-north-star-metric',
             delay:'600'
         }
     ]
@@ -76,7 +76,7 @@ const Showcase = () => {
                 imageSrc={translations['en-GB'].showcase.bannerSection2Image.src}
                 title={translations[language].showcase.bannerSection2Title} 
                 body={translations[language].showcase.bannerSection2Description} 
-                link='/articles/situation-analysis-and-decisions'
+                link='/articles?article=situation-analysis-and-decisions'
                 linkPlaceholder={translations[language].showcase.bannerSection2Button}
                 variation='light'
                 textSide='right'

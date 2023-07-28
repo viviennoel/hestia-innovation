@@ -70,21 +70,21 @@ const Index = () => {
         {
             source: translations['en-GB'].development.articlesCarousel[0].carouselImage.src,
             alt: translations[language].development.articlesCarousel[0].carouselImage.alt,
-            link: '/articles/why-Data-Driven-Development-is-a-game-changer',
+            link: '/articles?article=why-Data-Driven-Development-is-a-game-changer',
             title: translations[language].development.articlesCarousel[0].title,
             text: translations[language].development.articlesCarousel[0].description
         },
         {            
             source: translations['en-GB'].development.articlesCarousel[1].carouselImage.src,
             alt: translations[language].development.articlesCarousel[1].carouselImage.alt,
-            link: '/articles/cisa-cyber-essentials',
+            link: '/articles?article=cisa-cyber-essentials',
             title: translations[language].development.articlesCarousel[1].title,
             text: translations[language].development.articlesCarousel[1].description
         },
         {
             source: translations['en-GB'].development.articlesCarousel[2].carouselImage.src,
             alt: translations[language].development.articlesCarousel[2].carouselImage.alt,
-            link: '/articles/what-is-automation',
+            link: '/articles?article=what-is-automation',
             title: translations[language].development.articlesCarousel[2].title,
             text: translations[language].development.articlesCarousel[2].description
         }
@@ -108,7 +108,7 @@ const Index = () => {
                 imageSrc={translations['en-GB'].development.bannerSection2Image.src}
                 title={translations[language].development.bannerSection2Title} 
                 body={translations[language].development.bannerSection2Description} 
-                link='/articles/technology-real-opportunity-for-business'
+                link='/articles?article=technology-real-opportunity-for-business'
                 linkPlaceholder={translations[language].development.bannerSection2Button}
                 variation='light'
                 textSide='right'

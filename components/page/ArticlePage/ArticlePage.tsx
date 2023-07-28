@@ -21,9 +21,9 @@ export const ArticlePage = ({article}:{article?:string}) => {
             const urlParamsArticle = urlParams.get('article');
             console.log('urlParamsArticle', urlParamsArticle)
             setArticle(urlParamsArticle);
+        } else{
+            setArticle(article);
         }
-
-        setArticle(article);
     }, [])
     
     useEffect(() => {

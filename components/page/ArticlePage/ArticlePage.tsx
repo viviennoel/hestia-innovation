@@ -15,7 +15,6 @@ export const ArticlePage = ({article}:{article?:string}) => {
     const [articleQuery, setArticle] = useState(undefined);
 
     useEffect(()=> {
-        console.log('article', article)
         if(typeof window !== undefined && article === undefined){
             const urlParams = new URLSearchParams(window.location.search);
             const urlParamsArticle = urlParams.get('article');
@@ -36,11 +35,11 @@ export const ArticlePage = ({article}:{article?:string}) => {
             { articleQuery && <div>
                 <BannerImage 
                 size='medium'
-                background={translations['en-GB'][article].src}
+                background={translations['en-GB'][articleQuery].src}
             >
-                 <AnimatedText words={translations[language][article].title} />
+                 <AnimatedText words={translations[language][articleQuery].title} />
             </BannerImage>
-            {translations[language][article].paragraphs.map(paragraph => 
+            {translations[language][articleQuery].paragraphs.map(paragraph => 
                 <section key={paragraph.title}>
                     <Container className={styles.container}>
                         <h2 className='mb-5' data-aos="fade"

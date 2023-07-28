@@ -103,6 +103,7 @@ export const translations = {
             design: 'Design',
             automation: 'IA & Automation',
             contact: 'Contact',
+            legal: 'Legal'
         },
         footer:{
             title: 'Hestia Innovation',
@@ -589,6 +590,7 @@ export const translations = {
             design: 'Conception',
             automation: 'IA et Automatisation',
             contact: 'Contact',
+            legal: 'Legal'
         },
         footer: {
             title: 'Hestia Innovation',
@@ -1091,6 +1093,7 @@ export const translations = {
             design: 'Design',
             automation: 'IA & Automation',
             contact: 'Contact',
+            legal: 'Legal'
         },
         footer:{
             title: 'Hestia Innovation',

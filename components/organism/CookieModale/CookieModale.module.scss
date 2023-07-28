@@ -1,5 +1,9 @@
 @use './../../../styles/variables.scss';
 
+body:has(.modaleDisplayed) {
+    position: fixed;
+}
+
 .mask{
     position: fixed;
     height: 100vh;

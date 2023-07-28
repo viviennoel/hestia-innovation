@@ -6,8 +6,6 @@ import { Footer } from '../components/organism/Footer';
 import { useRouter } from 'next/router';
 import { CookieModale } from '../components/organism/CookieModale/CookieModale';
 import { Kurale } from 'next/font/google';
-import { Head } from "next/document";
-import { translations } from '../translations/translations';
 
 const kurale = Kurale({ weight: "400", subsets: ["latin"]})
 

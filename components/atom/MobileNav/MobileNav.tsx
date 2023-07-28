@@ -43,6 +43,9 @@ export const MobileNav = () => {
         <Dropdown.Item className='pb-4' href="/contact">
           {translations[language].contact.title}
         </Dropdown.Item>
+        <Dropdown.Item className='pb-4' href="/legal">
+          {translations[language].header.legal}
+        </Dropdown.Item>
       </Dropdown.Menu>
     </Dropdown>
     )

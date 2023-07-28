@@ -7,14 +7,8 @@ import Error from "next/error";
 
 export const Articles = () => {
     const router = useRouter()
-    console.log(router.query.slug);
-    if(!translations['en-GB'].articles.slugs.includes(router.query.slug as string) && router.query.slug !== undefined){
-        console.log(!translations['en-GB'].articles.slugs.includes(router.query.slug as string) && router.query.slug !== undefined)
-        console.log(!translations['en-GB'].articles.slugs.includes(router.query.slug as string))
-        console.log(router.query.slug !== undefined)
-        return <Error statusCode={404} title="page Not Found" />
-    }
 
+    console.log(router.query.slug);
     return <ArticlePage article={router.query.slug as string} />
 }
 

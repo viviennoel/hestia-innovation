@@ -1,8 +1,10 @@
+import { AgileNorthStar } from "./articles/AgileNorthStar";
 import { AICustomerService } from "./articles/AICustomerService";
 import { aiDataManagement } from "./articles/aiDataManagement";
 import { aiPoweredHealthcare } from "./articles/aiPoweredHealthcare";
 import { AutomationWideApplications } from "./articles/AutomationWideApplications";
 import { CISACyberEssentials } from "./articles/CISACyberEssentials";
+import { DataDrivenDevGameChanger } from "./articles/DataDrivenDevGameChanger";
 import { GreenIT } from "./articles/GreenIT";
 import { HumanRelationAndTechnology } from "./articles/HumanRelationAndTechnology";
 import { PixelPerfectTesting } from "./articles/PixelPerfectTesting";
@@ -10,13 +12,15 @@ import { RealOpportunity } from "./articles/RealOpportunity";
 import { SituationAnalysisDecision } from "./articles/SituationAnalysisDecision";
 import { ThreeDModeling } from "./articles/ThreeDModeling";
 import { whatIsAutomation } from "./articles/whatIsAutomation";
+import { PrivacyPolicy } from "./legal/PrivacyPolicy";
 
 export const translations = {
     'en-GB': {
         contact: {
+            title: 'Contact us',
             email: 'Your email',
             message: 'Your message',
-            submit: 'send',
+            submit: 'Send the message',
             analysing: 'analysing your message',
             valid: 'Your message have been sent successfully',
             error: 'There was an error sending your messge. Please try again later',
@@ -47,7 +51,6 @@ export const translations = {
                 "situation-analysis-and-decisions", // showcase
                 "modeling-3D-immersive", // design
                 "why-Data-Driven-Development-is-a-game-changer", // TO BE WRITTEN -- development
-                "grow-business-with-automation",
                 "agile-north-star-metric", // TO BE WRITTEN -- showcase
             ]
         },
@@ -55,7 +58,6 @@ export const translations = {
         "ai-powered-healthcare": aiPoweredHealthcare["en-GB"],
         "ai-data-management": aiDataManagement["en-GB"],
         "cisa-cyber-essentials": CISACyberEssentials["en-GB"],
-
         "ai-customer-service": AICustomerService["en-GB"],
         "automation-wide-application-for-business": AutomationWideApplications["en-GB"],
         "green-it-opportunity-and-accessibility": GreenIT["en-GB"],
@@ -64,12 +66,10 @@ export const translations = {
         "technology-real-opportunity-for-business": RealOpportunity["en-GB"],
         "situation-analysis-and-decisions": SituationAnalysisDecision["en-GB"],
         "modeling-3D-immersive": ThreeDModeling["en-GB"],
-
-        "why-Data-Driven-Development-is-a-game-changer": ThreeDModeling["en-GB"], // TO BE WRITTEN
-        "grow-business-with-automation": ThreeDModeling["en-GB"], // TO BE WRITTEN
-        "agile-north-star-metric": ThreeDModeling["en-GB"], // TO BE WRITTEN
+        "why-Data-Driven-Development-is-a-game-changer": DataDrivenDevGameChanger["en-GB"], // TO BE WRITTEN
+        "agile-north-star-metric": AgileNorthStar["en-GB"], // TO BE WRITTEN
+        "legal": PrivacyPolicy["en-GB"],
         discover: "Discover Hestia",
-        contact: "Contact us",
         more: 'Read more',
         titleGoodPractices: "Best practices",
         titleAI: "Artificial Intelligence",
@@ -158,7 +158,7 @@ export const translations = {
             section4Title: "Users, Leadership and Technology",
             bannerSection4Title: "Transforming Ideas into Solutions",
             bannerSection4Description: "With our deep technical expertise and innovative mindset, we excel at translating complex concepts into user-friendly and scalable solutions. Partner with us to bring your vision to life.",
-            bannerSection4Button: "Get in touch",
+            bannerSection4Button: "Visit our showcase",
             bannerSection4Image: {
             src: "https://res.cloudinary.com/djlwtz7qw/image/upload/c_scale,w_636/v1689947307/hestia/AdobeStock_254846475_butasd.webp",
             alt: ""
@@ -525,6 +525,7 @@ export const translations = {
     },
     'fr-FR': {
         contact: {
+            title: "Contactez-nous",
             email: 'Votre adresse e-mail',
             message: 'Votre message',
             submit: 'Envoyer',
@@ -549,19 +550,18 @@ export const translations = {
         "ai-powered-healthcare": aiPoweredHealthcare["fr-FR"],
         "ai-data-management": aiDataManagement["fr-FR"],
         "cisa-cyber-essentials": CISACyberEssentials["fr-FR"],
-        "ai-customer-service": AICustomerService["en-GB"],
-        "automation-wide-application-for-business": AutomationWideApplications["en-GB"],
-        "green-it-opportunity-and-accessibility": GreenIT["en-GB"],
-        "human-relations-and-technology": HumanRelationAndTechnology["en-GB"],
-        "pixel-perfect-testing-for-big-teams": PixelPerfectTesting["en-GB"],
-        "technology-real-opportunity-for-business": RealOpportunity["en-GB"],
-        "situation-analysis-and-decisions": SituationAnalysisDecision["en-GB"],
-        "modeling-3D-immersive": ThreeDModeling["en-GB"],
-        
-        "why-Data-Driven-Development-is-a-game-changer": ThreeDModeling["en-GB"], // TO BE WRITTEN
-        "grow-business-with-automation": ThreeDModeling["en-GB"], // TO BE WRITTEN
+        "ai-customer-service": AICustomerService["fr-FR"],
+        "automation-wide-application-for-business": AutomationWideApplications["fr-FR"],
+        "green-it-opportunity-and-accessibility": GreenIT["fr-FR"],
+        "human-relations-and-technology": HumanRelationAndTechnology["fr-FR"],
+        "pixel-perfect-testing-for-big-teams": PixelPerfectTesting["fr-FR"],
+        "technology-real-opportunity-for-business": RealOpportunity["fr-FR"],
+        "situation-analysis-and-decisions": SituationAnalysisDecision["fr-FR"],
+        "modeling-3D-immersive": ThreeDModeling["fr-FR"],
+        "why-Data-Driven-Development-is-a-game-changer": DataDrivenDevGameChanger["fr-FR"], // TO BE WRITTEN
+        "agile-north-star-metric": AgileNorthStar["fr-FR"], // TO BE WRITTEN
+        "legal": PrivacyPolicy["fr-FR"],
         discover: "Découvrez Hestia",
-        contact: "Contactez-nous",
         more: 'Lire la suite',
         home: {
             titlePresentation: 'Webmasters',
@@ -1021,6 +1021,7 @@ export const translations = {
     },
     'en-SET': {
         contact: {
+            title: '',
             email: '',
             message: '',
             submit: '',
@@ -1045,19 +1046,18 @@ export const translations = {
         "ai-powered-healthcare": aiPoweredHealthcare["en-SET"],
         "ai-data-management": aiDataManagement["en-SET"],
         "cisa-cyber-essentials": CISACyberEssentials["en-SET"],
-        "ai-customer-service": AICustomerService["en-GB"],
-        "automation-wide-application-for-business": AutomationWideApplications["en-GB"],
-        "green-it-opportunity-and-accessibility": GreenIT["en-GB"],
-        "human-relations-and-technology": HumanRelationAndTechnology["en-GB"],
-        "pixel-perfect-testing-for-big-teams": PixelPerfectTesting["en-GB"],
-        "technology-real-opportunity-for-business": RealOpportunity["en-GB"],
-        "situation-analysis-and-decisions": SituationAnalysisDecision["en-GB"],
-        "modeling-3D-immersive": ThreeDModeling["en-GB"],
-        
-        "why-Data-Driven-Development-is-a-game-changer": ThreeDModeling["en-GB"], // TO BE WRITTEN
-        "grow-business-with-automation": ThreeDModeling["en-GB"], // TO BE WRITTEN
+        "ai-customer-service": AICustomerService["en-SET"],
+        "automation-wide-application-for-business": AutomationWideApplications["en-SET"],
+        "green-it-opportunity-and-accessibility": GreenIT["en-SET"],
+        "human-relations-and-technology": HumanRelationAndTechnology["en-SET"],
+        "pixel-perfect-testing-for-big-teams": PixelPerfectTesting["en-SET"],
+        "technology-real-opportunity-for-business": RealOpportunity["en-SET"],
+        "situation-analysis-and-decisions": SituationAnalysisDecision["en-SET"],
+        "modeling-3D-immersive": ThreeDModeling["en-SET"],
+        "legal": PrivacyPolicy["en-SET"],
+        "why-Data-Driven-Development-is-a-game-changer": ThreeDModeling["en-SET"], // TO BE WRITTEN
+        "grow-business-with-automation": ThreeDModeling["en-SET"], // TO BE WRITTEN
         discover: "Discover Hestia",
-        contact: "Contact us",
         more: 'Read more',
         titleGoodPractices: "Best practices",
         titleAI: "Artificial Intelligence",

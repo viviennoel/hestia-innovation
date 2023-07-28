@@ -51,7 +51,7 @@ const Contact = () => {
                 size='medium'
                 background='https://res.cloudinary.com/djlwtz7qw/image/upload/v1684920923/cld-sample-2.jpg'
             >
-                <AnimatedText words={translations[language].titleGoodPractices} />
+                <AnimatedText words={translations[language].contact.title} />
             </BannerImage>
             <div className='mb-5'>
                 <Subtitle content={translations[language].showcase.discoverArticles} />
@@ -69,7 +69,7 @@ const Contact = () => {
                             <Form.Check type="checkbox" required label="I accept the general conditions of use" />
                         </Form.Group> */}
                         <Button variant="dark" type="submit">
-                            {translations[language].contact.send}
+                            {translations[language].contact.submit}
                         </Button>
                         {status === 'loading' && <p>{translations[language].contact.analysing}</p>}
                         {status === 'success' && <p>{translations[language].contact.valid}</p>}

@@ -29,7 +29,12 @@ export const CookieModale = () => {
     }
     
     return(
-        <div className={`${styles.mask} ${cookies === null ? 'd-flex' : 'd-none'}`}>
+        <div className={`${styles.mask} ${cookies === null ? 'd-flex' : 'd-none'}`} 
+            data-aos="fade-down"
+            data-aos-anchor-placement="top-bottom"
+            data-aos-delay="200"
+            data-aos-duration="1000"
+        >
             <div className='px-2 d-flex m-auto'>
                 <div className={styles.modale}>
                     <div className={styles.language}>

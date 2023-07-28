@@ -14,7 +14,7 @@ export const RedirectionHomepage = () => {
                 <ButtonCustom variation='dark'><Link href='/showcase'>{translations[language].discover}</Link></ButtonCustom>
             </div>
             <div>
-                <ButtonCustom variation='dark'><Link href='/contact'>{translations[language].contact}</Link></ButtonCustom>
+                <ButtonCustom variation='dark'><Link href='/contact'>{translations[language].contact.title}</Link></ButtonCustom>
             </div>
         </div>
     )

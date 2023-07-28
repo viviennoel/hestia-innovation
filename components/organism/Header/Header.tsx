@@ -22,7 +22,7 @@ export const Header = () => {
                     <MobileNav />
                     {!isHomepage && <h2
                         className={`${styles.logo} my-auto`}
-                        ><Link href='/'>Hestia</Link></h2>}
+                        ><Link href='/'>HESTIA</Link></h2>}
                     <LanguageNav />
                 </div>
 
@@ -35,7 +35,7 @@ export const Header = () => {
                         <Link href="/development">{translations[language].header.dev}</Link>
                         <Link href="/designs">{translations[language].header.design}</Link>
                         <Link href="/ai">{translations[language].header.automation}</Link>
-                        <Link href="/contact">{translations[language].header.contact}</Link>
+                        <Link href="/contact">{translations[language].contact.title}</Link>
                     </div>
                     <div className='d-flex'>
                         <LanguageNav />

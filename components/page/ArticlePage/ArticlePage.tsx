@@ -12,6 +12,7 @@ import styles from './ArticlePage.module.scss';
 
 export const ArticlePage = ({article}: {article:string}) => {
     const { language } = useContext(LanguageContext);
+    console.log(translations[language][article])
     
     useEffect(() => {
         AOS.init();
@@ -29,15 +30,15 @@ export const ArticlePage = ({article}: {article:string}) => {
             {translations[language][article].paragraphs.map(paragraph => 
                 <section key={paragraph.title}>
                     <Container className={styles.container}>
-                        <h2 className='mb-5' data-aos="fade-left"
+                        <h2 className='mb-5' data-aos="fade"
                                     data-aos-anchor-placement="top-bottom"
-                                    data-aos-duration="1000">{paragraph.title}</h2>
+                                    data-aos-duration="1000" data-aos-delay="300">{paragraph.title}</h2>
                         {paragraph.body.map((bodyPart, index) => {
                             return (
                                 bodyPart.split('ubtitle: ').length > 1 ? 
-                                    <h3 className={styles.subtitle} key={index}  data-aos="fade-right"
+                                    <h3 className={styles.subtitle} key={index}  data-aos="fade"
                                         data-aos-anchor-placement="top-bottom"
-                                        data-aos-duration="1000"
+                                        data-aos-duration="1000" data-aos-delay="300"
                                     >
                                         {bodyPart.split('Subtitle: ')[1]}
                                     </h3>

@@ -1,12 +1,13 @@
 import { Header } from '../components/organism/Header'
 import "../styles/globals.scss";
 import React, { useEffect, useState } from "react";
-import { Suspense } from 'react';
 import LanguageContext from "../context/languageContext";
 import { Footer } from '../components/organism/Footer';
 import { useRouter } from 'next/router';
 import { CookieModale } from '../components/organism/CookieModale/CookieModale';
 import { Kurale } from 'next/font/google';
+import { Head } from "next/document";
+import { translations } from '../translations/translations';
 
 const kurale = Kurale({ weight: "400", subsets: ["latin"]})
 
@@ -14,7 +15,7 @@ export default function App({ Component, pageProps }) {
   const [language, setLanguage] = useState<string>("en-SET");
   const router = useRouter()
   const isHomepage = router.pathname === '/';
-  const isCookieSettings = router.pathname === '/legal/cookie-settings';
+  const isCookieSettings = router.pathname === '/legal';
 
   const getNavigatorLanguage = () => {
     if(navigator.language === 'en-GB' || navigator.language === 'fr-FR'){

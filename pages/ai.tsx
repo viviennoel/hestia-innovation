@@ -248,7 +248,7 @@ return (
         imageSrc={translations['en-GB'].automation.bannerSection4Image.src}
         title={translations[language].automation.bannerSection4Title} 
         body={translations[language].automation.bannerSection4Description} 
-        link='/articles/'
+        link='/contact'
         linkPlaceholder={translations[language].automation.bannerSection4Button}
         variation='light'
         textSide='right'

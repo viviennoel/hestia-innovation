@@ -10,16 +10,18 @@ import { useContext, useEffect, useState } from 'react';
 import LanguageContext from '../../../context/languageContext';
 import styles from './ArticlePage.module.scss';
 
-export const ArticlePage = () => {
+export const ArticlePage = ({article}:{article?:string}) => {
     const { language } = useContext(LanguageContext);
-    const [article, setArticle] = useState(undefined);
+    const [articleQuery, setArticle] = useState(undefined);
 
     useEffect(()=> {
-        if(typeof window !== undefined){
+        if(typeof window !== undefined && article === undefined){
             const urlParams = new URLSearchParams(window.location.search);
-            const article = urlParams.get('article');
-            setArticle(article);
+            const urlParamsArticle = urlParams.get('article');
+            setArticle(urlParamsArticle);
         }
+
+        setArticle(article);
     }, [])
     
     useEffect(() => {
@@ -28,7 +30,7 @@ export const ArticlePage = () => {
 
     return(
         <div className={styles.wrapper}>
-            { article && <div>
+            { articleQuery && <div>
                 <BannerImage 
                 size='medium'
                 background={translations['en-GB'][article].src}

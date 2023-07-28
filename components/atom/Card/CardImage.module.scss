@@ -1,3 +1,5 @@
+@import '../../../styles/mixins.scss';
+
 .card{
     height: 100%;
     border-radius: 0;
@@ -6,5 +8,11 @@
 
     p {
         color: #6b7075;
+    }
+}
+
+.image{
+    @include for-phone-only {
+        height: 100%;
     }
 }

@@ -8,7 +8,7 @@ import Error from "next/error";
 export const Articles = () => {
     const router = useRouter()
 
-    console.log(router.query.slug);
+    console.log('router', router.query.slug);
     return <ArticlePage article={router.query.slug as string} />
 }
 

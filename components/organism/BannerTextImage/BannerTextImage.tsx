@@ -3,7 +3,7 @@ import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import styles from './BannerTextImage.module.scss'
 import { BannerTextImageProps } from '../../../types/componentProps';
-import Button from 'react-bootstrap/Button';
+import Link from 'next/link';
 
 export const BannerTextImage = ({imageSrc, title, body, link, linkPlaceholder, variation, textSide, cta}: BannerTextImageProps) => {
     const isVisibleButton = linkPlaceholder && link && cta !== false;
@@ -32,9 +32,9 @@ export const BannerTextImage = ({imageSrc, title, body, link, linkPlaceholder, v
 
                         <p className={`pb-md-3 ${styles.body}`}>{body}</p>
                         {isVisibleButton && 
-                            <Button href={link} className={`${styles.button} my-5`} >
+                            <Link href={link} className={`${styles.button} my-5`} >
                                 {linkPlaceholder}
-                            </Button>}
+                            </Link>}
                     </Col>
                     {textSide !== 'right' &&
                     <Col md className={`${!isTextRight ? 'pt-3 pt-md-0' : ''} d-none d-md-block`}>

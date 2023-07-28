@@ -78,7 +78,7 @@ const Designs = () => {
             imageSrc={translations['en-GB'].designs.bannerSection3Image.src} 
             title={translations[language].designs.bannerSection3Title} 
             body={translations[language].designs.bannerSection3Description} 
-            link='https://www.cypress.io/app/'
+            link='/articles/pixel-perfect-testing-for-big-teams'
             linkPlaceholder={translations[language].designs.bannerSection3Button}
             variation='light'
             textSide='left'

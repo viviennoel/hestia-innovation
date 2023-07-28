@@ -1,7 +1,7 @@
 export const AgileNorthStar = {
   "en-GB": {
   "title": "Agility and the North Star Metric: Empowering Business Success in a Dynamic World",
-  "src": "",
+  "src": "https://res.cloudinary.com/djlwtz7qw/image/upload/c_scale,w_800/v1689929639/hestia/article20Compressed_htsrbf.webp",
   "paragraphs": [
     {
       "title": "Introduction",
@@ -52,7 +52,7 @@ export const AgileNorthStar = {
 },
   "fr-FR": {
   "title": "Agilité et la North Star Metric : Donner du pouvoir à la réussite des entreprises dans un monde dynamique",
-  "src": "",
+  "src": "https://res.cloudinary.com/djlwtz7qw/image/upload/c_scale,w_800/v1689929639/hestia/article20Compressed_htsrbf.webp",
   "paragraphs": [
     {
       "title": "Introduction",

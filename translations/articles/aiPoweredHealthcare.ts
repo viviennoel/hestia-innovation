@@ -1,7 +1,7 @@
 export const aiPoweredHealthcare = {
     "en-GB": {
         "title": "AI-Powered Healthcare: Transforming Diagnosis, Treatment, and Patient Care",
-        "src": "https://res.cloudinary.com/djlwtz7qw/image/upload/c_scale,w_636/v1689951522/hestia/AdobeStock_176565736_enyemm.webp",
+        "src": "https://res.cloudinary.com/djlwtz7qw/image/upload/c_scale,w_800/v1689929638/hestia/adobe7Compressed_tzamdw.webp",
         "paragraphs": [
           {
             "title": "Introduction to AI-Powered Healthcare",
@@ -89,13 +89,13 @@ export const aiPoweredHealthcare = {
         ]
   },
   "fr-FR": {
-    "title": "🏥 Santé alimentée par l'IA : Transformer le diagnostic, le traitement et les soins aux patients",
+    "title": "Santé alimentée par l'IA : Transformer le diagnostic, le traitement et les soins aux patients",
     "src": "https://res.cloudinary.com/djlwtz7qw/image/upload/c_scale,w_636/v1689951522/hestia/AdobeStock_176565736_enyemm.webp",
     "paragraphs": [
     {
     "title": "Introduction à la Santé alimentée par l'IA",
     "body": [
-    "Sous-titre: L'intersection de l'IA et de la médecine 🧬",
+    "Subtitle: L'intersection de l'IA et de la médecine 🧬",
     "La santé alimentée par l'IA est l'utilisation de l'intelligence artificielle (IA) et des algorithmes d'apprentissage automatique pour révolutionner le domaine de la médecine. Grâce à l'intégration de technologies de pointe, l'industrie de la santé connaît un changement de paradigme dans la manière dont les diagnostics sont établis, les traitements sont administrés et les soins aux patients sont dispensés.",
     "Dans cet article, nous explorerons l'impact transformateur de l'IA sur la santé. De la détection des maladies à la découverte de médicaments, en passant par les plans de traitement personnalisés et les assistants de santé virtuels, l'IA redéfinit le paysage de la médecine moderne.",
     "Rejoignez-nous dans ce voyage à travers l'intersection de l'IA et de la santé pour découvrir son potentiel d'amélioration des résultats pour les patients et de révolution de l'avenir de la médecine."

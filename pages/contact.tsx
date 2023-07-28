@@ -49,7 +49,7 @@ const Contact = () => {
         <div>
             <BannerImage 
                 size='medium'
-                background='https://res.cloudinary.com/djlwtz7qw/image/upload/v1684920923/cld-sample-2.jpg'
+                background='https://res.cloudinary.com/djlwtz7qw/image/upload/c_scale,w_800/v1689947305/hestia/AdobeStock_177912003_mmomwr.webp'
             >
                 <AnimatedText words={translations[language].contact.title} />
             </BannerImage>

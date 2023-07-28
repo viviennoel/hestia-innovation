@@ -119,7 +119,7 @@ export const translations = {
         },
         about: {
             title: "About us",
-            src: "https://res.cloudinary.com/djlwtz7qw/image/upload/c_scale,w_636/v1689947307/hestia/AdobeStock_464279454_ad2kcr.webp",
+            src: "https://res.cloudinary.com/djlwtz7qw/image/upload/c_scale,w_800/v1689947307/hestia/AdobeStock_464279454_ad2kcr.webp",
             navigate: 'Discover our offices through the multiverse!',
             multiverseTitle: 'Our offices in the multiverse!',
             

@@ -1,7 +1,7 @@
 export const GreenIT = {
 "en-GB": {
 "title": "The Importance of Accessibility & GreenIT: Unleashing New Business Opportunities",
-"src": "",
+"src": "https://res.cloudinary.com/djlwtz7qw/image/upload/c_scale,w_800/v1689929638/hestia/article17Compressed_ukz4np.webp",
 "paragraphs": [
 {
 "title": "Introduction 🌱🌐🤝",
@@ -60,7 +60,7 @@ export const GreenIT = {
 },
 "fr-FR": {
   "title": "L'Importance de l'Accessibilité & du GreenIT : Découverte de Nouvelles Opportunités Commerciales",
-  "src": "",
+  "src": "https://res.cloudinary.com/djlwtz7qw/image/upload/c_scale,w_800/v1689929638/hestia/article17Compressed_ukz4np.webp",
   "paragraphs": [
     {
       "title": "Introduction 🌱🌐🤝",

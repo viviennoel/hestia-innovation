@@ -1,7 +1,7 @@
 export const AutomationWideApplications = {
   "en-GB": {
   "title": "The Power of Automation in Business",
-  "src": "",
+  "src": "https://res.cloudinary.com/djlwtz7qw/image/upload/c_scale,w_800/v1689947306/hestia/AdobeStock_593395544_d6ixbm.webp",
   "paragraphs": [
     {
       "title": "Introduction 🌟🚀",
@@ -63,7 +63,7 @@ export const AutomationWideApplications = {
 },
 "fr-FR": {
   "title": "La Puissance de l'Automatisation en Entreprise",
-  "src": "",
+  "src": "https://res.cloudinary.com/djlwtz7qw/image/upload/c_scale,w_800/v1689947306/hestia/AdobeStock_593395544_d6ixbm.webp",
   "paragraphs": [
     {
       "title": "Introduction 🌟🚀",

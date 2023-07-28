@@ -1,7 +1,7 @@
 export const RealOpportunity = {
   "en-GB": {
   "title": "A Real Opportunity for Business: Embracing Cutting-Edge Technologies",
-  "src": "",
+  "src": "https://res.cloudinary.com/djlwtz7qw/image/upload/c_scale,w_800/v1689947306/hestia/AdobeStock_608662653_rmenrp.webp",
   "paragraphs": [
     {
       "title": "Introduction 🌟🌐",
@@ -69,7 +69,7 @@ export const RealOpportunity = {
 },
 "fr-FR": {
   "title": "Une Véritable Opportunité pour les Entreprises : Adopter des Technologies de Pointe",
-  "src": "",
+  "src": "https://res.cloudinary.com/djlwtz7qw/image/upload/c_scale,w_800/v1689947306/hestia/AdobeStock_608662653_rmenrp.webp",
   "paragraphs": [
     {
       "title": "Introduction 🌟🌐",

@@ -92,17 +92,17 @@ export const whatIsAutomation = {
         ]
     },
     "fr-FR": {
-        "title": "Qu'est-ce que l'automatisation ? 🤖",
+        "title": "Qu'est-ce que l'automatisation ?",
         "src": "https://res.cloudinary.com/djlwtz7qw/image/upload/c_scale,w_636/v1689929637/hestia/adobe10Compressed_zgakaw.webp",
         "paragraphs": [
         {
         "title": "Introduction à l'automatisation",
         "body": [
-        "Sous-titre: Comprendre le concept d'automatisation",
+        "Subtitle Comprendre le concept d'automatisation",
         "L'automatisation est l'utilisation de la technologie et des machines pour effectuer des tâches ou des processus sans intervention humaine. Elle fait partie intégrante des industries modernes, des entreprises et de la vie quotidienne. L'automatisation joue un rôle crucial dans la rationalisation des opérations, l'augmentation de l'efficacité et la réduction des erreurs humaines.",
         "Dans le monde d'aujourd'hui, où tout va vite, l'automatisation est devenue synonyme de progrès et d'innovation. Des usines de fabrication aux bureaux, des transports aux maisons intelligentes, l'automatisation a révolutionné notre façon de vivre et de travailler. En déléguant les tâches répétitives et chronophages aux machines, les humains peuvent se concentrer sur des activités plus complexes et créatives.",
         "Dans cet article, nous allons explorer le concept d'automatisation, ses avantages et ses limitations. Nous allons nous plonger dans diverses applications concrètes de l'automatisation et voir comment elle redessine les industries du monde entier. Des premières formes d'automatisation aux technologies de pointe du futur, l'automatisation a parcouru un long chemin et continue de repousser les limites de ce qui est possible.",
-        "Sous-titre: Que discuterons-nous ? 🚀",
+        "Subtitle Que discuterons-nous ? 🚀",
         "Plongeons plus profondément dans le monde de l'automatisation et comprenons comment elle révolutionne notre façon de travailler et de vivre."
         ],
         "img": {
@@ -113,13 +113,13 @@ export const whatIsAutomation = {
         {
         "title": "L'évolution de l'automatisation 📜",
         "body": [
-        "Sous-titre: Les racines de l'automatisation",
+        "Subtitle Les racines de l'automatisation",
         "L'automatisation n'est pas un concept nouveau. Ses origines remontent à l'Antiquité, lorsque les humains utilisaient des outils et des machines simples pour les aider dans leurs tâches quotidiennes. Cependant, c'est pendant la Révolution industrielle que l'automatisation a fait un bond en avant significatif. L'invention de la machine à vapeur et la mécanisation des usines ont marqué le début d'une nouvelle ère.",
-        "Sous-titre: L'avènement du numérique",
+        "Subtitle L'avènement du numérique",
         "Avec le progrès de la technologie, l'automatisation a également évolué. L'introduction de l'électricité a ouvert la voie à des systèmes automatisés plus sophistiqués. La chaîne de montage, mise au point par Henry Ford, a révolutionné la fabrication, conduisant à une production de masse et à une productivité accrue.",
         "Au cours des dernières décennies, la montée de l'informatique et de la technologie numérique a donné naissance à une nouvelle vague d'automatisation. Aujourd'hui, nous disposons de systèmes intelligents pilotés par l'intelligence artificielle (IA) et l'apprentissage automatique, capables de prendre des décisions complexes et de s'adapter.",
         "Des métiers à tisser mécaniques d'antan aux robots de pointe et aux véhicules autonomes d'aujourd'hui, l'automatisation est devenue un aspect essentiel de notre société moderne. En regardant vers l'avenir, l'intégration de l'automatisation avec les technologies émergentes continuera de redessiner les industries et de redéfinir notre mode de vie.",
-        "Sous-titre: Une quête d'efficacité",
+        "Subtitle Une quête d'efficacité",
         "L'histoire de l'automatisation démontre le désir humain d'efficacité et de progrès. Chaque avancée technologique nous rapproche d'un monde où les machines gèrent des tâches qui étaient autrefois considérées comme impossibles sans l'intervention humaine. Alors que nous entamons ce voyage d'évolution technologique, il est essentiel de comprendre les avantages et les limites de l'automatisation."
         ],
         "img": {
@@ -131,23 +131,23 @@ export const whatIsAutomation = {
         "title": "Les avantages de l'automatisation 📈",
         "body": [
         "L'adoption généralisée de l'automatisation a apporté de nombreux avantages, faisant d'elle un outil indispensable pour les entreprises et les industries modernes.",
-        "Sous-titre: 1. Productivité accrue: 📊",
+        "Subtitle 1. Productivité accrue: 📊",
         "L'automatisation permet d'effectuer les tâches beaucoup plus rapidement qu'avec le travail humain seul. Avec les tâches répétitives prises en charge par les machines, les processus de production deviennent plus efficaces et cohérents.",
-        "Sous-titre: 2. Économies de coûts: 💰",
+        "Subtitle 2. Économies de coûts: 💰",
         "Bien que l'investissement initial dans la technologie d'automatisation puisse être important, les économies de coûts à long terme sont considérables. Les systèmes automatisés peuvent fonctionner 24 heures sur 24, 7 jours sur 7, sans besoin de paiement des heures supplémentaires ou de pauses, ce qui entraîne une réduction des coûts de main-d'œuvre.",
-        "Sous-titre: 3. Qualité et précision améliorées: 🎯",
+        "Subtitle 3. Qualité et précision améliorées: 🎯",
         "L'automatisation réduit le risque d'erreurs humaines et garantit l'exécution précise des tâches. Cela se traduit par des produits et des services de meilleure qualité.",
-        "Sous-titre: 4. Sécurité et réduction des risques: ⚠️",
+        "Subtitle 4. Sécurité et réduction des risques: ⚠️",
         "Dans les environnements dangereux ou les industries à haut risque, l'automatisation peut éliminer le besoin d'intervention humaine dans les tâches dangereuses, améliorant ainsi la sécurité sur le lieu de travail.",
-        "Sous-titre: 5. Collecte et analyse améliorées des données: 📊",
+        "Subtitle 5. Collecte et analyse améliorées des données: 📊",
         "Les systèmes automatisés peuvent recueillir de vastes quantités de données, fournissant des informations précieuses pour la prise de décision et l'optimisation des processus.",
-        "Sous-titre: 6. Scalabilité: 🚀",
+        "Subtitle 6. Scalabilité: 🚀",
         "L'automatisation permet aux entreprises de développer leurs activités sans augmentation significative des besoins en main-d'œuvre. Cette flexibilité est particulièrement bénéfique pendant les périodes de croissance.",
-        "Sous-titre: 7. Cohérence et normalisation: 🔄",
+        "Subtitle 7. Cohérence et normalisation: 🔄",
         "En suivant des algorithmes et des processus prédéfinis, l'automatisation garantit un résultat cohérent, essentiel dans des domaines tels que le contrôle qualité et le service client.",
-        "Sous-titre: 8. Gain de temps: ⏰",
+        "Subtitle 8. Gain de temps: ⏰",
         "L'automatisation libère des ressources humaines pour se concentrer sur des tâches plus stratégiques et créatives, favorisant ainsi l'innovation et la résolution de problèmes.",
-        "Sous-titre: Augmentation de la compétitivité",
+        "Subtitle Augmentation de la compétitivité",
         "Dans l'ensemble, les avantages de l'automatisation contribuent à accroître la compétitivité, à améliorer la satisfaction client et à créer de nouvelles opportunités de croissance et d'innovation."
         ],
         "img": {
@@ -159,21 +159,21 @@ export const whatIsAutomation = {
         "title": "Les limites de l'automatisation ❌",
         "body": [
         "Bien que l'automatisation offre de nombreux avantages, elle présente également ses propres limites. Comprendre ces défis est essentiel pour assurer une mise en œuvre responsable et efficace.",
-        "Sous-titre: 1. Complexité et coût de mise en œuvre: 💼",
+        "Subtitle 1. Complexité et coût de mise en œuvre: 💼",
         "La mise en œuvre de l'automatisation peut être complexe et nécessiter d'importants investissements financiers, en particulier pour les petites entreprises. L'intégration de systèmes automatisés avec l'infrastructure existante peut également être difficile.",
-        "Sous-titre: 2. Dépendance à la technologie: 📟",
+        "Subtitle 2. Dépendance à la technologie: 📟",
         "La forte dépendance à l'automatisation peut rendre les entreprises vulnérables aux pannes de système ou aux problèmes techniques. Un seul dysfonctionnement pourrait perturber l'ensemble des opérations.",
-        "Sous-titre: 3. Absence de jugement humain: 😔",
+        "Subtitle 3. Absence de jugement humain: 😔",
         "Les systèmes automatisés manquent de jugement humain et de créativité, limitant pour le moment leur capacité à gérer des situations imprévisibles ou des tâches nécessitant de l'empathie et de l'intelligence émotionnelle.",
-        "Sous-titre: 4. Préoccupations en matière d'emploi: 🛠️",
+        "Subtitle 4. Préoccupations en matière d'emploi: 🛠️",
         "L'adoption généralisée de l'automatisation a suscité des inquiétudes concernant la suppression d'emplois. Bien que l'automatisation puisse créer de nouvelles opportunités d'emploi, elle peut également éliminer certains postes.",
-        "Sous-titre: 5. Risques de sécurité et de confidentialité: 🔒",
+        "Subtitle 5. Risques de sécurité et de confidentialité: 🔒",
         "L'automatisation accrue signifie plus de collecte de données et de connectivité, ce qui entraîne des risques potentiels de violation de la sécurité et de confidentialité.",
-        "Sous-titre: 6. Compatibilité et normalisation: 🔌",
+        "Subtitle 6. Compatibilité et normalisation: 🔌",
         "Différentes technologies d'automatisation ne sont pas toujours compatibles, ce qui oblige les entreprises à investir dans des efforts de normalisation.",
-        "Sous-titre: 7. Considérations éthiques: 🤔",
+        "Subtitle 7. Considérations éthiques: 🤔",
         "L'utilisation de l'automatisation dans certaines industries, comme les armes autonomes dans l'armée, soulève des questions éthiques concernant la responsabilité des machines.",
-        "Sous-titre: Un outil au service de votre expertise",
+        "Subtitle Un outil au service de votre expertise",
         "Malgré ces limitations, l'automatisation reste un outil puissant lorsqu'elle est utilisée judicieusement. Équilibrer les avantages de l'automatisation avec les inconvénients potentiels est essentiel pour un avenir durable et inclusif."
         ],
         "img": {

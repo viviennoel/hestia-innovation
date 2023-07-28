@@ -1,7 +1,7 @@
 export const ThreeDModeling = {
   "en-GB": {
   "title": "WebGL and 3D Modeling in Websites: Exploring New Dimensions",
-  "src": "",
+  "src": "https://res.cloudinary.com/djlwtz7qw/image/upload/c_scale,w_800/v1689929638/hestia/article16Compressed_fwi7gy.webp",
   "paragraphs": [
     {
       "title": "Introduction 🌟🌐",
@@ -63,7 +63,7 @@ export const ThreeDModeling = {
 },
 "fr-FR": {
   "title": "WebGL et Modélisation 3D sur les Sites Web : Explorer de Nouvelles Dimensions",
-  "src": "",
+  "src": "https://res.cloudinary.com/djlwtz7qw/image/upload/c_scale,w_800/v1689929638/hestia/article16Compressed_fwi7gy.webp",
   "paragraphs": [
     {
       "title": "Introduction 🌟🌐",

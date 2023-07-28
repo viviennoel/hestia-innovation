@@ -1,7 +1,7 @@
 export const HumanRelationAndTechnology = {
   "en-GB": {
 "title": "The Importance of Balancing Technology and Human Relations in B2B: Unleashing New Business Opportunities",
-"src": "https://www.example.com",
+"src": "https://res.cloudinary.com/djlwtz7qw/image/upload/c_scale,w_800/v1689947305/hestia/AdobeStock_609626533_utv0pt.webp",
 "paragraphs": [
 {
 "title": "Introduction 🌐🤝",
@@ -55,7 +55,7 @@ export const HumanRelationAndTechnology = {
 },
 "fr-FR": {
   "title": "L'importance d'équilibrer la technologie et les relations humaines en B2B : exploiter de nouvelles opportunités commerciales",
-  "src": "https://www.example.com",
+  "src": "https://res.cloudinary.com/djlwtz7qw/image/upload/c_scale,w_800/v1689947305/hestia/AdobeStock_609626533_utv0pt.webp",
   "paragraphs": [
     {
       "title": "Introduction 🌐🤝",

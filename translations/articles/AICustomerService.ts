@@ -1,7 +1,7 @@
 export const AICustomerService = {
   "en-GB":{
   "title": "How to Foster Customer Engagement with AI in the B2C Sector",
-  "src": "",
+  "src": "https://res.cloudinary.com/djlwtz7qw/image/upload/c_scale,w_800/v1689929637/hestia/adobe8Compressed_swfngf.webp",
   "paragraphs": [
     {
       "title": "Introduction 🌟🌐",
@@ -46,7 +46,7 @@ export const AICustomerService = {
 },
   "fr-FR":{
   "title": "Comment Favoriser l'Engagement des Clients avec l'IA dans le Secteur B2C",
-  "src": "",
+  "src": "https://res.cloudinary.com/djlwtz7qw/image/upload/c_scale,w_800/v1689929637/hestia/adobe8Compressed_swfngf.webp",
   "paragraphs": [
     {
       "title": "Introduction 🌟🌐",

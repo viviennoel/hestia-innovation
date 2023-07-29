@@ -31,10 +31,11 @@ export const BannerTextImage = ({imageSrc, title, body, link, linkPlaceholder, v
                         </Col>
 
                         <p className={`pb-md-3 ${styles.body}`}>{body}</p>
-                        {isVisibleButton && 
-                            <Link href={link} className={`${styles.button} my-5`} >
+                        {isVisibleButton && <div className='mt-5 mb-4'>
+                            <Link href={link} className={`${styles.button}`} >
                                 {linkPlaceholder}
-                            </Link>}
+                            </Link>
+                        </div>}
                     </Col>
                     {textSide !== 'right' &&
                     <Col md className={`${!isTextRight ? 'pt-3 pt-md-0' : ''} d-none d-md-block`}>

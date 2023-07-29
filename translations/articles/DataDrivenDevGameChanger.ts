@@ -1,7 +1,7 @@
 export const DataDrivenDevGameChanger = {
   "en-GB": {
   "title": "Data Driven Development: A Game Changer for Business",
-  "src": "https://res.cloudinary.com/djlwtz7qw/image/upload/c_scale,w_800/v1689947307/hestia/AdobeStock_279424236_auulss.webp",
+  "src": "https://res.cloudinary.com/djlwtz7qw/image/upload/c_scale,w_700/v1689947307/hestia/AdobeStock_279424236_auulss.webp",
   "paragraphs": [
     {
       "title": "Introduction",
@@ -60,7 +60,7 @@ export const DataDrivenDevGameChanger = {
 },
   "fr-FR": {
   "title": "Le Développement Axé sur les Données : Un Changement Majeur pour les Entreprises 📊🚀",
-  "src": "https://res.cloudinary.com/djlwtz7qw/image/upload/c_scale,w_800/v1689947307/hestia/AdobeStock_279424236_auulss.webp",
+  "src": "https://res.cloudinary.com/djlwtz7qw/image/upload/c_scale,w_700/v1689947307/hestia/AdobeStock_279424236_auulss.webp",
   "paragraphs": [
     {
       "title": "Introduction",

@@ -9,6 +9,7 @@ import { translations } from '../../../translations/translations';
 import { useContext, useEffect, useState } from 'react';
 import LanguageContext from '../../../context/languageContext';
 import styles from './ArticlePage.module.scss';
+import { ContactFixed } from '../../organism/ContactFixed/ContactFixed';
 
 export const ArticlePage = ({article}:{article?:string}) => {
     const { language } = useContext(LanguageContext);
@@ -73,6 +74,7 @@ export const ArticlePage = ({article}:{article?:string}) => {
                 variation='light'
                 textSide='right'
             />
+            <ContactFixed />
             </div>
         }
         </div>

@@ -1,7 +1,7 @@
 export const CISACyberEssentials = {
     "en-GB": {
         "title": "CISA's Cyber Essentials: A Comprehensive Guide to Improve Cybercrime Preparedness",
-        "src": "https://res.cloudinary.com/djlwtz7qw/image/upload/c_scale,w_800/v1689929638/hestia/adobe7Compressed_tzamdw.webp",
+        "src": "https://res.cloudinary.com/djlwtz7qw/image/upload/c_scale,w_700/v1689929638/hestia/adobe7Compressed_tzamdw.webp",
         "paragraphs": [
           {
             "title": "🌟 For whom?",
@@ -102,7 +102,7 @@ export const CISACyberEssentials = {
     },
     "fr-FR": {
         "title": "CISA's Cyber Essentials: Un Guide Complet pour Améliorer la Préparation à la Cybercriminalité",
-        "src": "https://res.cloudinary.com/djlwtz7qw/image/upload/c_scale,w_800/v1689929638/hestia/adobe7Compressed_tzamdw.webp",
+        "src": "https://res.cloudinary.com/djlwtz7qw/image/upload/c_scale,w_700/v1689929638/hestia/adobe7Compressed_tzamdw.webp",
         "paragraphs": [
           {
             "title": "🌟 Pour qui?",

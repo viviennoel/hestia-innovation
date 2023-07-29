@@ -15,7 +15,7 @@ export const CardImage = ({content, cta}) => {
     }, [])
     return(
         <Card 
-            data-aos="fade-down"
+            data-aos="fade-up"
             data-aos-anchor-placement="top-bottom"
             data-aos-delay={delay}
             data-aos-duration="1000"

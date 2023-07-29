@@ -6,8 +6,10 @@ import { Footer } from '../components/organism/Footer';
 import { useRouter } from 'next/router';
 import { CookieModale } from '../components/organism/CookieModale/CookieModale';
 import { Kurale } from 'next/font/google';
+import { Lato } from 'next/font/google';
 
 const kurale = Kurale({ weight: "400", subsets: ["latin"]})
+const lato = Lato({ weight: "400", subsets: ["latin"]})
 
 export default function App({ Component, pageProps }) {
   const [language, setLanguage] = useState<string>("en-SET");
@@ -40,7 +42,10 @@ export default function App({ Component, pageProps }) {
   return (
     <LanguageContext.Provider value={{ language, setLanguage }}>
       <style jsx global>{`
-        h1, h2, h3, a {
+        h1, h2, a {
+          font-family: ${lato.style.fontFamily} !important;
+        }
+        h3 {
           font-family: ${kurale.style.fontFamily} !important;
         }
       `}</style>

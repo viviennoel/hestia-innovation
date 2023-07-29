@@ -116,10 +116,11 @@ export const translations = {
             nav5: '✨ Design & Products',
             nav6: '✨ Automation & AI',
             nav7: '✨ Contact',
+            legal: '✨ Legal',
         },
         about: {
             title: "About us",
-            src: "https://res.cloudinary.com/djlwtz7qw/image/upload/c_scale,w_800/v1689947307/hestia/AdobeStock_464279454_ad2kcr.webp",
+            src: "https://res.cloudinary.com/djlwtz7qw/image/upload/c_scale,w_700/v1689947307/hestia/AdobeStock_464279454_ad2kcr.webp",
             navigate: 'Discover our offices through the multiverse!',
             multiverseTitle: 'Our offices in the multiverse!',
             
@@ -603,6 +604,7 @@ export const translations = {
             nav5: '✨ Conception et produits',
             nav6: '✨ IA et automatisation',
             nav7: '✨ Contact',
+            legal: '✨ Legal',
         },
         about: {
             title: "À propos de nous",
@@ -1106,6 +1108,7 @@ export const translations = {
             nav5: '✨ Design & Products',
             nav6: '✨ Automation & AI',
             nav7: '✨ Contact',
+            legal: '✨ Legal',
         },
         about: {
             title: "About us",

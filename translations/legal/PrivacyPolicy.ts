@@ -1,7 +1,7 @@
 export const PrivacyPolicy = {
   "en-GB": {
   "title": "Legal Mentions",
-  "src": "https://res.cloudinary.com/djlwtz7qw/image/upload/c_scale,w_800/v1689947307/hestia/AdobeStock_601930650_cjluby.webp",
+  "src": "https://res.cloudinary.com/djlwtz7qw/image/upload/c_scale,w_700/v1689947307/hestia/AdobeStock_601930650_cjluby.webp",
   "paragraphs": [
     {
       "title": "Disclaimer",
@@ -101,7 +101,7 @@ export const PrivacyPolicy = {
 },
 "fr-FR": {
 "title": "Mentions Légales",
-"src": "https://res.cloudinary.com/djlwtz7qw/image/upload/c_scale,w_800/v1689947307/hestia/AdobeStock_601930650_cjluby.webp",
+"src": "https://res.cloudinary.com/djlwtz7qw/image/upload/c_scale,w_700/v1689947307/hestia/AdobeStock_601930650_cjluby.webp",
 "paragraphs": [
 {
 "title": "Clause de non-responsabilité",

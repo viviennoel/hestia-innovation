@@ -1,7 +1,7 @@
 export const PixelPerfectTesting = {
   "en-GB": {
   "title": "Pixel Perfect Testing: Avoiding Regression in Big Teams",
-  "src": "https://res.cloudinary.com/djlwtz7qw/image/upload/c_scale,w_800/v1689947308/hestia/AdobeStock_215484326_rrfxwp.webp",
+  "src": "https://res.cloudinary.com/djlwtz7qw/image/upload/c_scale,w_700/v1689947308/hestia/AdobeStock_215484326_rrfxwp.webp",
   "paragraphs": [
     {
       "title": "Introduction 🎯",
@@ -79,7 +79,7 @@ export const PixelPerfectTesting = {
 },
 "fr-FR": {
 "title": "Pixel Perfect Testing : Éviter la régression dans les grandes équipes",
-"src": "https://res.cloudinary.com/djlwtz7qw/image/upload/c_scale,w_800/v1689947308/hestia/AdobeStock_215484326_rrfxwp.webp",
+"src": "https://res.cloudinary.com/djlwtz7qw/image/upload/c_scale,w_700/v1689947308/hestia/AdobeStock_215484326_rrfxwp.webp",
 "paragraphs": [
 {
 "title": "Introduction 🎯",

@@ -1,7 +1,7 @@
 export const aiPoweredHealthcare = {
     "en-GB": {
         "title": "AI-Powered Healthcare: Transforming Diagnosis, Treatment, and Patient Care",
-        "src": "https://res.cloudinary.com/djlwtz7qw/image/upload/c_scale,w_800/v1689929638/hestia/adobe7Compressed_tzamdw.webp",
+        "src": "https://res.cloudinary.com/djlwtz7qw/image/upload/c_scale,w_700/v1689929638/hestia/adobe7Compressed_tzamdw.webp",
         "paragraphs": [
           {
             "title": "Introduction to AI-Powered Healthcare",

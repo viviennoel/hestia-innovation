@@ -35,8 +35,7 @@ export const Header = () => {
                         <Link href="/development">{translations[language].header.dev}</Link>
                         <Link href="/designs">{translations[language].header.design}</Link>
                         <Link href="/ai">{translations[language].header.automation}</Link>
-                        <Link href="/contact">{translations[language].contact.title}</Link>
-                        <Link href="/legal">{translations[language].header.legal}</Link>
+                        <Link href="/contact">{translations[language].header.contact}</Link>
                     </div>
                     <div className='d-flex'>
                         <LanguageNav />

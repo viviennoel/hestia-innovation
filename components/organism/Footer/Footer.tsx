@@ -66,6 +66,11 @@ export const Footer = () => {
                                             {translations[language].footer.nav7}
                                         </Link>
                                     </li>
+                                    <li>
+                                        <Link href="/legal">
+                                            {translations[language].footer.legal}
+                                        </Link>
+                                    </li>
                                 </ul>
                             </Col>
                         </Row>

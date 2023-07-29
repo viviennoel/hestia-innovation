@@ -1,7 +1,7 @@
 export const SituationAnalysisDecision = {
   "en-GB": {
 "title": "The Crucial Role of Situation Analysis and Striking the Balance Between Perfect Design and Performance in Data-Driven Development",
-"src": "https://res.cloudinary.com/djlwtz7qw/image/upload/c_scale,w_800/v1689947308/hestia/AdobeStock_81346463_cz9lc4.webp",
+"src": "https://res.cloudinary.com/djlwtz7qw/image/upload/c_scale,w_700/v1689947308/hestia/AdobeStock_81346463_cz9lc4.webp",
 "paragraphs": [
 {
 "title": "Understanding Situation Analysis: Unraveling the Power of Data",
@@ -48,7 +48,7 @@ export const SituationAnalysisDecision = {
 },
 "fr-FR": {
   "title": "Le rôle crucial de l'analyse de la situation et l'équilibre entre le design parfait et les performances dans le développement axé sur les données",
-  "src": "https://res.cloudinary.com/djlwtz7qw/image/upload/c_scale,w_800/v1689947308/hestia/AdobeStock_81346463_cz9lc4.webp",
+  "src": "https://res.cloudinary.com/djlwtz7qw/image/upload/c_scale,w_700/v1689947308/hestia/AdobeStock_81346463_cz9lc4.webp",
   "paragraphs": [
     {
       "title": "Comprendre l'analyse de la situation : Découvrir la puissance des données",

@@ -41,7 +41,7 @@ export const MobileNav = () => {
           {translations[language].header.automation}
         </Dropdown.Item>
         <Dropdown.Item className='pb-4' href="/contact">
-          {translations[language].contact.title}
+          {translations[language].header.contact}
         </Dropdown.Item>
         <Dropdown.Item className='pb-4' href="/legal">
           {translations[language].header.legal}

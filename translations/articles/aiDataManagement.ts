@@ -1,7 +1,7 @@
 export const aiDataManagement = {
     "en-GB": {
         "title": "AI in Data Management: Revolutionizing Data-Driven Decision Making",
-        "src": "https://res.cloudinary.com/djlwtz7qw/image/upload/c_scale,w_800/v1689929638/hestia/adobe9Compressed_hyvabe.webp",
+        "src": "https://res.cloudinary.com/djlwtz7qw/image/upload/c_scale,w_700/v1689929638/hestia/adobe9Compressed_hyvabe.webp",
         "paragraphs": [
           {
             "title": "🌟 Introduction",
@@ -84,7 +84,7 @@ export const aiDataManagement = {
       },
     "fr-FR": {
         "title": "L'IA dans la gestion des données : Révolution de la prise de décision basée sur les données",
-        "src": "https://res.cloudinary.com/djlwtz7qw/image/upload/c_scale,w_800/v1689929638/hestia/adobe9Compressed_hyvabe.webp",
+        "src": "https://res.cloudinary.com/djlwtz7qw/image/upload/c_scale,w_700/v1689929638/hestia/adobe9Compressed_hyvabe.webp",
         "paragraphs": [
           {
             "title": "🌟 Introduction",

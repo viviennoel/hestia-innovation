@@ -5,10 +5,10 @@ import LanguageContext from "../context/languageContext";
 import { Footer } from '../components/organism/Footer';
 import { useRouter } from 'next/router';
 import { CookieModale } from '../components/organism/CookieModale/CookieModale';
-import { Kurale } from 'next/font/google';
-import { Lato } from 'next/font/google';
+import { Kurale, Nunito, Lato } from 'next/font/google';
 
 const kurale = Kurale({ weight: "400", subsets: ["latin"]})
+const nunito = Nunito({ weight: "400", subsets: ["latin"]})
 const lato = Lato({ weight: "400", subsets: ["latin"]})
 
 export default function App({ Component, pageProps }) {
@@ -42,7 +42,10 @@ export default function App({ Component, pageProps }) {
   return (
     <LanguageContext.Provider value={{ language, setLanguage }}>
       <style jsx global>{`
-        h1, h2, a {
+        h1 {
+          font-family: ${nunito.style.fontFamily} !important;
+        }
+        h2, a {
           font-family: ${lato.style.fontFamily} !important;
         }
         h3 {

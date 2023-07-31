@@ -3,6 +3,7 @@ import { AICustomerService } from "./articles/AICustomerService";
 import { aiDataManagement } from "./articles/aiDataManagement";
 import { aiPoweredHealthcare } from "./articles/aiPoweredHealthcare";
 import { AutomationWideApplications } from "./articles/AutomationWideApplications";
+import { BioticCapacityTechnology } from "./articles/BioticCapacityTechnology";
 import { CISACyberEssentials } from "./articles/CISACyberEssentials";
 import { DataDrivenDevGameChanger } from "./articles/DataDrivenDevGameChanger";
 import { GreenIT } from "./articles/GreenIT";
@@ -52,8 +53,10 @@ export const translations = {
                 "modeling-3D-immersive", // design
                 "why-Data-Driven-Development-is-a-game-changer", // TO BE WRITTEN -- development
                 "agile-north-star-metric", // TO BE WRITTEN -- showcase
+                "biotic-capacity-technology",
             ]
         },
+        "biotic-capacity-technology": BioticCapacityTechnology["en-GB"],
         "what-is-automation": whatIsAutomation["en-GB"],
         "ai-powered-healthcare": aiPoweredHealthcare["en-GB"],
         "ai-data-management": aiDataManagement["en-GB"],
@@ -548,6 +551,7 @@ export const translations = {
             contactTitle: 'Vous avez besoin de plus d\'informations ?',
             contactLink: 'Contactez-nous',
         },
+        "biotic-capacity-technology": BioticCapacityTechnology["fr-FR"],
         "what-is-automation": whatIsAutomation["fr-FR"],
         "ai-powered-healthcare": aiPoweredHealthcare["fr-FR"],
         "ai-data-management": aiDataManagement["fr-FR"],
@@ -1046,6 +1050,7 @@ export const translations = {
             contactTitle: '',
             contactLink: '',
         },
+        "biotic-capacity-technology": BioticCapacityTechnology["en-SET"],
         'what-is-automation': whatIsAutomation["en-SET"],
         "ai-powered-healthcare": aiPoweredHealthcare["en-SET"],
         "ai-data-management": aiDataManagement["en-SET"],

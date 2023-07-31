@@ -581,10 +581,10 @@ export const translations = {
             accept: 'Accepter',
             refuse: 'Refuser',
             title: 'Cookies, qu\'est-ce que c\'est ?',
-            text: 'Nous utilisons des cookies pour analyser vos besoins et préférences afin de vous fournir un contenu personnalisé. Pour plus d\'informations, veuillez consulter notre ',
+            text: 'Nous utilisons des cookies pour analyser vos besoins et vous fournir un contenu personnalisé. Pour plus d\'informations, veuillez consulter notre ',
             settings: 'Paramètres des cookies',
             policy: 'Politique de confidentialité',
-            statistiques: 'Les données sont la clé du succès dans le développement axé sur les données. Aidez-nous à vous fournir de meilleures informations en utilisant des statistiques!',
+            statistiques: 'Les données sont la clé du succès dans le développement axé sur les données!',
         },
         header: {
             navigation: 'Navigation',

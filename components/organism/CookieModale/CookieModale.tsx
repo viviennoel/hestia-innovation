@@ -43,14 +43,14 @@ export const CookieModale = () => {
                     </h2>
                     <p className='pb-4'>
                         {translations[language].cookie.text}
-                        <Link href='/legal/privacy-policy' className={`${styles.link} ${styles.notUnderlined}`}>{translations[language].cookie.policy}</Link>
+                        <Link href='/legal' className={`${styles.link} ${styles.notUnderlined}`}>{translations[language].cookie.policy}</Link>
                     </p>
                     <div className='w-100 pb-5 d-flex'>
                         <p>{translations[language].cookie.statistiques}</p>
                         <img width="48" height="48" src="https://img.icons8.com/color/48/futures--v1.png" alt="statistiques" className='ms-5'/>
                     </div>
                     <div className='d-md-flex justify-content-between text-center text-md-left'>
-                        <Link href='/legal/cookie-settings' className={`${styles.link} mb-4 mb-md-0`}>{translations[language].cookie.settings}</Link>
+                        <Link href='/legal' className={`${styles.link} mb-4 mb-md-0`}>{translations[language].cookie.settings}</Link>
                         <div>
                             <button className={`${styles.buttonRefuse} me-3 mt-4 mt-md-0`} onClick={()=>setCookiesLocal(false)}>{translations[language].cookie.refuse}</button>
                             <button className={`${styles.buttonAccept}`} onClick={()=>setCookiesLocal(true)}>{translations[language].cookie.accept}</button>

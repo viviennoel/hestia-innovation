@@ -1087,7 +1087,7 @@ export const translations = {
             refuse: 'Decline',
             title: "Cookies, what is it?",
             text: "We use cookies to analyse your needs and preferences in order to provide you a customized content. For more information, please visit our ",
-            settings: 'Cookie settins',
+            settings: 'Cookie settings',
             policy: 'Privacy policy',
             statistiques: 'Data is the key of success in Data Driven Development. Help us providing you better insights using statistics!'
         },

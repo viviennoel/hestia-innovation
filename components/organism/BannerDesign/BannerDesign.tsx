@@ -55,7 +55,7 @@ export const BannerDesign = () => {
       const clips = glt.animations;
       clips.forEach( function ( clip ) {
         clip.duration = 7;
-        mixer.clipAction(clip).setEffectiveTimeScale ( 1.2 )
+        mixer.clipAction(clip).setEffectiveTimeScale ( 1 )
         mixer.clipAction( clip ).play();
       } );
 

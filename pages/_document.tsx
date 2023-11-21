@@ -32,8 +32,8 @@ export default function Document() {
           type="text/css" 
           crossOrigin="anonymous" />
 
-        <meta property="og:url" content="https://res.cloudinary.com/djlwtz7qw/image/upload/c_thumb,w_200,g_face/v1690800082/article17Compressed_ukz4np_hoqgc9.jpg" />
-        <meta property="og:image" content="https://res.cloudinary.com/djlwtz7qw/image/upload/c_thumb,w_200,g_face/v1690800082/article17Compressed_ukz4np_hoqgc9.jpg" />
+        <meta property="og:url" content="https://res.cloudinary.com/djlwtz7qw/image/upload/c_thumb,w_500,g_face/v1690800082/article17Compressed_ukz4np_hoqgc9.jpg" />
+        <meta property="og:image" content="https://res.cloudinary.com/djlwtz7qw/image/upload/c_thumb,w_500,g_face/v1690800082/article17Compressed_ukz4np_hoqgc9.jpg" />
         <meta property="og:title" content={translations[language].seo.title} />
         <meta property="og:description" content={translations[language].seo.description} />
         <meta name="description" content={translations[language].seo.description} />

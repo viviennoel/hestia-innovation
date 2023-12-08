@@ -2,6 +2,8 @@
 
 body:has(.modaleDisplayed) {
     position: fixed;
+    min-width: 100vw;
+    min-height: 100vh;
 }
 
 .mask{

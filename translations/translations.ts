@@ -81,7 +81,7 @@ export const translations = {
         subtitleAI: "Artificial Intelligence text explaination dummy",
         subtitleDesign: "User oriented design text explaination dummy",
         home: {
-            titlePresentation: 'Vivien NOEL',
+            titlePresentation: 'Webmasters',
             titleWord1: 'Web development',
             titleWord2: 'Data Driven Development',
             titleWord3: 'Outstanding experience',
@@ -570,7 +570,7 @@ export const translations = {
         discover: "Découvrez Hestia",
         more: 'Lire la suite',
         home: {
-            titlePresentation: 'Vivien NOEL',
+            titlePresentation: 'Webmasters',
             titleWord1: 'Développement Web',
             titleWord2: 'Développement axé sur les données',
             titleWord3: 'Une expérience unique',
@@ -1075,7 +1075,7 @@ export const translations = {
         subtitleAI: "Artificial Intelligence text explaination dummy",
         subtitleDesign: "User oriented design text explaination dummy",
         home: {
-            titlePresentation: 'Vivien NOEL',
+            titlePresentation: 'Webmasters',
             titleWord1: 'Web development',
             titleWord2: 'Data Driven Development',
             titleWord3: 'Outstanding experience',

@@ -1,6 +1,7 @@
 export const marketResearchAdvice = {
     'en-GB': {
       "title": "Heed This Simple Market Research Advice Before Launching That New Product",
+      "src": "https://res.cloudinary.com/djlwtz7qw/image/upload/f_auto,q_auto/v1/hestia/AdobeStock_176565736_enyemm",
       "paragraphs": [
         {
           "title": "Introduction",
@@ -58,6 +59,7 @@ export const marketResearchAdvice = {
     },
     'fr-FR': {
       "title": "Conseils simples de recherche de marché à prendre en compte avant le lancement du nouveau produit",
+      "src": "https://res.cloudinary.com/djlwtz7qw/image/upload/f_auto,q_auto/v1/hestia/AdobeStock_176565736_enyemm",
       "paragraphs": [
         {
           "title": "Introduction",

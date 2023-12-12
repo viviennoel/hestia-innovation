@@ -34,7 +34,7 @@ export const ArticlePage = ({article}:{article?:string}) => {
         <div className={styles.wrapper}>
             <p>{articleQuery}</p>
             { articleQuery && <div>
-                <BannerImage 
+            <BannerImage 
                 size='medium'
                 background={translations['en-GB'][articleQuery].src}
             >
@@ -55,9 +55,7 @@ export const ArticlePage = ({article}:{article?:string}) => {
                                     >
                                         {bodyPart.split('Subtitle: ')[1]}
                                     </h3>
-                                : <p key={index}>
-                                    {bodyPart}
-                                </p>
+                                : <p key={index} dangerouslySetInnerHTML={{ __html: bodyPart }} />
                             )
                         })}
                         {paragraph.img && <img src={paragraph.img.src} alt={paragraph.img.src} className={`${styles.image} mx-auto`}></img>}

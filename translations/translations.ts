@@ -8,6 +8,7 @@ import { CISACyberEssentials } from "./articles/CISACyberEssentials";
 import { DataDrivenDevGameChanger } from "./articles/DataDrivenDevGameChanger";
 import { GreenIT } from "./articles/GreenIT";
 import { HumanRelationAndTechnology } from "./articles/HumanRelationAndTechnology";
+import { marketResearchAdvice } from "./articles/marketResearchAdvice";
 import { PixelPerfectTesting } from "./articles/PixelPerfectTesting";
 import { RealOpportunity } from "./articles/RealOpportunity";
 import { SituationAnalysisDecision } from "./articles/SituationAnalysisDecision";
@@ -54,8 +55,10 @@ export const translations = {
                 "why-Data-Driven-Development-is-a-game-changer", // TO BE WRITTEN -- development
                 "agile-north-star-metric", // TO BE WRITTEN -- showcase
                 "biotic-capacity-technology",
+                "market-research-advice",
             ]
         },
+        "market-research-advice": marketResearchAdvice["en-GB"],
         "biotic-capacity-technology": BioticCapacityTechnology["en-GB"],
         "what-is-automation": whatIsAutomation["en-GB"],
         "ai-powered-healthcare": aiPoweredHealthcare["en-GB"],
@@ -551,6 +554,7 @@ export const translations = {
             contactTitle: 'Vous avez besoin de plus d\'informations ?',
             contactLink: 'Contactez-nous',
         },
+        "market-research-advice": marketResearchAdvice["fr-FR"],
         "biotic-capacity-technology": BioticCapacityTechnology["fr-FR"],
         "what-is-automation": whatIsAutomation["fr-FR"],
         "ai-powered-healthcare": aiPoweredHealthcare["fr-FR"],
@@ -1050,6 +1054,7 @@ export const translations = {
             contactTitle: '',
             contactLink: '',
         },
+        "market-research-advice": marketResearchAdvice["en-SET"],
         "biotic-capacity-technology": BioticCapacityTechnology["en-SET"],
         'what-is-automation': whatIsAutomation["en-SET"],
         "ai-powered-healthcare": aiPoweredHealthcare["en-SET"],

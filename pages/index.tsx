@@ -12,7 +12,7 @@ const Index = () => {
 
     return(
         <div>
-            {/* <BannerHome /> */}
+            <BannerHome />
             <Titles />
             <RedirectionHomepage />
         </div>

@@ -43,13 +43,16 @@ export default function App({ Component, pageProps }) {
     <LanguageContext.Provider value={{ language, setLanguage }}>
       <style jsx global>{`
         h1 {
-          font-family: ${nunito.style.fontFamily} !important;
+          font-family: "Lato" !important;
         }
-        h2, a {
-          font-family: ${lato.style.fontFamily} !important;
+        a {
+          font-family: "Marcellus SC", serif !important;
         }
         h3 {
-          font-family: ${kurale.style.fontFamily} !important;
+          font-family: "Kurale" !important;
+        }
+        h2 {
+          font-family: "Diphylleia", serif !important;
         }
       `}</style>
       {!isCookieSettings && <CookieModale />}

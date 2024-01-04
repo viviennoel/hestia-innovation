@@ -24,7 +24,7 @@ export default function Document() {
         </Script>
 
         <link rel="preconnect" href="https://fonts.googleapis.com"></link>
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin></link>
+        <link rel="preconnect" href="https://fonts.gstatic.com"></link>
         <link href="https://fonts.googleapis.com/css2?family=Diphylleia&family=Kurale&family=Lato:wght@400&family=Marcellus+SC&display=swap" rel="stylesheet"></link>
 
         <meta property="og:url" content="https://res.cloudinary.com/djlwtz7qw/image/upload/c_thumb,w_500,g_face/v1690800082/article17Compressed_ukz4np_hoqgc9.jpg" />

@@ -65,9 +65,6 @@ const Contact = () => {
                             <Form.Label>{translations[language].contact.message}</Form.Label>
                             <Form.Control as="textarea" rows={3}  name="message" value={formData.message} onChange={handleChange} />
                         </Form.Group>
-                        {/* <Form.Group className="mb-3" controlId="formBasicCheckbox">
-                            <Form.Check type="checkbox" required label="I accept the general conditions of use" />
-                        </Form.Group> */}
                         <Button variant="dark" type="submit">
                             {translations[language].contact.submit}
                         </Button>

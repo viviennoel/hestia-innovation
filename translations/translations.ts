@@ -94,9 +94,9 @@ export const translations = {
         cookie: {
             accept: 'Accept',
             refuse: 'Decline',
-            title: "Cookies, what is it?",
+            title: "Privacy Policy",
             text: "We use cookies to analyse your needs and preferences in order to provide you a customized content. For more information, please visit our ",
-            settings: 'Cookie settins',
+            settings: 'Cookie settings',
             policy: 'Privacy policy',
             statistiques: 'Data is the key of success in Data Driven Development. Help us providing you better insights using statistics!'
         },
@@ -584,7 +584,7 @@ export const translations = {
         cookie: {
             accept: 'Accepter',
             refuse: 'Refuser',
-            title: 'Cookies, qu\'est-ce que c\'est ?',
+            title: 'Politique de confidentialité',
             text: 'Nous utilisons des cookies pour analyser vos besoins et vous fournir un contenu personnalisé. Pour plus d\'informations, veuillez consulter notre ',
             settings: 'Paramètres des cookies',
             policy: 'Politique de confidentialité',
@@ -1090,7 +1090,7 @@ export const translations = {
         cookie: {
             accept: 'Accept',
             refuse: 'Decline',
-            title: "Cookies, what is it?",
+            title: "Privacy Policy",
             text: "We use cookies to analyse your needs and preferences in order to provide you a customized content. For more information, please visit our ",
             settings: 'Cookie settings',
             policy: 'Privacy policy',

@@ -38,8 +38,7 @@ export const CookieModale = () => {
                         <LanguageNav/>
                     </div>
                     <h2 className='text-center pb-4'>
-                    <img width="48" height="48" className='me-2' src="https://img.icons8.com/external-flaticons-lineal-color-flat-icons/64/external-cookie-bakery-flaticons-lineal-color-flat-icons-5.png" alt="what is a cookie"/>
-                    {translations[language].cookie.title}
+                        {translations[language].cookie.title}
                     </h2>
                     <p className='pb-4'>
                         {translations[language].cookie.text}
@@ -47,7 +46,6 @@ export const CookieModale = () => {
                     </p>
                     <div className='w-100 pb-5 d-flex'>
                         <p>{translations[language].cookie.statistiques}</p>
-                        <img width="48" height="48" src="https://img.icons8.com/color/48/futures--v1.png" alt="statistiques" className='ms-5'/>
                     </div>
                     <div className='d-md-flex justify-content-between text-center text-md-left'>
                         <Link href='/legal' className={`${styles.link} mb-4 mb-md-0`}>{translations[language].cookie.settings}</Link>

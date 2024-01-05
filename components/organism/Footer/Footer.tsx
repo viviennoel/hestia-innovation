@@ -38,7 +38,7 @@ export const Footer = () => {
                                         </Link>
                                     </li>
                                     <li>
-                                        <Link href='/showroom'>
+                                        <Link href='/showcase'>
                                             {translations[language].footer.nav3}
                                         </Link>
                                     </li>

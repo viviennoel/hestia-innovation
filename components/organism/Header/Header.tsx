@@ -8,6 +8,8 @@ import { MobileNav } from "../../atom/MobileNav";
 import { useRouter } from "next/router";
 import { translations } from "../../../translations/translations";
 import { LanguageNav } from "../../atom/LanguageNav";
+import Dropdown from 'react-bootstrap/Dropdown';
+import React from "react";
 
 export const Header = () => {
     const { language } = useContext(LanguageContext);
@@ -30,11 +32,21 @@ export const Header = () => {
                 <div className='d-none d-lg-flex justify-content-between w-100'>
                     <div className={`my-auto ${styles.menuDesktop}`}>
                         <Link href="/">{translations[language].header.home}</Link>
-                        <Link href="/about">{translations[language].header.about}</Link>
                         <Link href="/showcase">{translations[language].header.showcase}</Link>
-                        <Link href="/development">{translations[language].header.dev}</Link>
-                        <Link href="/designs">{translations[language].header.design}</Link>
-                        <Link href="/ai">{translations[language].header.automation}</Link>
+
+                        {/* Our expertise */}
+                        <Dropdown>
+                            <Dropdown.Toggle className={styles.toggleDropdown} id="dropdown-basic">
+                                {translations[language].header.exertise} <span className={styles.downArrow}>&#9660;</span>
+                            </Dropdown.Toggle>
+                            <Dropdown.Menu className={styles.menuDropdown}>
+                                <Link href="/development">{translations[language].header.dev}</Link>
+                                <Link href="/designs">{translations[language].header.design}</Link>
+                                <Link href="/ai">{translations[language].header.automation}</Link>
+                            </Dropdown.Menu>
+                        </Dropdown>
+
+                        <Link href="/about">{translations[language].header.about}</Link>
                         <Link href="/contact">{translations[language].header.contact}</Link>
                     </div>
                     <div className='d-flex'>

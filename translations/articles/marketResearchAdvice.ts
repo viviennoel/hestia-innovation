@@ -117,6 +117,7 @@ export const marketResearchAdvice = {
     },
     'en-SET': {
       "title": "",
+      "src": "",
       "paragraphs": []
     }
 }

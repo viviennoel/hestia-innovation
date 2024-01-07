@@ -1,30 +1,27 @@
-import {BannerImage} from './../../organism/BannerImage';
-import {BannerTextImage} from './../../organism/BannerTextImage';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
-import {Subtitle} from './../../atom/Subtitle/Subtitle';
-import Container from 'react-bootstrap/Container';
-import {AnimatedText} from './../../atom/AnimatedText/AnimatedText';
-import { translations } from '../../../translations/translations';
-import { useContext, useEffect, useState } from 'react';
-import LanguageContext from '../../../context/languageContext';
+import { useEffect, useState } from 'react';
 import styles from './ArticlePage.module.scss';
-import { ContactFixed } from '../../organism/ContactFixed/ContactFixed';
+import { Article } from './../../organism/Article/Article';
+import { ArticleList } from './../../organism/ArticleList/ArticleList';
+import { useRouter } from 'next/router';
 
 export const ArticlePage = ({article}:{article?:string}) => {
-    const { language } = useContext(LanguageContext);
     const [articleQuery, setArticle] = useState(undefined);
+    const router = useRouter()
 
     useEffect(()=> {
         if(typeof window !== undefined && article === undefined){
             const urlParams = new URLSearchParams(window.location.search);
             const urlParamsArticle = urlParams.get('article');
             console.log('urlParamsArticle', urlParamsArticle)
-            setArticle(urlParamsArticle);
+            const { query } = router.query
+            console.log(query)
+            setArticle(urlParamsArticle ? urlParamsArticle : null);
         } else{
             setArticle(article);
         }
-    }, [])
+    }, [router])
     
     useEffect(() => {
         AOS.init();
@@ -32,48 +29,7 @@ export const ArticlePage = ({article}:{article?:string}) => {
 
     return(
         <div className={styles.wrapper}>
-            <p>{articleQuery}</p>
-            { articleQuery && <div>
-            <BannerImage 
-                size='medium'
-                background={translations['en-GB'][articleQuery].src}
-            >
-                 <AnimatedText words={translations[language][articleQuery].title} />
-            </BannerImage>
-            {translations[language][articleQuery].paragraphs.map(paragraph => 
-                <section key={paragraph.title}>
-                    <Container className={styles.container}>
-                        <h2 className='mb-5' data-aos="fade"
-                                    data-aos-anchor-placement="top-bottom"
-                                    data-aos-duration="1000" data-aos-delay="300">{paragraph.title}</h2>
-                        {paragraph.body.map((bodyPart, index) => {
-                            return (
-                                bodyPart.split('ubtitle: ').length > 1 ? 
-                                    <h3 className={styles.subtitle} key={index}  data-aos="fade"
-                                        data-aos-anchor-placement="top-bottom"
-                                        data-aos-duration="1000" data-aos-delay="300"
-                                    >
-                                        {bodyPart.split('Subtitle: ')[1]}
-                                    </h3>
-                                : <p key={index} dangerouslySetInnerHTML={{ __html: bodyPart }} />
-                            )
-                        })}
-                        {paragraph.img && <img src={paragraph.img.src} alt={paragraph.img.src} className={`${styles.image} mx-auto`}></img>}
-                    </Container>
-                </section>)
-            }
-            <Subtitle content={translations[language].articles.contact} />
-            <BannerTextImage
-                imageSrc={translations['en-GB'].articles.contactSrc}
-                title={translations[language].articles.contactTitle} 
-                body={translations[language].articles.contactDescription} 
-                link='/contact'
-                linkPlaceholder={translations[language].articles.contactLink}
-                variation='light'
-                textSide='right'
-            />
-            <ContactFixed />
-            </div>
+            { articleQuery ? <Article articleQuery={articleQuery} /> : <ArticleList />
         }
         </div>
     )

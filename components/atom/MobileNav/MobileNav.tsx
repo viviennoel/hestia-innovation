@@ -25,11 +25,11 @@ export const MobileNav = () => {
         <Dropdown.Item className='pb-4' href="/">
           {translations[language].header.home}
         </Dropdown.Item>
-        <Dropdown.Item className='pb-4' href="/about">
-          {translations[language].header.about}
-        </Dropdown.Item>
         <Dropdown.Item className='pb-4' href="/showcase">
           {translations[language].header.showcase}
+        </Dropdown.Item>
+        <Dropdown.Item className='pb-4' href="/articles">
+          {translations[language].header.articles}
         </Dropdown.Item>
         <Dropdown.Item className='pb-4'  href="/development">
           {translations[language].header.dev}
@@ -39,6 +39,9 @@ export const MobileNav = () => {
         </Dropdown.Item>
         <Dropdown.Item className='pb-4' href="/ai">
           {translations[language].header.automation}
+        </Dropdown.Item>
+        <Dropdown.Item className='pb-4' href="/about">
+          {translations[language].header.about}
         </Dropdown.Item>
         <Dropdown.Item className='pb-4' href="/contact">
           {translations[language].header.contact}
